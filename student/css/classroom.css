@@ -183,3 +183,33 @@ header nav .header-right a {
   margin: 12px;
   color: #5ea6d9;
 }
+
+
+/*next page*/
+.next_page .hide{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #000;
+	opacity: 0.4;
+}
+.next_page .show{
+	position: fixed;
+	top: 230px;
+	left: 50%;
+	margin-left: -621px;
+	width: 1242px;
+	height: 598px;
+	background: #fff;
+}
+.next_page .show .tit{
+	margin-left: 20px;
+}
+.next_page .show .vedio{
+	height: 540px;
+	width: 1200px;
+	background-color: #DDDDDD;
+	margin: auto;
+}
