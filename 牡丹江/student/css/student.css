@@ -52,6 +52,23 @@ body {
 .navcenter .curriculum .formbiaoge {
     width: 100%;
 }
+.navcenter p.ketangbiaoti {
+    width: 87px;
+    height: 31px;
+    background: url("../img/shilu.png") no-repeat center center;
+    text-align: center;
+    line-height: 31px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #FF4D77;
+}
+.navcenter p.ketanghudong {
+    width: 126px;
+    height: 31px;
+    background: url("../img/shilu2.png") no-repeat center center;
+    line-height: 31px;
+    color: #2FBB32;
+}
 /*—°‘Ò ±º‰*/
 .navcenter .time {
     height: 50px;
@@ -417,4 +434,22 @@ border-radius: 0 0 6px 6px
 }
 .bordereds .zuoye {
     color: #4DA7E5;
+}
+.zhuangtai {
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0 10px;
+    font-size: 16px;
+}
+.zhuangtai span {
+    display: inline-block;
+    width: 54px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #FD5DE5;
+    text-align: center;
+}
+.pingyu {
+    font-size: 16px;
 }
