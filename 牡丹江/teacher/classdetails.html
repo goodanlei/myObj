@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂记录-查看</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="common/jquery-ui-1.11.4.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/classdetails.css"/>
+</head>
+<body>
+<div class="navcenter">
+        <div class="navcenter-biaoti">
+            <span class="ketang">课堂记录</span>
+            <span class="fanhui"><a href="classroomrecord.html">返回</a></span>
+        </div>
+        <div class="time">
+            <form action="">
+                <p>选择时间：
+                    <input class="datepicker" type="text" id="datepicker">
+                    <input class="submit" type="submit" value="提交"/>
+                </p>
+            </form>
+        </div>
+        <div class="curriculum">
+            <!--上一周 下一周 按钮-->
+            <div class="about">
+                <input type="button" value="上一周"/>
+                <input class="nextweek" type="button" value="下一周"/>
+            </div>
+            <!--表格-->
+            <div class="formbiaoge">
+                <table class="bordered">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>班级</th>
+                        <th>课程</th>
+                        <th>授课老师</th>
+                        <th>课堂实录</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>2015-12-28(一).mp4</td>
+                        <td>
+                            <input class="yanjing" type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>2015-12-28(一).mp4</td>
+                        <td>
+                            <input class="yanjing" type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>2015-12-28(一).mp4</td>
+                        <td>
+                            <input class="yanjing" type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>2015-12-28(一).mp4</td>
+                        <td>
+                            <input class="yanjing" type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--学生状态-->
+            <div class="state">
+                <p>学生状态</p>
+                <div class="evaluate">
+                    <ul>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                        <li>
+                            <span>柳玉韬</span>
+                            <input class="appraise" type="button" value="优秀"/>
+                            <input class="appraise normal" type="button" value="正常"/>
+                            <input class="appraise" type="button" value="较差"/>
+                            <input class="interact" type="button" value="互动记录并评价"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--弹窗 查看 -->
+<div class="examine" style="display: none">
+    <div class="examine-nav">
+        <p class="cha"><img src="img/cha.png" alt="关闭"/></p>
+        <div class="exanav-container">
+            <div class="exanav-left">
+                <div class="exanav-vedio"></div>
+                <p>2015-12-28（一）.mp4</p>
+            </div>
+            <div class="exanav-right">
+                <ul>
+                    <li>
+                        <p>2015-12-17 16:31:03</p>
+                        <p>
+                            <span class="fullname">周宇：</span>
+                            <span class="reply-nav">听明白了吗？</span>
+                            <span class="reply">回复</span>
+                        </p>
+                        <div class="viewreply">
+                            <p>2015-12-17 16:31:03</p>
+                            <p>
+                                <span class="aite">周宇@小于：</span>
+                                <span>听懂了</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>2015-12-17 16:31:03</p>
+                        <p>
+                            <span class="fullname">周宇：</span>
+                            <span class="reply-nav">听明白了吗？</span>
+                            <span class="reply">回复</span>
+                        </p>
+                        <div class="viewreply">
+                            <p>2015-12-17 16:31:03</p>
+                            <p>
+                                <span class="aite">周宇@小于：</span>
+                                <span>听懂了</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>2015-12-17 16:31:03</p>
+                        <p>
+                            <span class="fullname">周宇：</span>
+                            <span class="reply-nav">听明白了吗？</span>
+                            <span class="reply">回复</span>
+                        </p>
+                        <div class="viewreply">
+                            <p>2015-12-17 16:31:03</p>
+                            <p>
+                                <span class="aite">周宇@小于：</span>
+                                <span>听懂了</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>2015-12-17 16:31:03</p>
+                        <p>
+                            <span class="fullname">周宇：</span>
+                            <span class="reply-nav">听明白了吗？</span>
+                            <span class="reply">回复</span>
+                        </p>
+                        <div class="viewreply">
+                            <p>2015-12-17 16:31:03</p>
+                            <p>
+                                <span class="aite">周宇@小于：</span>
+                                <span>听懂了</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <hr/>
+                <p class="seemore"><span>查看更多</span></p>
+                <form action="">
+                    <p class="seemore-text"><textarea name=""></textarea></p>
+                    <p><input type="submit" value="发表"/></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹窗 课堂状态-->
+<div class="roomstate" style="display: none;">
+    <div class="roomstate-nav">
+        <p class="cha-room"><img class="chas" src="img/cha.png" alt=""/></p>
+        <h3>
+            <span class="charoom-xingming">刘余涛</span>
+            <img src="img/dian.png" alt=""/>
+            <span>课堂状态</span>
+        </h3>
+        <div class="interaction">
+            <p class="interaction-p">课堂互动记录</p>
+            <div class="formbiaoge">
+                <table class="bordered bordereds">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>班级</th>
+                        <th>课程</th>
+                        <th>授课老师</th>
+                        <th>课堂实录</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>
+                            <p><span>老师下发：</span><span class="zuoye">测试一</span></p>
+                            <p>学生已提交答案</p>
+                        </td>
+                        <td>
+                            <input type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>
+                            <p><span>老师下发：</span><span class="zuoye">PPT</span></p>
+                        </td>
+                        <td>
+                            <input type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>
+                            <p><span>老师下发：</span><span class="zuoye">测试二</span></p>
+                        </td>
+                        <td>
+                            <input type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2015-12-28</p>
+                            <p>星期一</p>
+                            <p>9:00</p>
+                        </td>
+                        <td>三年一班</td>
+                        <td>数学</td>
+                        <td>李本玲</td>
+                        <td>
+                            <p><span>学习提问：</span><span class="zuoye">问题一</span></p>
+                        </td>
+                        <td>
+                            <input type="button" value="查看"/>
+                            <input class="download" type="button" value="下载"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p class="interaction-p">评语</p>
+            <form class="pingjia" action="">
+                <p><textarea></textarea></p>
+                <p>
+                    <input type="submit" value="保存"/>
+                    <input class="resets" type="reset" value="取消"/>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="common/js/jquery.1.8.2.min.js"></script>
+<script src="common/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="common/js/classdetails.js"></script>
+
+</html>
