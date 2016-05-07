@@ -126,7 +126,7 @@ header nav .header-right a {
 .box .cont {
   width: 1100px;
   height: 1260px;
-  margin: 10px auto 160px;
+  margin: 10px auto 40px;
   background: url(../img/preview-cont.png) no-repeat;
   -moz-background-size: 1100px 1260px;
   /* 老版本的 Firefox */
@@ -167,10 +167,24 @@ header nav .header-right a {
 }
 .box .cont li .cont-l {
   float: left;
-  width: 355px;
-  height: 200px;
+  width: 305px;
+  height: 190px;
   margin-top: 10px;
+  padding: 10px 0 0 50px;
 }
+.box .cont li .cont-l h1{margin-bottom: 6px;}
+.box .cont li .cont-l h1 span{
+	position: relative;
+	top:-6px;
+	margin-left: 13px;
+	color:#66aeff;
+	font-size: 16px;
+}
+.box .cont li .cont-l h2{margin-bottom: 12px;}
+.box .cont li .cont-l strong em{font-weight: bold;}
+
+
+
 .box .cont li .cont-l:before,
 .box .cont li .cont-l:after {
   content: " ";
@@ -228,8 +242,9 @@ header nav .header-right a {
 }
 .box .cont li .cont-r {
   float: left;
-  width: 589px;
+  width: 489px;
   height: 200px;
+  padding-left: 100px;
 }
 .box .cont li .cont-r span {
   line-height: 50px;
@@ -250,12 +265,16 @@ header nav .header-right a {
 }
 .box .cont li .cont-r dd .item {
   padding-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background: url(../img/do-2.png) no-repeat;
 }
+.box .cont li .cont-r dd .item:nth-child(2){background-position: 0px -40px;}
+.box .cont li .cont-r dd .item:nth-child(3){background-position: 0px -80px;}
+.box .cont li .cont-r dd .item:nth-child(4){background-position: 0px -118px;}
+
 .box .cont .page {
   text-align: center;
-  width: 760px;
+  width: 826px;
   margin: 40px auto;
 }
 .box .cont .page:before,
@@ -264,21 +283,74 @@ header nav .header-right a {
   display: table;
   clear: both;
 }
-.box .cont .page span {
+.box .cont .page span{
   display: block;
   float: left;
   width: 50px;
   line-height: 50px;
   height: 50px;
+  color:#99cc66;
+  margin:0 5px;
+  font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.box .cont .page span.num{
+	color:#99cc66;
+}
+.box .cont .page span.yx_active{
+	background: url(../img/page-bg.png) no-repeat;
+	color:#fff;
 }
 .box .cont .page span.active {
   background: url(../img/page-num-active.png) no-repeat;
 }
 .box .cont .page span.f {
-  background: url(../img/page-lf.png) no-repeat;
+      background: url(../img/page-lf.png) no-repeat;
   width: 100px;
 }
 .box .cont .page span.l {
   background: url(../img/page-lf.png) no-repeat;
   width: 100px;
 }
+
+/*5.6---修改*/
+.prepared_nav{
+		width: 1100px;
+		margin:0px auto;
+		height: 194px;
+		background: url(../img/yx_nav_bg.png) no-repeat;
+		background-position-y: 40px; 
+}
+
+.prepared_nav .nav-con{
+	height: 73px;
+	padding: 15px 0 0 40px;
+}
+.prepared_nav .nav-con li{float: left;margin-right: 38px;color:#742b23;font-size: 16px;padding: 3px 5px;cursor: pointer;}
+
+.prepared_nav .nav-con li.pre_active{
+	background: #b2392b;
+	color:#fff;
+	
+}
+
+.cont .no_show{
+	padding-top: 110px;
+	margin: 0 auto;
+	text-align: center;
+}
+.cont .no_show img{
+	display: block;
+	margin-left: 490px;
+	
+}
+.cont .no_show p{color:#742b23;}
+
+
+
+
+
+
+
+

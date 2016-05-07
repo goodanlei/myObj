@@ -8,7 +8,11 @@ $(function () {
 		$(this).attr("class",'active');
 	});
 	$(".page span").click(function(){
-		$(".page span").removeClass("active");
-		$(this).addClass('active');
+		$(".page span").removeClass("yx_active");
+		$(this).addClass('yx_active');
 	});
+	
+	$('.prepared_nav .nav-con li').click(function(){
+		$(this).addClass('pre_active').siblings().removeClass('pre_active');
+	})
 });

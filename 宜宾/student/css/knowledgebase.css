@@ -83,6 +83,7 @@ header nav .header-right a {
     float: right;
     width: 852px;
     height: 1115px;
+    margin-bottom: 40px;
 }
 .container-right .conright-list {
     margin-left: 40px;
@@ -386,6 +387,36 @@ header nav .header-right a {
     /* 老版本的 Firefox */
     background-size: 1100px 1260px;
 }
+
+/*无资源展示*/
+
+.know_box .no_show{
+	padding-top: 40px;
+	text-align: center;
+	color:#742b23;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
