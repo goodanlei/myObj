@@ -197,15 +197,20 @@ header nav .header-right a {
 }
 .next_page .show{
 	position: fixed;
-	top: 230px;
+	top: 50%;
 	left: 50%;
 	margin-left: -621px;
+	margin-top: -299px;
 	width: 1242px;
 	height: 598px;
 	background: #fff;
 }
 .next_page .show .tit{
 	margin-left: 20px;
+}
+.next_page .show .tit img{
+	cursor: pointer;
+	float: right;
 }
 .next_page .show .vedio{
 	height: 540px;

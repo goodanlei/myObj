@@ -3,7 +3,7 @@ $(function () {
 	$(".cont table span").click(function(){
 			$(".next_page").show();
 	});
-	$(".next_page").click(function(){
+	$(".next_page .show .tit img").click(function(){
 			$(".next_page").hide();
 	});
 	
