@@ -190,7 +190,27 @@ $(function(){
 	$('.questions_r li span').click(function(){
 		$(this).addClass('que_active').parent().siblings().find('span').removeClass('que_active');
 	})
-
+	//试题预览 上下删除事件
+	$(".List-questions img.del").click(function () {
+		var t = $(this).parents(".ques_num");
+		t.remove();
+	});
+	$(".List-questions img.next").click(function () {
+		var t = $(this).parents(".ques_num");
+		t.removeClass("active");
+		t.next().addClass("active");
+	});
+	$(".List-questions img.up").click(function () {
+		var t = $(this).parents(".ques_num");
+		t.removeClass("active");
+		t.prev().addClass("active");
+	});
+	$(".ques_num").hover(function () {
+		$(".ques_num").removeClass("active");
+		$(this).addClass("active");
+	},function () {
+		$(this).removeClass("active");
+	});
 	/*************************************  课堂记录  **************************************************/
 	
 

@@ -356,6 +356,12 @@ iframe {
   background: url(../img/icon-up.png) no-repeat;
   background-position-y: 2px;
 }
+
+
+
+
+
+
 .cont-body {
   height: 1127px;
 }
@@ -376,6 +382,7 @@ iframe {
   border: 1px solid #dddddd;
 }
 .cont-body li{
+	color: #909090;
     float: left;
     width: 212px;
     height: 262px;
@@ -387,11 +394,19 @@ iframe {
 .cont-body li:hover span{
 	font-size: 13px;
 }
+.cont-body li:hover span.title{
+	color: #D03D31;
+}
 .cont-body li:hover div.cont-item{
 	  margin-top: 0px;
 	  width: 212px;
     height: 262px;
     border: 2px solid #dddddd;
+}
+
+.cont-body li:hover .xing{
+	background: url(../img/index-xin2.png) no-repeat;
+	background-position: 3px;
 }
 /***********************************************/
 
@@ -403,7 +418,7 @@ iframe {
   padding: 15px 10px 0px 10px;
 }
 .cont-body li .text .title {
-	  widht:100px;
+	  width:100%;
 	  text-align: left;
     text-align: left;
     height: 19px;
@@ -434,27 +449,30 @@ iframe {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.cont-body li .text .body p .text-blue{
+.cont-body li .text .body p .text-def2{
+	color: #555555;
 	width:100px;
+}
+.cont-body li .text .body p .text-def{
+	color: #6c6c6c;
 }
 .cont-body li .text .body div {
   padding-top: 5px;
 }
 .cont-body li .text .body .text-blue {
   color: #34a7ff;
-}
-.cont-body li .text .body .text-red {
-  color: #d03d31;
   float: right;
 }
 .cont-body li .text .body .huan {
-  background: url(../img/iocn-yuanhuan.png) no-repeat;
+  background:url(../img/resource-library-eye.gif) no-repeat;
+  background-position: 0px 3px;
   padding-left: 20px;
   width:28px;
 }
-.cont-body li .text .body .xing {
+.cont-body li .xing {
 	width:28px;
-  background: url(../img/icon-xing.png) no-repeat;
+  background: url(../img/index-xin.png) no-repeat;
+  background-position: 3px;
   padding-left: 20px;
 }
 .page {
