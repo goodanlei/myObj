@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/classroom_record.css"/>
+		<meta charset="utf-8" />
 		<title>课堂记录</title>
 	</head>
 	<body>
@@ -82,39 +82,39 @@
 							<p>2016-04-05</p>
 						</td>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 					<tr>
 						<td>08:08:08-08:08:08</td>
-						<td><span>查看</span><span>下载保存</span></td>
+						<td><span class="look">查看</span><span>下载保存</span></td>
 					</tr>
 				</table>
 			</div>
@@ -126,6 +126,7 @@
 					<span>
 						视频播放：
 					</span>
+					<img src="img/video-close.png"/>
 				</div>
 				<div class="show-video">
 					<video width="100%" height="100%" controls="controls" poster="img/vedio-img.png">
@@ -134,32 +135,36 @@
 				</div>
 			</div>
 		</div>
-		<!--foot start-->
-			<iframe src="footer.html" width="100%" height="80px" style="border:0"></iframe>
-		<!--foot end-->
 	</body>
-	<script src="common/js/jquery.1.8.2.min.js" ></script>
-	<script>
+	<script src="common/js/jquery.1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			$(".box-right table span.look").click(function(){
+		$(".next_page").show();
+	});
+	$(".next_page .show .show-tit img").click(function(){
+		s=true;
+		$(".show-video video").trigger("click");;
+		$(".next_page").hide();
+	});
 	
-		$(".box-right table span").click(function(){
-			$(".next_page").show();
-		});
-		
-		//视频
-		var s = false;
-		$(".show-video video").click(function () {
-			s = !s;	
-			play(this);
-		});
-		function play (obj) {
-			if(s){
-				obj.play();
-			}else{
-				obj.pause();
-			}
+	//视频
+	var s = false;
+	$(".show-video video").click(function () {
+		s = !s;	
+		play(this);
+	});
+	function play (obj) {
+		if(s){
+			obj.play();
+		}else{
+			obj.pause();
 		}
-		$('.header .header_con .header_btn span,.header .header_con .header_btn img').click(function(){
-	        $('.personal').slideToggle();
-	    });
+	}
+    $('.header .header_con .header_btn span,.header .header_con .header_btn img').click(function(){
+        $('.personal').slideToggle();
+    });
+    $('.header .header_con .header_list li a').click(function(){
+        $(this).addClass('header_active').parent('li').siblings('li').find('a').removeClass('header_active');
+    });
 	</script>
 </html>

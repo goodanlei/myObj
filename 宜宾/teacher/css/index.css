@@ -532,7 +532,7 @@ iframe {
     top:42px;
     right:70px;
     display: none;
-    z-index: 1111;
+    z-index: 999;
 }
 .header .personal li{
     height: 40px;
