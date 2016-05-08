@@ -98,7 +98,9 @@ $(function(){
                 if(!s){
                     $(".del_down").show();  
                 }
-
+				setTimeout(function () {
+					$(".del_down").hide(); 
+				},500);
             });
             
         },
