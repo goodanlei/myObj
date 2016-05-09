@@ -68,11 +68,10 @@ table {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-	
 }  
-#dvMsgBox .top{height:40px; background-color:#bb372c;padding-left:16px; float:left; width:100%;}  
-#dvMsgBox .top .right{height:100%;padding-right:6px;}  
-#dvMsgBox .top .right .title{height:100%;line-height:40px;color:#fff;vertical-align:middle;font-size:14px;overflow:hidden;}  
+#dvMsgBox .top{height:40px; background-color:#bb372c; float:left; width:100%;}  
+#dvMsgBox .top .right{height:100%;}  
+#dvMsgBox .top .right .title{text-align:left;height:100%;padding-left:16px;line-height:40px;color:#fff;vertical-align:middle;font-size:14px;overflow:hidden;}  
 #dvMsgBox .body{background:#fff;padding-left:10px;}  
 #dvMsgBox .body .right{background:#fff;padding-right:2px;}  
 #dvMsgBox .body .right .ct{  
