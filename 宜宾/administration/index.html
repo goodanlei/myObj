@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--告诉设备忽略将页面中的数字识别为电话号码-->
+	<meta content="telephone=no" name="format-detection" />
+	<!--如果你不想Android自动识别页面中的邮件地址，你不妨加上这样一句meta标签在head中 -->
+	<meta content="email=no" name="format-detection" />
+
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>	
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<!-- 3.2.3工况报告 -->
+	<div class="gkbg_main">
+		<div class="gkbg_top">
+			<img src="images/btn_back.png" class="gkbg_back">
+			<dl>
+				<dt>需要关注以下项目：</dt>
+				<dd>发动机计算负载</dd>
+				<dd>发动机转速</dd>
+			</dl>
+			<img src="images/tb_10.png" class="gkbg_work">
+		</div>
+		<dl class="gkbg_report">
+			<dt>
+				<div>OBD参数</div>
+				<var>当前值</var>
+				<em>参考值</em>
+			</dt>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div class="gkbg_red">电瓶充电电压（V）↗</div>
+				<var class="gkbg_red">14.375</var>
+				<em  class="gkbg_red">13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div class="gkbg_green">电瓶充电电压（V）↘</div>
+				<var class="gkbg_green">14.375</var>
+				<em class="gkbg_green">13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+			<dd>
+				<div>电瓶充电电压（V）</div>
+				<var>14.375</var>
+				<em>13.2-14.8</em>
+				<span>&gt;</span>
+			</dd>
+		</dl>
+	</div>
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+</html>

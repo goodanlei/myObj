@@ -1,0 +1,39 @@
+html{font:normal normal 62.5% "Microsoft YaHei";}/*加上是--1rem等于10px*/
+.gkbg_main{width:100%;background-color: #eee;}
+.gkbg_top{height:280px;}
+.gkbg_back{float: left;margin:29px 126px 0 27px;}
+.gkbg_top dl{float: left;margin-top: 56px;color: #333;}
+.gkbg_top dl dt{font-size: 5rem;}
+.gkbg_top dl dd{padding-left:42px;background:url(../images/tb_09.png) 0 27px no-repeat;font-size: 4rem;}
+.gkbg_work{float: right;margin:52px 60px 0 0;}
+.gkbg_report dt{overflow:hidden;background-color: #3598db;color: #fff;text-align: center;}
+.gkbg_report dt div,.gkbg_report dt var,.gkbg_report dt em{float: left;height: 150px;border-right:2px solid #dcdcdc;font-size:5rem;color: #fff;line-height:150px;}
+.gkbg_report dt div,.gkbg_report dd div{width: 604px;}
+.gkbg_report dt var,.gkbg_report dd var{width: 220px;}
+.gkbg_report dt em,.gkbg_report dd em{width: 296px;}
+.gkbg_report dd span{width: 116px;text-align: center;}
+.gkbg_report dd div,.gkbg_report dd var,.gkbg_report dd em,.gkbg_report dd span{float: left;height: 150px;font-size: 4rem;line-height: 150px;text-align: center;}
+.gkbg_report dd div{text-align: left;padding-left: 90px;width: 572px;color: #333;}
+.gkbg_report dd var,.gkbg_report dd em{color: #999;}
+.gkbg_report .gkbg_red{color: #ff4400;}
+.gkbg_report .gkbg_green{color: #1bbc9b;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
