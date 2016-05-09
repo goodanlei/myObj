@@ -93,14 +93,34 @@ $(function(){
         },
         //del_down btn
         del_down:function(){
-            $("#download,#delete").parent().click(function(){
+            $("#download").parent().click(function(){
                 var s =$(".investment_con_one input:checked").size();
                 if(!s){
                     $(".del_down").show();  
                 }
 				setTimeout(function () {
 					$(".del_down").hide(); 
-				},500);
+				},3000);
+            });
+            $("#delete").parent().click(function(){
+                var s =$(".investment_con_one input:checked").size();
+                if(!s){
+                   if(!s){
+	                    $(".del_down").show();  
+	                }
+					setTimeout(function () {
+						$(".del_down").hide(); 
+					},3000);
+                   
+                }else{
+                	YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {
+                   	if(s=='no'){
+                   		alert("你取消了");
+                   	}else{
+                   		alert("删除了");
+                   	}
+                   });
+                }
             });
             
         },

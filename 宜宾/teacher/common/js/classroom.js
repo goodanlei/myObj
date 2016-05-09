@@ -192,8 +192,14 @@ $(function(){
 	})
 	//试题预览 上下删除事件
 	$(".List-questions img.del").click(function () {
-		var t = $(this).parents(".ques_num");
-		t.remove();
+		YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {
+       	if(s=='no'){
+       		alert("你取消了");
+       	}else{
+       		alert("删除了");
+       	}
+       });
+		
 	});
 	$(".List-questions img.next").click(function () {
 		var t = $(this).parents(".ques_num");

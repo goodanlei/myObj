@@ -676,7 +676,7 @@ float:left;
 .del_down .con{
     position: fixed;
     left: 50%;
-    top:400px;
+    top:240px;
     z-index:1000;
     margin-left:-164px;
     width:328px;
