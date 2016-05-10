@@ -3,93 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-	<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<!--告诉设备忽略将页面中的数字识别为电话号码-->
-	<meta content="telephone=no" name="format-detection" />
-	<!--如果你不想Android自动识别页面中的邮件地址，你不妨加上这样一句meta标签在head中 -->
-	<meta content="email=no" name="format-detection" />
-
-	<!--[if lt IE 9]>
-		<script src="js/html5.js"></script>	
-	<![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
 </head>
 <body>
-	<!-- 3.2.3工况报告 -->
-	<div class="gkbg_main">
-		<div class="gkbg_top">
-			<img src="images/btn_back.png" class="gkbg_back">
-			<dl>
-				<dt>需要关注以下项目：</dt>
-				<dd>发动机计算负载</dd>
-				<dd>发动机转速</dd>
-			</dl>
-			<img src="images/tb_10.png" class="gkbg_work">
+	<!-- 外层框架  -->
+	<div class="mian">
+		<div class="main_left">
+			<h3>宜宾智慧教育平台</h3>
+			<ul class="left_list">
+				<li class="list_active">资源管理</li>
+				<li>教材管理</li>
+				<li>课程管理</li>
+				<li>设备管理</li>
+			</ul>
 		</div>
-		<dl class="gkbg_report">
-			<dt>
-				<div>OBD参数</div>
-				<var>当前值</var>
-				<em>参考值</em>
-			</dt>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div class="gkbg_red">电瓶充电电压（V）↗</div>
-				<var class="gkbg_red">14.375</var>
-				<em  class="gkbg_red">13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div class="gkbg_green">电瓶充电电压（V）↘</div>
-				<var class="gkbg_green">14.375</var>
-				<em class="gkbg_green">13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-			<dd>
-				<div>电瓶充电电压（V）</div>
-				<var>14.375</var>
-				<em>13.2-14.8</em>
-				<span>&gt;</span>
-			</dd>
-		</dl>
+		<div class="main_right">
+			<div class="right_head clearfix">
+				<p class="fl">资源管理//Resource management</p>
+				<div class="btn fr">
+					<em>张燕霞</em>
+					<img src="img/xia_green.png" alt="" />
+					<span>[已登录]</span>
+				</div>
+			</div>
+			<div class="right_sort">
+				<span>全部</span>
+				<div class="clearfix">
+					<ul class="fl sub_l">
+						<li>市级:</li>
+						<li>区县级：</li>
+						<li>校级：</li>
+					</ul>
+					<ul class="fl sub_r">
+						<li><span class="sub_active">宜宾市资源库</span></li>
+						<li class="quxian">
+							<span class="sub_active">翠屏区资源库</span><em></em>
+							<span>翠屏区资源库</span><em></em>
+							<span>翠屏区资源库</span><em></em>
+							<span>翠屏区资源库</span><em></em>
+							<span>翠屏区资源库</span><em></em>
+							<span>翠屏区资源库</span>
+						</li>
+						<li class="xiaoji">
+							<span class="sub_active">钟灵街小学</span><em></em>
+							<span>钟灵街小学</span><em></em>
+							<span>钟灵街小学</span><em></em>
+							<span>钟灵街小学</span><em></em>
+							<span>钟灵街小学</span><em></em>
+							<span>钟灵街小学</span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="right_con"></div>
+			<ul class="right_footer">
+				<li>
+					<span>主办：宜宾市教育体育局</span>
+					<span>承办：宜宾市新宜集团</span>
+					<span>技术支持：有限公司宜宾市科信教育投资股份</span>
+				</li>
+				<li>
+					<span>@2016  宜宾市智慧教育云平台</span>
+					<span>联系电话：0831—83500071</span>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 </body>
-<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="common/js/index.js"></script>
 </html>
