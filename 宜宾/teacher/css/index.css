@@ -404,10 +404,6 @@ iframe {
     border: 2px solid #dddddd;
 }
 
-.cont-body li:hover .xing{
-	background: url(../img/index-xin2.png) no-repeat;
-	background-position: 3px;
-}
 /***********************************************/
 
 .cont-body li img {
@@ -464,6 +460,12 @@ iframe {
   float: right;
 }
 .cont-body li .text .body .huan {
+  background:url(../img/resource-library-eye-def.png) no-repeat;
+  background-position: 0px 3px;
+  padding-left: 20px;
+  width:28px;
+}
+.cont-body li .text .body .huan_active {
   background:url(../img/resource-library-eye.gif) no-repeat;
   background-position: 0px 3px;
   padding-left: 20px;
@@ -472,6 +474,12 @@ iframe {
 .cont-body li .xing {
 	width:28px;
   background: url(../img/index-xin.png) no-repeat;
+  background-position: 3px;
+  padding-left: 20px;
+}
+.cont-body li .xing_active {
+	width:28px;
+  background: url(../img/index-xin2.png) no-repeat;
   background-position: 3px;
   padding-left: 20px;
 }
