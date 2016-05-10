@@ -35,6 +35,7 @@ $(function(){
                 $(".select-school-xuanze").show();
             });
         },
+
         init:function(){
             this.teacher()
             this.student();

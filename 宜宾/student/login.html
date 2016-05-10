@@ -10,6 +10,7 @@
             color: #212121;
             font-size: 16px;
             background: #fff;
+            position: relative;
         }
         header {
             width: 100%;
@@ -39,12 +40,14 @@
             background: url("img/ditu2.jpg") no-repeat;
         }
         .container .container-nav {
+            position: relative;
             width: 1200px;
             height: 650px;
             margin: 0 auto;
             padding-top: 110px;
         }
         .container-nav-right {
+
             float: right;
             width: 458px;
             background: #FFF;
@@ -240,6 +243,86 @@
             border: 1px solid #FCB88E;
             margin-right: 44px;
         }
+
+        /*管理员登录*/
+        .aministrator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+        .administrator-login {
+            position: absolute;
+            top: 81px;
+            right: 0;
+            width:100px;
+            padding-right: 18px;
+            text-align: right;
+            background: url("img/administrator.png") no-repeat center right;
+            cursor: pointer;
+            color: #fff;
+        }
+        .aministrator-main {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-top: -229px;
+            margin-left: -286px;
+            width: 573px;
+            height: 458px;
+            background: #fff;
+            border-radius: 8px;
+        }
+        .aministrator-main .admain-center {
+            width: 450px;
+            height: 280px;
+            margin: 35px auto 0;
+        }
+        .admain-center p {
+            line-height: 30px;
+            font-size: 16px;
+            color: #636D77;
+        }
+        .admain-center p input.admain-username,.admain-center p input.admain-password {
+            width: 410px;
+            height: 53px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #cdd1dd;
+            padding-left: 40px;
+            background: url("img/data.png") no-repeat 15px center;
+        }
+        .admain-center p input.admain-password {
+            background: url("img/account.png") no-repeat 15px center;
+        }
+        .admain-center .admain-alertname,.admain-center .admain-alertpass {
+            visibility: hidden;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: red;
+            font-size: 14px;
+
+        }
+        .submit {
+            float: right;
+            width: 159px;
+            height: 45px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+            background: #3BC1C3;
+            border-radius: 5px;
+        }
+        .guanbi2 {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -255,6 +338,7 @@
 <div class="container">
     <div class="container-nav">
         <img class="container-nav-left" src="img/image2.png" alt=""/>
+        <p class="administrator-login">管理员登录</p>
         <div class="container-nav-right">
             <ul class="container-list">
                 <li class="list-teacher current">教师版</li>
@@ -346,7 +430,47 @@
         <p class="confirm"><input class="confirm-submit-student" type="submit" value="确认"/><input class="quxiao" type="reset" value="取消"/></p>
     </form>
 </div>
+<!--管理员登录 弹窗-->
+<div class="aministrator" style="display: none">
+    <div class="aministrator-main">
+        <img src="img/gaunli.png" alt=""/>
+        <img class="guanbi2" src="img/guanbi2.png" alt=""/>
+        <div class="admain-center">
+            <form action="">
+                <p>用户名</p>
+                <p><input class="admain-username" placeholder="请输入用户名" type="text"/></p>
+                <p class="admain-alertname">用户名错误</p>
+                <p>密码</p>
+                <p><input class="admain-password" placeholder="请输入密码" type="text"/></p>
+                <p class="admain-alertpass">密码错误</p>
+                <p><span><input type="checkbox"/>记住密码</span><span><input class="submit" type="button" value="登录"/></span></p>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 <script src="common/js/jquery.1.8.2.min.js"></script>
 <script src="common/js/login.js"></script>
+<script>
+    $(function(){
+        $(".administrator-login").click(function(){
+            $(".aministrator").show();
+        })
+        $(".guanbi2").click(function(){
+            $(".aministrator").hide();
+        })
+        function yanzheng(obj,hide){
+            $(obj).blur(function(){
+                if($(obj).val()==""){
+                    $(hide).css("visibility","inherit");
+                }
+                else{
+                    $(hide).css("visibility","hidden");
+                }
+            })
+        }
+        yanzheng(".admain-username",".admain-alertname");
+        yanzheng(".admain-password",".admain-alertpass");
+    });
+</script>
 </html>
