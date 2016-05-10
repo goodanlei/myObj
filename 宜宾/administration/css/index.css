@@ -16,10 +16,10 @@ html{ height:100%} /*兼容firefox的div高度100%*/
 }
 
 .main_left .left_list li{
-	width: 238px;
-	height: 100px;
-	line-height: 100px;
-	text-align: center;
+	width: 186px;
+	height: 60px;
+	padding-top: 40px;
+	padding-left: 52px;
 	color:#fff;
 	font-size: 18px;
 	margin-bottom: 50px;
@@ -27,9 +27,34 @@ html{ height:100%} /*兼容firefox的div高度100%*/
 }
 .main_left .left_list li.list_active{
 	border-left:4px solid #1ab394 ;
-	width: 234px;
+	width: 182px;
 	background: #0f1922;
 }
+
+.main_left .left_list li em{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/left_list.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top:-24px;
+	left:50px;
+}
+.main_left .left_list li:nth-child(1) em{background-position:  0px 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main_right .right_head{height: 34px;padding-top: 34px;}
 .main_right .right_head p{font-size: 18px;color:#222;}
@@ -71,7 +96,7 @@ html{ height:100%} /*兼容firefox的div高度100%*/
 .main_right .right_footer{
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 20px;
+	padding: 20px 0;
 	font-size: 12px;
 	color:#545454;
 }
