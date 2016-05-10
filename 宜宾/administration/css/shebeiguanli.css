@@ -1,0 +1,33 @@
+        .right_con{background:none!important}
+        .conleft{width:60%;height:auto;background:#fff;position:relative;min-width:600px;}
+        .conright{width:35%;height:735px;background:#fff;margin-left:2%;}
+        .bgtitle{padding:20px;font-size:16px;}
+        .bgtitle .fl h2:before{content:"";width:3px;height:25px;background:#4dbd73;position:absolute;left:0}
+        h2{font-size:16px;}
+        h2 span img{margin-right:6px;}
+        .tablelist{border-collapse:collapse;clear:both;border:1px solid #d1eedb;margin:0 auto 12px;width:90%;margin-top:40px;}
+        .tablelist td{border:1px solid #d1eedb}
+        tbody .odd{background:#f5fbf7;height:30px!important;}
+        tbody .odd td{height:40px;}
+        td span{display:inline-block;width:75px;height:25px;color:#000;line-height:25px;text-align:center;border:1px solid #4dbd73;}
+        td .tbactive{background:#4dbd73;color:#fff}
+        .zuobiao{width:113px;text-align:center;}
+        thead tr{height:40px;font-weight:bold;}
+        thead{background:#f5fbf7}
+        tbody tr{height:60px;}
+        .tablelist ul{list-style:none;min-width:400px;width:auto;margin:0;}
+        .tablelist ul li{display:inline-block;width:50px;}
+        
+        .conright{position:relative}
+        .rttit h2{padding:20px;}
+        .rttit h2:before{content:"";width:3px;height:25px;background:#4dbd73;position:absolute;left:0;}
+        .cxid{width:265px;height:30px;border-radius:5px;margin-right:10px;border:1px solid #ccc;}
+        .seache{position:relative;height:50px;margin-bottom:80px;}
+        .seache img{position:absolute;right:15px;top:8px;}
+        .cxshow{min-width:300px;height:331px;background:#f9f9f9;clear:both;border-radius:5px;margin:50px auto;position:relative;}
+        .idshow{width:290px;height:50px;position:absolute;top:50%;left:50%;margin-left:-145px;font-weight:bold;line-height:50px;margin-top:-25px;}
+        .idshow input{width:150px;height:25px;border:1px solid #ccc;background:#f9f9f9;text-align:center;border-radius:3px;margin-left:10px;}
+        .zhuyi{position:absolute;width:200px;height:25px;left:50%;bottom:10px;margin-left:-100px;color:#666}
+        .youid{width:13px;height:11px;border:none;background:url('../img/youid.png')}
+        .wuid{width:13px;height:11px;border:none;background:url('../img/wuid.png')}
+        .right_footer{clear:both;}
