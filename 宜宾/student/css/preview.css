@@ -149,8 +149,12 @@ header nav .header-right a {
   height: 210px;
 }
 .box .cont li a {
+	text-underline-style: solid !important;
   color: #669933;
   font-size: 16px;
+}
+.box .cont li a:hover{
+	text-decoration: underline
 }
 .box .cont li:first-of-type {
   background: url(../img/preniew-cont-1.png) no-repeat;
@@ -162,9 +166,11 @@ header nav .header-right a {
   display: table;
   clear: both;
 }
-.box .cont li:first-of-type .cont-l,
-.box .cont li:first-of-type .cont-r {
+.box .cont li:first-of-type .cont-l{
   margin-top: 50px;
+}
+.box .cont li:first-of-type .cont-r {
+  margin-top: 45px;
 }
 .box .cont li .cont-l {
   float: left;
@@ -181,7 +187,7 @@ header nav .header-right a {
 	color:#66aeff;
 	font-size: 16px;
 }
-.box .cont li .cont-l h2{margin-bottom: 12px;}
+.box .cont li .cont-l h2{margin-bottom: 6px;}
 .box .cont li .cont-l strong em{font-weight: bold;}
 
 
@@ -244,6 +250,7 @@ header nav .header-right a {
 .box .cont li .cont-r {
   float: left;
   width: 489px;
+  margin-top: 4px;
   height: 200px;
   padding-left: 100px;
 }
@@ -265,13 +272,18 @@ header nav .header-right a {
   float: left;
 }
 .box .cont li .cont-r dd .item {
-  padding-left: 30px;
-  margin-bottom: 20px;
-  background: url(../img/do-2.png) no-repeat;
+      width: 418px;
+    padding-left: 30px;
+    height: 25px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: url(../img/do-2.png) no-repeat;
+        white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .box .cont li .cont-r dd .ziyuan-icon-1{background-position: 0px 0px;}
-.box .cont li .cont-r dd .ziyuan-icon-2{background-position: 0px -40px;}
-.box .cont li .cont-r dd .ziyuan-icon-3{background-position: 0px -80px;}
+.box .cont li .cont-r dd .ziyuan-icon-2{background-position: 0px -39px;}
+.box .cont li .cont-r dd .ziyuan-icon-3{background-position: 0px -78px;}
 .box .cont li .cont-r dd .ziyuan-icon-4{background-position: 0px -118px;}
 
 .box .cont .page {
