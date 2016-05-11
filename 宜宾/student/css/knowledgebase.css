@@ -45,7 +45,7 @@ header nav .header-right a {
     background: url("../img/knowledge-left.png") no-repeat top center;
     padding: 40px 0 0 40px;
 }
-.container-left li{margin-bottom: 10px;}
+.container-left li{margin-bottom: 5px;}
 .container-left>ul>li>a {
     display: block;
     width: 160px;
@@ -145,11 +145,12 @@ header nav .header-right a {
     margin: 7px 23px 0 0;
 }
 .container-right .conright-mask li.conright-mask5 {
-    margin: 5px 21px 0 0;
+    margin: 13px 21px 0 0;
 }
 .container-right .conright-mask li.conright-mask6 {
     margin-top: 14px;
     height: 36px;
+        width: 34px;
 }
 .container-right .conright-mask li.show {
     visibility: visible;
@@ -243,7 +244,7 @@ header nav .header-right a {
 .container-right .conright-nav .conright-nav-center ul li p {
     font-size: 12px;
     color: #6C6C6C;
-
+    padding-bottom: 3px;
 }
 
 .container-right .conright-nav .conright-nav-center ul li .biaoti {
@@ -426,17 +427,17 @@ header nav .header-right a {
 
 /* ***************************************************5-6*/
 .cont-body li div.cont-item{
-  margin: auto;
-  margin-top: 5px;
-  width: 172px;
-  height: 252px;
-  border: 1px solid #dddddd;
+    margin: auto;
+    margin-top: 5px;
+    width: 172px;
+    height: 237px;
+    border: 1px solid #dddddd;
 }
 .cont-body li{
 	color: #909090;
     float: left;
     width: 182px;
-    height: 262px;
+    height: 237px;
     margin: 5px 0px 18px 18px;
 }
 .cont-body li:hover .text .title{
@@ -451,7 +452,7 @@ header nav .header-right a {
 .cont-body li:hover div.cont-item{
 	  margin-top: 0px;
 	  width: 182px;
-    height: 262px;
+    height: 237px;
     border: 2px solid #dddddd;
 }
 
@@ -465,15 +466,18 @@ header nav .header-right a {
   padding: 1px 10px 0px 10px;
 }
 .cont-body li .text .title {
-    height: 40px;
+    height: 30px;
+    line-height: 16px;
     display: block;
     overflow: hidden;
+        color: #222;
+    font-weight: bold;
 }
 .cont-body li .text .body {
-  font-size: 12px;
+    font-size: 11px;
+    margin-top: 3px;
 }
 .cont-body li .text .body p {
-  padding: 10px 0px 7px 0px;
   border-bottom: 1px solid #dddddd;
 }
 .cont-body li .text .body p:after{
@@ -486,6 +490,7 @@ header nav .header-right a {
     float: left;
     overflow: hidden;
     height: 17px;
+    margin-right: 10px;
 }
 .cont-body li .text .body p .text-def2{
 	color: #555555;
@@ -508,10 +513,10 @@ header nav .header-right a {
   width:28px;
 }
 .cont-body li .text .body .huan_active {
-  background:url(../img/resource-library-eye.gif) no-repeat;
-  background-position: 0px 3px;
-  padding-left: 20px;
-  width:28px;
+      background: url(../img/resource-library-eye.gif) no-repeat;
+    background-position: 0px 3px;
+    padding-left: 20px;
+    width: 31px;
 }
 .cont-body li .xing {
 	width:28px;

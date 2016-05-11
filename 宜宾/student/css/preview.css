@@ -335,9 +335,12 @@ header nav .header-right a {
 .prepared_nav .nav-con li{float: left;margin-right: 38px;color:#742b23;font-size: 16px;padding: 3px 5px;cursor: pointer;}
 
 .prepared_nav .nav-con li.pre_active{
-	background: #b2392b;
-	color:#fff;
-	
+    padding-right: 10px;
+    background: url(../img/nav-con-sel.png) no-repeat;
+    background-position: 0px 2px;
+    background-size: 50px 100%;
+    padding-left: 10px;
+    color: #fff;
 }
 
 .cont .no_show{

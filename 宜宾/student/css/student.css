@@ -49,6 +49,7 @@ header nav .header-right a {
 	width:1100px;
 	height:867px;
 	background: url(../img/sy_main.png) no-repeat;
+	    background-size: 1100px;
 	text-align: center;
 	margin:auto;
 	position: relative;
@@ -220,6 +221,7 @@ header nav .header-right a {
 	width: 500px;
 	height: 564px;
 	position: relative;
+	color: #993333;
 	top:-6px;
 }
 
