@@ -153,6 +153,7 @@ ul.ziyuan .ziyuan-item dt span {
 }
 ul.ziyuan .ziyuan-item dd {
   width: 375px;
+  min-height: 46px;
   float: left;
 }
 ul.ziyuan .ziyuan-item dd span {
