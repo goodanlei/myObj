@@ -320,13 +320,15 @@ header nav .header-right a {
 }
 .box .nav {
     width: 1100px;
-    margin: 0px auto 30px;
-    height: 258px;
+    margin: 40px auto 30px;
     background: url(../img/preview-nav.png) no-repeat;
-    background-position-y: 40px;
+    background-size: 100% 100%;
+    padding-bottom: 20px;
 }
 .box .nav-tit {
     margin: 0px 118px;
+    position: absolute;
+    top: 68px;
     height: 83px;
 }
 .box .nav-tit a {
@@ -345,11 +347,10 @@ header nav .header-right a {
     background-position-x: 9px;
 }
 .box .nav-con {
-    height: 145px;
+    padding-top: 45px;
 }
 .box .nav-con ul {
     margin: 10px 50px;
-    height: 145px;
 }
 .box .nav-con li {
     margin-bottom: 3px;
@@ -376,20 +377,23 @@ header nav .header-right a {
     margin: 0px 20px;
     margin-top: 5px;
 }
+.box .nav-con li:first-of-type img{
+	margin-right: 34px;
+    margin-left: 21px;
+}
 .box .nav-con li a {
     display: block;
     color: #732B23;
     float: left;
-    width: 56px;
+    padding: 0px 10px;
     height: 100%;
     line-height: 30px;
 }
 .box .nav-con li a.active {
 	  color: #FFFFFF;
     background: url(../img/nav-con-sel.png) no-repeat;
-    -moz-background-size: 56px 100%;
-    /* 老版本的 Firefox */
-    background-size: 56px 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 .box .cont {
     width: 1100px;
