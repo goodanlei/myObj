@@ -17,7 +17,4 @@ $(function(){
 	    var _height  =  $('.main_right').height() + 'px';
 	    $('.main_left').css('height',_height);
 	}
-	
-	
-	
 })

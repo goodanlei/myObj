@@ -23,6 +23,7 @@
 			</ul>
 		</div>
 		<div class="main_right">
+
 			<div class="right_head clearfix">
 				<p class="fl">资源管理//Resource management</p>
 				<div class="btn fr">
@@ -59,7 +60,6 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 			<div class="right_con">
 				<div class="conleft fl">
@@ -70,6 +70,7 @@
 							<h2><span><img src="./img/youid.png" alt="" /></span>有ID信息&nbsp;&nbsp;<span><img src="./img/wuid.png" alt="" /></span>无ID信息</h2>
 						</div>
 					</div>
+					<!--班级id表格-->
 					<div class="table">
 						<table class="tablelist">
 							<thead>
@@ -78,7 +79,7 @@
 									<td>班级</td>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody class="tbody">
 								<tr>
 									<td class="zuobiao"><span class="tbactive">一年级</span></td>
 									<td>
@@ -244,23 +245,30 @@
 						</table>
 					</div>
 				</div>
+				<!--查询id部分-->
 				<div class="conright fl">
 					<div class="rttit">
 						<h2>ID信息</h2>
 					</div>
 					<div class="seache  fr">
+						<!--提交查询ID的表单-->
 						<form action="#">
 							<input type="text" placeholder="请输入年级班级号、ID号" name="cxid" class="cxid">
-							<img src="./img/seache.png" alt="">
+							<img id="seacheid" src="./img/seache.png" alt="">
 						</form>
 					</div>
 					<div class="cxshow">
 						<div class="idshow">
 							<span class="fl">一年级三班id:</span>
-							<form class="fl" action="#">
-								<input type="text" value="1827283" disabled>
+							<form class="fl" action="#" id="idxg">
+								<!--修改id的输入框-->
+								<input id="xianshiid" type="text" value="1827283" disabled="disabled">
 							</form>
 						</div>
+						<!--保存id按钮-->
+							<div id="saveid">
+								保存
+							</div>
 						<p class="zhuyi">注：双击ID可进行编辑修改</p>
 					</div>
 				</div>
@@ -277,9 +285,41 @@
 				</li>
 			</ul>
 		</div>
-
 	</div>
+	
+	<!--保存成功弹窗-->
+	<div id="tcdui">
+		<p>保存成功</p>
+		<img src="./img/duihao.png" alt="" />
+	</div>
+	
+	<!--空ID弹窗-->
+	<div class="tckong kongsave">
+		<div class="kongtit">
+			<div class="tip fl">提示</div>
+			<div class="close fr"><img src="./img/close.png" alt="" /></div>
+		</div>
+		<div class="sure">
+			<p>ID号码为空是否确认保存?</p>
+			<button class="btzuo">确定</button>
+			<button class="btyou">取消</button>
+		</div>
+	</div>
+	
+	<!--修改ID点击保存弹窗-->
+	<div class="tckong suresave">
+		<div class="kongtit">
+			<div class="tip fl">提示</div>
+			<div class="close fr"><img src="./img/close.png" alt="" /></div>
+		</div>
+		<div class="sure">
+			<p>您已更改ID信息是否保存?</p>
+			<button class="btzuo">确定</button>
+			<button class="btyou">取消</button>
+		</div>
+	</div>
+	
 </body>
 <script type="text/javascript" src="common/js/index.js"></script>
-
+<script type="text/javascript" src="common/js/shebeiguanli.js"></script>
 </html>
