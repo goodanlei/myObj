@@ -33,7 +33,7 @@ $(function(){
 		$(".page span").removeClass("active");
 		$(this).addClass('active');
 	});
-	$('.info_show_set img').click(function () {
+	$('.info_show_set p img').click(function () {
 		var s = $(this).attr("status");
 		if(s=='open'||s==undefined){
 			$(this).attr("status","close");
