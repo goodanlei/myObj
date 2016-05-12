@@ -1,0 +1,180 @@
+@charset "utf-8";
+body {
+  background-color: #edf1f2;
+  height: 930px;
+  width: 80%;
+  margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.box-main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.box-main:before,
+.box-main:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/******左右侧共同部分start*********/
+.main-tit {
+  height: 50px;
+  border: 1px solid #000;
+}
+.main-tit:before,
+.main-tit:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.main-tit .text {
+  width: 38%;
+  overflow: hidden;
+  float: left;
+  margin-top: 12px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #000;
+  border-left: 4px solid #4DBD73;
+  padding-left: 25px;
+  color: #222222;
+  font-size: 16px;
+}
+.main-tit .btn {
+  float: right;
+  width: 13%;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  margin-top: 23px;
+  margin-right: 34px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #3BC2C5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/******左右侧共同部分end*********/
+/****左侧部分 start***/
+.main-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-left: -15px;
+}
+.main-left .con-foot {
+  font-size: 12px;
+  margin-top: 253px;
+  background-color: #F9F9F9;
+  height: 72px;
+  bottom: 0px;
+  border: 1px solid #000;
+}
+.main-left .con {
+  margin-left: 15px;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+.main-left .table {
+  margin-top: 10PX;
+  padding: 0px 30px;
+}
+.main-left table {
+  width: 100%;
+  border: 0px;
+}
+.main-left th {
+  background-color: #F5FBF7;
+  font-size: 16px;
+  color: #222222;
+  height: 42px;
+}
+.main-left .l {
+  overflow: hidden;
+  width: 14%;
+}
+.main-left .c {
+  width: 13%;
+}
+.main-left .r {
+  width: 72%;
+  text-align: left;
+  padding-left: 10px;
+}
+.main-left td {
+  font-size: 14px;
+}
+.main-left th,
+.main-left td {
+  border-color: #AFE1C0;
+}
+.main-left p {
+  line-height: 33px;
+  width: 100%;
+  height: 33px;
+  overflow: hidden;
+}
+.main-left .section {
+  text-align: center;
+}
+.main-left .section div {
+  padding: 0 3px;
+  border: 1px solid #4DBD73;
+  border-radius: 3px;
+  margin: 6px;
+}
+.main-left .section .active {
+  background-color: #4DBD73;
+  color: #FFFFFF;
+}
+.main-left .grade {
+  text-align: center;
+}
+.main-left .grade .active {
+  color: #4dbd73;
+}
+.main-left .subject {
+  text-align: left;
+}
+.main-left .subject .active {
+  color: #3bc2c5;
+}
+.main-left .subject .add {
+  background: url(../img/subject-add.png) no-repeat;
+  background-size: 100%;
+  background-position-y: 8px;
+  cursor: pointer;
+}
+.main-left .subject span {
+  display: block;
+  overflow: hidden;
+  float: left;
+  height: 20px;
+  width: 11%;
+  text-align: center;
+  padding: 7px 3px 5px 7px;
+  line-height: 20px;
+}
+/*********************左侧部分 end*/
+/*右侧侧部分*/
+.main-right {
+  margin-right: -15px;
+  float: right;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.main-right .con {
+  margin-right: 15px;
+  background-color: #FFFFFF;
+  height: 100%;
+}
