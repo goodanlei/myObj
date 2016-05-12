@@ -27,6 +27,10 @@ header nav .header-right a {
     line-height: 36px;
     margin: 0 15px;
 }
+a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.active,.beiying{
+	font-weight:bold ;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -39,11 +43,17 @@ header nav .header-right a {
 }
 /*左边*/
 .container-nav .container-left {
-	    padding: 45px 0 0 30px;
+	padding: 45px 0 0 30px;
+	overflow: hidden;
     float: left;
     width: 188px;
     height: 835px;
     background: url("../img/knowledge-left.png") no-repeat top center;
+}
+.container-nav .container-left > ul{
+	height: 750px;
+    width: 230px;
+    overflow: auto;
 }
 .container-left li{margin-bottom: 5px;}
 .container-left>ul>li>a {
@@ -58,7 +68,7 @@ header nav .header-right a {
     background: url("../img/xia.png") no-repeat center right;
     margin-bottom: 5px;
 }
-.container-left>ul>li>a.cuent {
+.container-left>ul>li>a.cuent,.container-left>ul>li>a:hover{
     background: url("../img/shang.png") no-repeat center right;
 }
 .container-left .container-left-nav {
@@ -338,6 +348,7 @@ header nav .header-right a {
     height: 63px;
     margin-left: 76px;
     padding-top: 20px;
+    
 }
 .box .nav-tit a:first-of-type {
     margin: 0px;
@@ -376,10 +387,6 @@ header nav .header-right a {
     float: left;
     margin: 0px 20px;
     margin-top: 5px;
-}
-.box .nav-con li:first-of-type img{
-	margin-right: 34px;
-    margin-left: 21px;
 }
 .box .nav-con li a {
     display: block;

@@ -187,7 +187,9 @@ header nav .header-right a {
   margin: 12px;
   color: #5ea6d9;
 }
-
+.cont .table span:hover{
+  text-decoration: underline;
+}
 
 /*next page*/
 .next_page .hide{

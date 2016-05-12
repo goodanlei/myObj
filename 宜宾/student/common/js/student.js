@@ -33,7 +33,16 @@ $(function(){
 		$(".page span").removeClass("active");
 		$(this).addClass('active');
 	});
-
+	$('.info_show_set img').click(function () {
+		var s = $(this).attr("status");
+		if(s=='open'||s==undefined){
+			$(this).attr("status","close");
+			$(this).attr("src","img/imgkai_off.png");
+		}else{
+			$(this).attr("status","open");
+			$(this).attr("src","img/kai_on.png");			
+		}
+	})
 });
 
 

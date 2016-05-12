@@ -25,7 +25,9 @@ header nav .header-right a {
     line-height: 36px;
     margin: 0 15px;
 }
-
+.info_show_set img:hover{
+	cursor: pointer;
+}
 
 .container{
 	width: 1200px;

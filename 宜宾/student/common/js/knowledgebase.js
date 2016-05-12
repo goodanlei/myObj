@@ -4,12 +4,14 @@
 $(function(){
    var knowledge = {
        show:function(){
+       	var that = this;
            $(".container-left>ul>li>a").click(function(){
                if($(this).next().is(":visible")){
                    $(this).next().hide();
                    $(this).removeClass("cuent")
                }
                else{
+               	   that.closeAll();
                    $(this).next().show();
                    $(this).addClass("cuent")
                }
@@ -49,10 +51,15 @@ $(function(){
                $(this).addClass('active');
            });
        },
+       closeAll:function(){
+       		$(".container-left-nav").hide();
+       		$(".container-left>ul>li>a.cuent").removeClass("cuent");
+       },
 
        init:function(){
            this.show();
            this.exclusive();
+           this.closeAll();
        },
    };
     knowledge.init();
