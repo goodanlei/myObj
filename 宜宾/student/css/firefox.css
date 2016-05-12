@@ -5,5 +5,6 @@
 	}
 	.prepared_nav {    background-position: 0px 40px;}
 	.box .nav {    background-position:0px 40px;}
+	.container-nav .box .nav {background-position:0px;}
 	th,td{border-color: rgb(238, 238, 238);}
 }
