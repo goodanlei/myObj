@@ -150,18 +150,18 @@ header nav .header-right a {
 .cont {
   text-align: center;
   width: 1100px;
-  margin: 34px auto 47px;
+  margin: 5px auto 47px;
   height: 807px;
   background: url(../img/cont-bg.png) no-repeat;
 }
 .cont p {
-  line-height: 50px;
+  line-height: 40px;
   color: #742b23;
 }
 .cont .table {
   height: 645px;
   width: 550px;
-  margin: 45px auto 0px;
+  margin: 15px auto 0px;
 }
 .cont .table table {
   border: 0px;
@@ -185,10 +185,11 @@ header nav .header-right a {
 }
 .cont .table span {
   margin: 12px;
-  color: #5ea6d9;
+  color: #222;
 }
 .cont .table span:hover{
   text-decoration: underline;
+  color: #5ea6d9;
 }
 
 /*next page*/

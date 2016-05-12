@@ -154,6 +154,7 @@ header nav .header-right a {
 .sy_box .box_main li .pen .font{
 	width: 230px;
     position: absolute;
+    margin-top: 10px;
     top: 142px;
     left: 22px;
 }
@@ -161,6 +162,7 @@ header nav .header-right a {
 	font-size: 24px;
 	color:#fff;
 	line-height: 32px;
+	margin-top: 8px;
 }
 
 

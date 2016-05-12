@@ -29,28 +29,6 @@ a:active {
   margin: 0px auto;
   padding: 0px;
 }
-/*导航条*/
-header {
-    width: 100%;
-    background-color: #FFFFFF;
-}
-header nav {
-    width: 1200px;
-    height: 36px;
-    margin: 0px auto 30px;
-}
-header nav span {
-    color: #732B23;
-    line-height: 36px;
-    margin-left: 10px;
-}
-header nav .header-right {
-    float: right;
-}
-header nav .header-right a {
-    line-height: 36px;
-    margin: 0 15px;
-}
 
 .box .nav {
   width: 1100px;
@@ -136,10 +114,12 @@ header nav .header-right a {
 	color: #742b23;
   text-align: center;
   line-height: 60px;
+  padding-top: 35px;
 }
 .box .cont ul {
-  margin: 105px auto 0px;
-  width: 950px;
+  margin-top: 35px;
+    margin-left: 65px;
+    width: 950px;
 }
 .box .cont li {
   background: url(../img/preview-cont-2.png) no-repeat;
