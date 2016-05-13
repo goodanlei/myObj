@@ -104,7 +104,7 @@ a:active {
 .box .cont {
   width: 1100px;
   height: 1260px;
-  margin: 10px auto 40px;
+  margin: 0px auto 40px;
   background: url(../img/preview-cont.png) no-repeat;
   -moz-background-size: 1100px 1260px;
   /* 老版本的 Firefox */
@@ -113,7 +113,7 @@ a:active {
 .box .cont p {
 	color: #742b23;
   text-align: center;
-  line-height: 60px;
+  line-height: 68px;
   padding-top: 35px;
 }
 .box .cont ul {
@@ -314,11 +314,11 @@ a:active {
 
 /*5.6---修改*/
 .prepared_nav{
-		width: 1100px;
-		margin:0px auto;
-		height: 194px;
-		background: url(../img/yx_nav_bg.png) no-repeat;
-		background-position-y: 40px; 
+	  width: 1100px;
+    margin: 20px auto 0px;
+    height: 169px;
+    background: url(../img/yx_nav_bg.png) no-repeat;
+    background-position-y: 40px;
 }
 
 .prepared_nav .nav-con{

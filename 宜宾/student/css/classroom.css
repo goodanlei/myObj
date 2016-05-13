@@ -11,6 +11,14 @@ body {
   display: table;
   clear: both;
 }
+a:link {
+  text-decoration: none;
+  color: #8b5852;
+}
+a:visited {
+  text-decoration: none;
+  color: #8b5852;
+}
 
 /*导航条*/
 header {
@@ -44,7 +52,7 @@ header nav .header-right a {
   text-align: center;
 }
 .nav .nav-tit {
-  margin: 0px 118px;
+  margin: 20px 118px 0px;
   height: 83px;
 }
 .nav .nav-tit a {
@@ -155,13 +163,13 @@ header nav .header-right a {
   background: url(../img/cont-bg.png) no-repeat;
 }
 .cont p {
-  line-height: 40px;
+  line-height: 33px;
   color: #742b23;
 }
 .cont .table {
   height: 645px;
   width: 550px;
-  margin: 15px auto 0px;
+  margin: 30px auto 0px;
 }
 .cont .table table {
   border: 0px;

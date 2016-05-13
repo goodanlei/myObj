@@ -22,8 +22,9 @@ header nav .header-right {
     float: right;
 }
 header nav .header-right a {
-    line-height: 36px;
-    margin: 0 15px;
+    /*line-height: 36px;
+    margin: 0 15px;*/
+    color: #742b23;
 }
 .info_show_set img:hover{
 	cursor: pointer;
@@ -134,7 +135,7 @@ header nav .header-right a {
 	font-family: "微软雅黑";*/
 	position: absolute;
 	top:95px;
-	left:80px;
+	left:100px;
 }
 .sy_box .box_main li:nth-child(1) .pen h3{
 	width: 102px;

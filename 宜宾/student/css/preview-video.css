@@ -69,13 +69,15 @@ header nav .header-right a {
   color: #742b23;
 }
 .box .cont .con{
-	margin:100px auto 0px;
+  margin: 50px 70px 0px;
 	width: 930px;
 	height: 1000px;
 	
 }
 /* 主题 */
 .box .cont .con p{
+	float: left;
+	padding-top:0px ;
 	text-align: left;
 	margin-bottom: 10px;
   line-height: 30px;
@@ -85,6 +87,7 @@ header nav .header-right a {
 }
 /*  tit    */
 .box .cont .con .author{
+	float: right;
 	color: #D03D31;
 }
 .box .cont .con .author:before{
@@ -92,6 +95,7 @@ header nav .header-right a {
 	color: #797979;
 }
 .box .cont .con .look{
+	float: right;
 	padding-left: 20px;
 	margin-left: 10px;
 	color: #4896ff;
@@ -99,6 +103,7 @@ header nav .header-right a {
 	background-position: 0px 4px;
 }
 .box .cont .con .down{
+	float: right;
 	padding-left: 20px;
 	margin-left: 10px;
 	color: #7ed221;
@@ -122,25 +127,29 @@ header nav .header-right a {
 /* text */
 .box .cont .con .icon{
 	height: 55px;
-	padding-top: 20px;
-	margin-bottom: 40px;
+	padding-top: 5px;
 }
 .box .cont .con .icon span{
 	font-size: 16px;
-	padding:10px 40px;
+	padding:2px 40px;
 	line-height: 40px;
 	color: #222222;
 }
 .box .cont .con .icon .shoucang{
 	background: url(../img/video-xing-max.png) no-repeat;
+	background-size: 25px 25px;
 }
 .box .cont .con .icon .xiazai{
 	background: url(../img/video-down-max.png) no-repeat;
+		background-size: 25px 25px;
 }
 /*  属性描述 */
-.box .cont .con .mes span{
-	font-size: 16px;
-	color: #6C6C6C;
+.box .cont .con .mes > span{
+	    font-size: 16px;
+    color: #6C6C6C;
+    height: 50px;
+    line-height: 50px;
+    display: block;
 }
 .box .cont .con .mes ul{
 	width: 50%;
@@ -148,7 +157,7 @@ header nav .header-right a {
 .box .cont .con .mes ul li{
 	margin-top: 10px;
 	width: 50%;
-	height: 30px;
+	height: 25px;
 	float: left;
 }
 .box .cont .con .mes ul li span{
