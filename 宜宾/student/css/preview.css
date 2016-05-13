@@ -248,15 +248,16 @@ a:active {
   float: left;
 }
 .box .cont li .cont-r dd {
+	width: 100%;
   padding-top: 15px;
   float: left;
 }
 .box .cont li .cont-r dd .item {
-      width: 418px;
+    width: 418px;
     padding-left: 30px;
     height: 25px;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin:0px auto 16px;
     background: url(../img/do-2.png) no-repeat;
         white-space: nowrap;
     text-overflow: ellipsis;

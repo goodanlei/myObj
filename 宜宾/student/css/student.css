@@ -353,6 +353,9 @@ header nav .header-right a {
 .info_show_safety .safety img{
 	margin: 35px 0 0 20px;
 }
+.info_show_safety .safety img.cha{
+    margin: 35px 20px 0px 40px;
+}
 .info_show_safety .safety .font {
 	margin: 24px 0 0 20px;
 }
@@ -367,7 +370,7 @@ header nav .header-right a {
 	color:#336633;
 	font-size: 13px;
 }
-.info_show_safety .safety .font p.font_red{color:#ff6666;}
+.info_show_safety .safety .font p.font_red{color:#f9a681;}
 .info_show_safety .safety .btn{
 	width: 117px;
 	height: 52px;
