@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
   background-color: #f1f1f1;
-  padding-bottom: 90px;
+  font-family: "微软雅黑";
 }
 .left {
   float: left;
@@ -16,7 +16,7 @@ body {
   clear: both;
 }
 .center {
-  margin:10px auto 0px;
+  margin:15px auto 25px;
   width: 1200px;
 }
 .center:before,
@@ -39,11 +39,12 @@ body {
 }
 .box-left .foot {
   background-color: #f9f9f9;
-  padding-top: 14px;
+  padding-top: 22px;
   margin-top: 166px ;
   font-size: 12px;
   text-align: center;
   height: 38px;
+  color:#abaaab;
 }
 .box-right {
   width: 590px;
@@ -53,11 +54,13 @@ body {
   float: right;
 }
 .tit {
-  height: 35px;
-  padding: 15px 0px 0px 20px;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 30px;
   border-bottom: 1px solid #dddddd;
-  background-color: #B1342A;
+  background-color: #d03d31;
   color: #FFFFFF;
+  font-size: 16px;
 }
 .rili {
   margin-top: 30px;
@@ -70,11 +73,13 @@ body {
   margin: 0px;
 }
 .class-list {
-  width: 380px;
+  width: 377px;
   height: 160px;
   margin-left: 108px;
   margin-top: 20px ;
   border: 1px solid #dddddd;
+  border-left:0;
+  border-bottom:0;
   text-align: center;
 }
 .class-list dl:before,
@@ -103,10 +108,10 @@ body {
   float: left;
 }
 .class-list span.active {
-  background-color: #f5faff;
+  background-color: #cdeaff;
 }
 .class-list .text {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .class-list .sel {
   margin-top: 10px;
@@ -119,9 +124,11 @@ body {
     margin-top: 5px;
 		margin-right: 5px; 
     display: block;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #dddddd;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    position: relative;
+    top:-6px;
 }
 .class-list .sel div:first-of-type span{
 	 background-color: #CDEAFF;
@@ -142,9 +149,10 @@ body {
 }
 .box-right table span{
 	margin: 5px;
-	color: #5ea6d9;
+	color: #222;
 	cursor: pointer;
 }
+.box-right table span:hover{color:#5EA6D9;}
 .box-right th{
 	height: 50px;
 	background-color: #ebebeb;
@@ -200,7 +208,6 @@ body {
 .next_page .show .show-video{
 	width: 1203px;
 	height: 544px;
-	/*background-color: #F1F1F1;*/
 	cursor: pointer;
 	margin-left: auto;
 	margin-right: auto;
@@ -327,3 +334,6 @@ body {
     color:#222;
 }
 .footer .footer_con p span{margin: 0 19px;}
+.box-right table tbody th,.box-right table tbody td{
+		border-color:#ebebeb;
+}

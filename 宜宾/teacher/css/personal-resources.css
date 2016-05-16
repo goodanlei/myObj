@@ -13,11 +13,12 @@ a,a:visited,a:link,a:hover,a:active {
 .route {
     width: 1200px;
     height: 56px;
-    background: #CF3D31;
-    margin: 20px auto;
+    background: #d03d31;
+    margin: 15px auto;
 }
 .route ul li {
     float: left;
+    height: 56px;
     line-height: 56px;
     font-size: 16px;
     color: #212121;
@@ -36,7 +37,7 @@ a,a:visited,a:link,a:hover,a:active {
     display: block;
     width: 1200px;
     height: 817px;
-    margin: 20px auto 25px;
+    margin: 0px auto 25px;
 }
 /*主题内容 右侧----主题内容 左侧 (公共样式)*/
 .container .left,.container .right {
@@ -45,12 +46,13 @@ a,a:visited,a:link,a:hover,a:active {
     background: #fff;
     -webkit-box-shadow:0 0 10px #ccc;
     -moz-box-shadow:0 0 10px #ccc;
+    -ms-box-shadow: 0 0 10px #ccc;
     box-shadow:0 0 10px #ccc;  ;
 }
 /*主题内容 左侧*/
 .container .left {
     width: 250px;
-    margin-right: 20px;
+    margin-right: 18px;
 }
 .container .left .menu {
     width: 250px;
@@ -89,13 +91,13 @@ a,a:visited,a:link,a:hover,a:active {
 }
 .container .right .path-navigation {
     width: 913px;
-    height: 57px;
+    height: 50px;
     padding-left: 17px;
 }
 .container .right .path-navigation ul,.container .right .path-navigation ul li {
     float: left;
     vertical-align: middle;
-    line-height: 57px;
+    line-height: 49px;
 }
 .container .right .path-navigation ul li a {
     font-size: 16px;
@@ -186,14 +188,14 @@ a,a:visited,a:link,a:hover,a:active {
     float: left;
     width: 100px;
     text-align: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 }
 .investment_btn ul li:nth-child(2),.investment_btn ul li:nth-child(3) {
     width: 84px;
     height: 42px;
     line-height: 42px;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #ebebeb;
 }
 .investment_btn ul li:nth-child(1) a {
     display: block;
@@ -207,9 +209,24 @@ a,a:visited,a:link,a:hover,a:active {
     color: #212121;
     text-align: center;
 }
+.investment_btn ul li:nth-child(2) a:hover,.investment_btn ul li:nth-child(3) a:hover {
+	color: #cf3d3e;
+}
 .investment_btn ul li:nth-child(2) img,.investment_btn ul li:nth-child(3) img {
     vertical-align: middle;
     margin-top: -3px;
+}
+.list-name2 {
+	width: 383px;
+}
+.look {
+	color: #4dbd75;
+}
+.look:hover {
+	color: #42a365;
+}
+.investment_btn ul li:nth-child(1) a.xiafa:hover {
+	color: #5292bf;
 }
 /*主题内容 右侧 table栏切换 list切换内容*/
 .investment_con table {
@@ -222,14 +239,41 @@ a,a:visited,a:link,a:hover,a:active {
     font-size: 16px;
     border-bottom: 1px solid #ddd;
 }
+.core-name {
+	width: 383px;
+}
 .investment_con table tr td {
     height: 53px;
     color: #555555;
     font-size: 14px;
 }
+.investment_con table tr td.gongkai {
+    cursor: pointer;
+    outline: none;
+}
+.investment_con table tr td.daigongkai {
+	color: #f7a35b;
+}
+.investment_con table tr td.yigongkai {
+	color: #7ED221;
+}
+.investment_con table tr td.gongkai:hover {
+    color: #d63e3e;
+}
+.investment_con table tr td.gongkai:active {
+    color: #d63e3e;
+}
+.investment_con table tr td label {
+	text-overflow: ellipsis;
+	display: inline-block;
+	line-height: 22px;
+	width: 287px;
+	overflow: hidden;
+	white-space: nowrap;
+}
 .investment_con table tr td input {
     vertical-align: middle;
-    margin-top: -3px;
+    margin-top: -14px;
     margin-right: 10px;
 }
 .investment_con table tr:nth-of-type(even){
@@ -238,9 +282,37 @@ a,a:visited,a:link,a:hover,a:active {
 .investment_con_list table tr td img {
     vertical-align: middle;
     margin-top: -3px;
+    margin-right: 3px;
+}
+.abc123 {
+	margin-top: -2px;
+    vertical-align: middle;
 }
 .investment_con .investment_con_one tbody img {
     cursor: pointer;
+    margin-top: -3px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.abc-span {
+	margin-right: 15px;
+	color: #42a365;
+}
+.abc-span a {
+	color: #4dbd75;
+}
+.abc-span a:hover {
+	color: #42a365;
+}
+.bianji {
+	color: #5ea6d9;
+	cursor: pointer;
+}
+.bianji img {
+	margin-right: 2px;
+}
+.bianji:hover {
+	color: #5292bf;
 }
 /*主题内容 右侧 table栏切换 分页*/
 .investment_paging {
@@ -296,7 +368,7 @@ float:left;
 .modify {
     width: 100%;
     height: 100%;
-    background: rgba(217,217,217,0.2);
+    background: rgba(0,0,0,0.3);
     z-index: 9999;
     position: absolute;
     top: 0;
@@ -305,7 +377,7 @@ float:left;
 .issued {
     width: 100%;
     height: 100%;
-    background: rgba(217,217,217,0.2);
+    background: rgba(0,0,0,0.3);
     z-index: 9999;
     position: absolute;
     top: 0;
@@ -412,7 +484,7 @@ float:left;
 /*修改资源信息 弹窗*/
 .modify .modify-resources {
     width: 727px;
-    height: 375px;
+    padding-bottom: 20px;
     background: #fff;
     position: absolute;
     top: 35%;
@@ -433,6 +505,22 @@ float:left;
     font-size: 16px;
     color: #fff;
 }
+.modify .modify-resources nav .tab{margin-top: 30px;margin-left: 42px;}
+.modify .modify-resources nav .tab span{
+	display: block;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 30px;
+	float: left;
+	margin-right: 39px;
+	border:1px solid #ebebeb;
+	cursor: pointer;
+}
+.modify .modify-resources nav .tab span.tabactive{background: #bb372c;color:#fff;}
+
+
+
+
 .modify .modify-resources nav .nav-top p,.modify .modify-resources nav .nav-top input {
     float: left;
 }
@@ -496,21 +584,30 @@ float:left;
     width: 103px;
     height: 29px;
 }
-.modify .modify-resources nav ul li:nth-child(2) {
-    margin-left: 44px;
-}
-.modify .modify-resources nav ul li:nth-child(1) input {
-    background: #CF3D31;
-    color: #fff;
-}
+
+.modify .modify-resources nav ul li:nth-child(1) input:hover{background-color: #b33329;}
 .modify .modify-resources nav ul li input {
-    border: 1px solid #F0F0F0;
+    border: 1px solid #ebebeb;
     display: block;
     width: 103px;
     line-height: 29px;
     text-align: center;
     color: #212121;
+    outline: none;
+    background-color: #fff;
 }
+.modify .modify-resources nav ul li:nth-child(2){
+    margin-left: 44px;
+}
+.modify .modify-resources nav ul li:nth-child(2) input:hover{
+	border-color:#ccc;
+}
+.modify .modify-resources nav ul li:nth-child(1) input{
+    background: #CF3D31;
+    color: #fff;
+}
+
+
 .modify .modify-resources nav .nav-top {
     width: 640px;
     height: 30px;
@@ -533,7 +630,7 @@ float:left;
     margin: 20px auto;
 }
 .modify .modify-resources nav .nav-selest span {
-    margin-right: 20px;
+    margin-right: 12px;
 }
 .modify .modify-resources nav .nav-selest input {
     width: 149px;
@@ -625,6 +722,11 @@ float:left;
 .issued .modify-resources nav .nav-container>div.current {
     display: block;
 }
+.issued .modify-resources nav .nav-container>div.current input{
+	position: relative;
+	top:1px;
+	margin-right: 3px;
+}
 .issued .modify-resources nav .nav-container label {
     cursor: pointer;
 }
@@ -652,13 +754,22 @@ float:left;
     color: #212121;
     background: #fff;
     border: 1px solid #EBEBEB;
+    outline: none;
+    cursor: pointer;
+}
+.issued .modify-resources nav .nav-submit input:hover {
+    border: 1px solid #ccc;
 }
 .issued .modify-resources nav .nav-submit input[type="submit"] {
     background: #CF3D31;
     color: #fff;
     margin-right: 39px;
+    outline: none;
+    border: none;
 }
-
+.issued .modify-resources nav .nav-submit input[type="submit"]:hover {
+    background: #BB372B;
+}
 /*下载弹窗*/
 .del_down{
     text-align: center;
@@ -670,7 +781,6 @@ float:left;
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background: #000;
     opacity: 0.3;
 }
 .del_down .con{
@@ -683,6 +793,9 @@ float:left;
     height: 180px;
     background-color: #FFFFFF;
     opacity: 1;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    -moz-box-shadow: 0 0 6px #ccc;
+    box-shadow: 0 0 6px #ccc;
 }
 .del_down .con img{
     display: block;

@@ -87,8 +87,14 @@ table {
 #dvMsgBox .body .right .ct .pro .bg{width:0%;height:100%;background:#c9dffc;}  
 #dvMsgBox .bottom{background:#fff;padding-left:6px;}  
 #dvMsgBox .bottom .right{height:100%;/*background:transparent url(right-corners.png) no-repeat right bottom;*/padding-right:6px;}  
-input.btn{width:106px;   border-radius: 3px; font-family:微软雅黑; cursor:pointer; color:#222222; border:none; height:25px; text-align:center;  background-color:#FFFFFF;text-align:center; margin:0px auto;}  
-input.btnfocus{ background-color:#BB372C; font-family:微软雅黑;   border-radius: 3px;width:106px;margin:0px auto; border:none; height:25px; cursor:pointer; color:#fff;}  
+input.btn{width:106px;   border-radius: 3px; font-family:微软雅黑; cursor:pointer; color:#fff; border:none; height:30px; text-align:center;  background-color:#D03D31;text-align:center; margin:0px auto;outline: none;}  
+
+.btn-btn input:nth-child(3){background: #fff;border:1px solid #ebebeb;color:#222;margin-left: 40px;}
+.btn-btn input:nth-child(3):hover{border-color: #ccc;}
+.btn-btn input:nth-child(2):hover{background-color: #b33329;}
+
+input.btnfocus{ background-color:#D03D31; font-family:微软雅黑;   border-radius: 3px;width:106px;margin:0px auto; border:none; height:30px; cursor:pointer; color:#fff;}  
+
 #dvMsgBox .icon{width:32px;height:32px;float:left;margin-right:10px;}  
 #dvMsgBox .error{background:url(icon-error.gif) no-repeat;}  
 #dvMsgBox .info{background:url(icon-info.gif) no-repeat;}  

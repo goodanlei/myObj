@@ -1,4 +1,5 @@
 /*ͷ��*/
+body{font-family: "微软雅黑", Arial, sans-serif;}
 .header{
     width: 100%;
     height: 62px;
@@ -24,14 +25,14 @@
     font-size: 18px;
     color:#222;
 }
-.header .header_active{
+.header .header_con .header_list li a.header_active{
 	border-bottom: 4px solid #d03d31;
+	color: #CA2E21;
 }
 
 .header .header_btn{
     height: 62px;
     line-height: 62px;
-    color:#d03d31;
     font-size: 16px;
     cursor: pointer;
 }

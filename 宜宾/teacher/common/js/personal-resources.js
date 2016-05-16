@@ -22,7 +22,7 @@ $(function(){
             $(".path-navigation-btn>li:nth-child(1) a").click(function(){
                 $(".popup").show();
             });
-            $(".investment_con .investment_con_one tbody img").click(function(){
+            $(".investment_con .investment_con_one tbody .bianji").click(function(){
                 $(".modify").show();
             });
             $(".investment_btn ul li:nth-child(1) a").click(function(){
@@ -96,36 +96,50 @@ $(function(){
             $("#download").parent().click(function(){
                 var s =$(".investment_con_one input:checked").size();
                 if(!s){
+                	$(".nav-text").text("请选中您需要下载的资源");
                     $(".del_down").show();  
                 }
 				setTimeout(function () {
 					$(".del_down").hide(); 
-				},3000);
+				},1000);
             });
             $("#delete").parent().click(function(){
                 var s =$(".investment_con_one input:checked").size();
                 if(!s){
                    if(!s){
-	                    $(".del_down").show();  
+                   		$(".nav-text").text("请选中您需要删除的资源");
+	                    $(".del_down1").show();  
 	                }
 					setTimeout(function () {
-						$(".del_down").hide(); 
-					},3000);
+						$(".del_down1").hide(); 
+					},1000);
                    
                 }else{
-                	YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {
-                   	if(s=='no'){
-                   		alert("你取消了");
-                   	}else{
-                   		alert("删除了");
-                   	}
-                   });
+                	YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {});
                 }
-            });
-            
+            });  
         },
-
-
+        cancel:function(){
+            $(".nav-top ul li input[type=text]").click(function(){
+                $(".nav-top ul li input[type=text]").attr("placeholder","")
+            });
+            $(".nav-top ul li input[type=text]").blur(function(){
+                $(".nav-top ul li input[type=text]").attr("placeholder","  例：2015年02月15日    下发资源（一）")
+            });
+        },
+        del_downs:function(){
+            $(".login").click(function(){
+                $(".del_down2").show();
+                setTimeout(function(){
+                    $(".del_down2").hide();
+                },2000);
+            })
+        },
+        tabs_name:function(){
+        	$('.modify .modify-resources nav .tab span').click(function(){
+        		$(this).addClass('tabactive').siblings().removeClass('tabactive');
+        	})
+        },
         /*执行函数*/
         init:function(){
             this.hide();
@@ -134,6 +148,9 @@ $(function(){
             this.upload();
             this.download();
             this.del_down();
+            this.del_downs();
+            this.cancel();
+            this.tabs_name();
         },
     };
     config.init();

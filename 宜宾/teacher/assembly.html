@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/classroom.css"/>
     <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
     <script src="common/js/jquery.1.8.2.min.js"></script>
     <script src="common/js/header_footer.js"></script>
     <script src="common/js/classroom.js"></script>
     <script src="common/js/jquery.ztree.core.js"></script>
     <script src="common/js/echarts.min.js"></script>
+    <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
 </head>
+
 <body>
 <!--header start-->
 	<div class="header clearfix">
@@ -28,20 +31,22 @@
                 <li><a href="#">综合分析</a></li>
             </ul>
             <div class="header_btn fr">
-                <span>Hi,秦佳琪</span>
-                <img src="img/xia_red.png" alt=""/>
+                <strong>
+                	<span>Hi,秦佳琪</span>
+                	<img src="img/xia_red.png" alt=""/>
+                	<ul class="personal">
+		                <li class="personal_active name_t">
+		                    <i class="red"></i>
+		                    <span>个人信息</span>
+		                </li>
+		                <li class="black_s">
+		                    <i class="grey"></i>
+		                    <span>退出系统</span>
+		                </li>
+		            </ul>
+                </strong>
                 <em class="login">[已登录]</em>
             </div>
-            <ul class="personal">
-                <li class="personal_active name_t">
-                    <i class="red"></i>
-                    <span>个人信息</span>
-                </li>
-                <li class="black_s">
-                    <i class="grey"></i>
-                    <span>退出系统</span>
-                </li>
-            </ul>
         </div>
     </div>
 <!--header end-->
@@ -61,7 +66,7 @@
             </div>
             <div class="blue_box fr">
             	<img class="test_box" src="img/delete_box.png" alt=""/>
-                <span>试题蓝</span>
+                <span>试题篮</span>
                 <strong class="test_num">10</strong>
             </div>
         </div>
@@ -96,7 +101,7 @@
                     <span class="car fr"><img src="img/delete.png" alt=""/></span>
                 </li>
             </ul>
-            <span class="box_car_btn"><a href="save_theme.html">试卷预览</a></span>
+            <a href="save_theme.html"><span class="box_car_btn">试卷预览</span></a>
         </div>
     </div>
     <div class="main assembly">
@@ -122,122 +127,122 @@
                 <tbody>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="orange look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a  class="look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a  class="look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td>课堂已测验</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a  class="look" href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                     <tr>
                         <td>组卷</td>
-                        <td>123</td>
+                        <td class="name">123</td>
                         <td class="green">未使用</td>
                         <td>2014-06-24  15:32:03</td>
-                        <td><a class="look"  href="save_as_theme.html">查看试卷</a><a>删除</a><a>下载试卷</a></td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
                     </tr>
                 </tbody>
             </table>

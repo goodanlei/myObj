@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/classroom.css"/>
     <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
     <script src="common/js/jquery.1.8.2.min.js"></script>
     <script src="common/js/header_footer.js"></script>
     <script src="common/js/classroom.js"></script>
@@ -28,20 +29,22 @@
                 <li><a href="#">综合分析</a></li>
             </ul>
             <div class="header_btn fr">
-                <span>Hi,秦佳琪</span>
-                <img src="img/xia_red.png" alt=""/>
+                <strong>
+	            	<span>Hi,秦佳琪</span>
+	            	<img src="img/xia_red.png" alt=""/>
+	            	<ul class="personal">
+		                <li class="personal_active name_t">
+		                    <i class="red"></i>
+		                    <span>个人信息</span>
+		                </li>
+		                <li class="black_s">
+		                    <i class="grey"></i>
+		                    <span>退出系统</span>
+		                </li>
+		            </ul>
+	            </strong>
                 <em class="login">[已登录]</em>
             </div>
-            <ul class="personal">
-                <li class="personal_active name_t">
-                    <i class="red"></i>
-                    <span>个人信息</span>
-                </li>
-                <li class="black_s">
-                    <i class="grey"></i>
-                    <span>退出系统</span>
-                </li>
-            </ul>
         </div>
     </div>
 	<!--header end-->
@@ -61,7 +64,7 @@
 	            </div>
 	            <div class="blue_box fr">
 	            	<img class="test_box" src="img/delete_box.png" alt=""/>
-	                <span>试题蓝</span>
+	                <span>试题篮</span>
 	                <strong class="test_num">10</strong>
 	            </div>
             </div>
@@ -96,7 +99,7 @@
                         <span class="car fr"><img src="img/delete.png" alt=""/></span>
                     </li>
                 </ul>
-                <span class="box_car_btn"><a href="save_theme.html">试卷预览</a></span>
+                <a href="save_theme.html"><span class="box_car_btn">试卷预览</span></a>
             </div>
         </div>
         <div class="main clearfix">
@@ -405,12 +408,9 @@
 							</div>
 						</li>
 					</ul>
-					<div class="other">
-						<span>Jetsen 影视资源</span>
-						<span>Jetsen 影视资源</span>
-					</div>
 					<div class="catalog">
 						<span >册别及章节列表</span>
+						<img src="img/tree-tishi.png"/>
 						<iframe class="tree" src="common/ztree/ztree.html" style="display: none;" height="819px" width="250px"   scrolling="auto"></iframe>
 					</div>
 				</div>
@@ -420,7 +420,7 @@
             	<div class="cont-nav2 clearfix">
 	        		<div class="cont-nav-text fl">
 						<span>小学语文</span>
-						<span class="red">>></span>
+						<span class="red"><img src="img/red_next.png" alt="" /></span>
 						<span>小学语文</span>
 					</div>
 					<a href="create_test.html" class="cont_btn fr">
@@ -500,14 +500,14 @@
                             </div>
                         </div>
                         <div class="sub_ques_line_r fr">
-                            <span class="btn">+ 加入试题蓝</span>
+                            <span class="btn jia">+ 加入试题蓝</span>
                             <span class="btn btn_del">
                             	<img src="img/delete_white.png" alt="" />
                             	删除
                             </span>
                             <div class="collection">
                                 <img src="img/share.png" alt=""/>
-                                <span class="green">已分享</span>
+                                <span class="quxiao">取消分享</span>
                             </div>
                         </div>
                     </div>
@@ -539,14 +539,14 @@
                             </div>
                         </div>
                         <div class="sub_ques_line_r fr">
-                            <span class="btn">+ 加入试题蓝</span>
+                            <span class="btn jia">+ 加入试题蓝</span>
                             <span class="btn btn_del">
                             	<img src="img/delete_white.png" alt="" />
                             	删除
                             </span>
                             <div class="collection">
                                 <img src="img/share.png" alt=""/>
-                                <span>取消分享</span>
+                                <span class="quxiao">取消分享</span>
                             </div>
                         </div>
                     </div>
@@ -578,14 +578,14 @@
                             </div>
                         </div>
                         <div class="sub_ques_line_r fr">
-                            <span class="btn">+ 加入试题蓝</span>
+                            <span class="btn jia">+ 加入试题蓝</span>
                             <span class="btn btn_del">
                             	<img src="img/delete_white.png" alt="" />
                             	删除
                             </span>
                             <div class="collection">
                                 <img src="img/share.png" alt=""/>
-                                <span>分享至校本题库</span>
+                                <span class="tiku">分享至校本题库</span>
                             </div>
                         </div>
                     </div>
@@ -624,7 +624,7 @@
                             </span>
                             <div class="collection">
                                 <img src="img/share.png" alt=""/>
-                                <span>分享至校本题库</span>
+                                <span class="tiku">分享至校本题库</span>
                             </div>
                         </div>
                     </div>
@@ -651,6 +651,14 @@
             </div>
         </div>
     </div>
+    <!-- 提示-->
+	<div class="del_down del_down2" style="display: none">
+	    <div class="hide"></div>
+	    <div class="con">
+	        <img src="img/dui.png">
+	        <span class="text-text">取消成功</span>
+	    </div>
+	</div>
     <!--foot start-->
 		<iframe src="footer.html" width="100%" height="80px" style="border:0"></iframe>
 	<!--foot end-->

@@ -1,12 +1,12 @@
 /*路径导航*/
+body{font-family: "微软雅黑";}
 .route {
     width: 1200px;
     height: 56px;
     background: #CF3D31;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 .route ul li {
-    width: 115px;
     float: left;
     line-height: 56px;
     font-size: 16px;
@@ -16,6 +16,7 @@
 .route ul li a {
     color: #fff;
     display: block;
+    padding: 0 20px;
 }
 .route ul li.current {
     background: #B33329;
@@ -97,14 +98,18 @@
     border: 1px solid #ccc;
     text-align: center;
     line-height: 29px;
+    outline: none;
 }
-.popup .long-resources nav ul li:nth-child(1) input {
+.popup .long-resources nav ul li:nth-child(2) input:hover{background-color:#b2b2b2;}
+.popup .long-resources nav ul li:nth-child(1) input{
     width: 103px;
     height: 29px;
     border: none;
     background: #CF3D31;
     color: #fff;
+    outline: none;
 }
+.popup .long-resources nav ul li:nth-child(1) input:hover{background-color:#b33329;}
 .popup .long-resources nav>ul li a {
     border: 1px solid #F0F0F0;
     display: block;
@@ -112,5 +117,6 @@
     line-height: 29px;
     text-align: center;
     color: #212121;
+    outline: none;
 }
 

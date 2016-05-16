@@ -45,7 +45,7 @@ YiBin.Msg={
           +'filter=\'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)\';"></iframe>',  
       html='<div class="top"><div class="right"><div class="title" id="dvMsgTitle"></div></div></div>'+  
         '<div class="body"><div class="right"><div class="ct" id="dvMsgCT"></div></div></div>'+  
-        '<div class="bottom" id="dvMsgBottom"><div class="right"><div class="btn" id="dvMsgBtns"></div></div></div>';  
+        '<div class="bottom" id="dvMsgBottom"><div class="right"><div class="btn btn-btn" id="dvMsgBtns"></div></div></div>';  
       this.dvMsgBox=document.createElement("div");  
       this.dvMsgBox.id="dvMsgBox";  
       this.dvMsgBox.innerHTML+=html;        

@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/classroom.css"/>
     <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
     <script src="common/js/YiBin.js"></script>
     <script src="common/js/jquery.1.8.2.min.js"></script>
     <script src="common/js/header_footer.js"></script>
     <script src="common/js/classroom.js"></script>
     <script src="common/js/jquery.ztree.core.js"></script>
     <script src="common/js/echarts.min.js"></script>
+    <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <!--header start-->
@@ -29,37 +31,41 @@
             <li><a href="#">综合分析</a></li>
         </ul>
         <div class="header_btn fr">
-            <span>Hi,秦佳琪</span>
-            <img src="img/xia_red.png" alt=""/>
+            <strong>
+            	<span>Hi,秦佳琪</span>
+            	<img src="img/xia_red.png" alt=""/>
+            	<ul class="personal">
+	                <li class="personal_active name_t">
+	                    <i class="red"></i>
+	                    <span>个人信息</span>
+	                </li>
+	                <li class="black_s">
+	                    <i class="grey"></i>
+	                    <span>退出系统</span>
+	                </li>
+	            </ul>
+            </strong>
             <em class="login">[已登录]</em>
         </div>
-        <ul class="personal">
-            <li class="personal_active name_t">
-                <i class="red"></i>
-                <span>个人信息</span>
-            </li>
-            <li class="black_s">
-                <i class="grey"></i>
-                <span>退出系统</span>
-            </li>
-        </ul>
     </div>
 </div>
 <!--header end-->
 <div class="wrapper">
     <div class="head clearfix">
         <ul class="nav_list clearfix">
-            <li><a href="index-all.html" >首页</a></li>
-            <li><a href="personalresources.html">个人资源中心</a></li>
-            <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
-            <li><a href="classroom_record.html">课堂记录</a></li>
-            <li><a href="#">综合分析</a></li>
-        </ul>
-        <div class="test_btn">
-            <img class="test_box" src="img/delete_box.png" alt=""/>
-            <span>试题蓝</span>
-            <strong class="test_num">10</strong>
-        </div>
+                <li><a href="test_questions.html" class="nav_list_active">试题库</a></li>
+                <li><a href="school_questions.html">校本题库</a></li>
+                <li><a href="me_questions.html">我的题库</a></li>
+                <li><a href="assembly.html">组卷记录</a></li>
+                <li><a href="my_classroom.html">我的课堂</a></li>
+            </ul>
+        <div class="test_btn clearfix">
+	            <div class="blue_box fr">
+	            	<img class="test_box" src="img/delete_box.png" alt=""/>
+	                <span>试题篮</span>
+	                <strong class="test_num">10</strong>
+	            </div>
+            </div>
         <div class="box_car">
             <ul>
                 <li class="clearfix">
@@ -107,8 +113,7 @@
             </div>
         </div>
         <div class="theme_title">
-            <input type="text" value="主标题" readonly="true"/>
-            <input type="text" value=" 副标题" readonly="true" />
+            <input class="save_theme_input" type="text" value="请输入名称" readonly="true"/>
         </div>
         <div class="choose">
             <p class="tit">一、选择题（本大题共<span>2</span>小题，共<span>4.0</span>分）</p>
@@ -342,6 +347,14 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<!--删除资源提示-->
+<div class="del_down" style="display: none">
+    <div class="hide"></div>
+    <div class="con">
+        <img src="img/del_down_waring.png">
+        <span class="nav-text">请您输入名称</span>
     </div>
 </div>
 <!--foot start-->

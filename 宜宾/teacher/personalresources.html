@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
     <link rel="stylesheet" href="css/personal-resources.css"/>
     <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
     <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -25,20 +26,22 @@
                 <li><a href="#">综合分析</a></li>
         </ul>
         <div class="header_btn fr">
-            <span>Hi,秦佳琪</span>
-            <img src="img/xia_red.png" alt=""/>
+            <strong>
+            	<span>Hi,秦佳琪</span>
+            	<img src="img/xia_red.png" alt=""/>
+            	<ul class="personal">
+	                <li class="personal_active name_t">
+	                    <i class="red"></i>
+	                    <span>个人信息</span>
+	                </li>
+	                <li class="black_s">
+	                    <i class="grey"></i>
+	                    <span>退出系统</span>
+	                </li>
+	            </ul>
+            </strong>
             <em class="login">[已登录]</em>
         </div>
-        <ul class="personal">
-            <li class="personal_active name_t">
-                <i class="red"></i>
-                <span>个人信息</span>
-            </li>
-            <li class="black_s">
-                <i class="grey"></i>
-                <span>退出系统</span>
-            </li>
-        </ul>
     </div>
 </div>
 <!--路径导航-->
@@ -82,7 +85,7 @@
                 <!--主题内容 右侧 table栏切换 侧边《下载 删除》按钮-->
                 <div class="investment_btn">
                     <ul>
-                        <li><a href="javascript:;">下发至学生</a></li>
+                        <li><a class="xiafa" href="javascript:;">下发至学生</a></li>
                         <li>
                             <img src="img/Personal-resources_dowmload.png" alt=""/>
                             <a id="download" href="javascript:;">下载</a>
@@ -98,53 +101,65 @@
                     <div class="investment_con_one">
                         <table>
                             <tr>
-                                <th>资源名称</th>
-                                <th>编辑</th>
+                                <th class="core-name">资源名称</th>
+                                <th>资源操作</th>
                                 <th>资源大小</th>
                                 <th>上传时间</th>
                                 <th>资源公开</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
+                                <td>
+                                	<input id="checkebox1" type="checkbox" value=""/>
+                                	<label for="checkebox1">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
                                 <td>20M</td>
                                 <td>2016-03-10</td>
-                                <td>公开至资源库</td>
+                                <td class="gongkai">公开至资源库</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
+                                <td>
+                                	<input id="checkebox2" type="checkbox" value=""/>
+                                	<label for="checkebox2">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
                                 <td>20M</td>
                                 <td>2016-03-10</td>
-                                <td>公开至资源库</td>
+                                <td class="yigongkai">已公开</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
+                                <td>
+                                	<input id="checkebox3" type="checkbox" value=""/>
+                                	<label for="checkebox3">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
                                 <td>20M</td>
                                 <td>2016-03-10</td>
-                                <td>公开至资源库</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                                <td>公开至资源库</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                                <td>公开至资源库</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_bianji1.png" alt=""/></td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                                <td>公开至资源库</td>
+                                <td class="daigongkai">待审核</td>
                             </tr>
                         </table>
                         <!--主题内容 右侧 table栏切换 分页-->
@@ -165,44 +180,23 @@
                     <div class="investment_con_list">
                         <table>
                             <tr>
-                                <th>资源名称</th>
+                                <th class="list-name2">资源名称</th>
+                                <th>资源操作</th>
                                 <th>资源来源</th>
                                 <th>资源大小</th>
                                 <th>上传时间</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
-                                <td>20M</td>
-                                <td>2016-03-10</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
-                                <td><img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库</td>
+                                <td>
+                                	<input id="shoucang1" type="checkbox" value=""/>
+                                	<label for="shoucang1">B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-</label>
+                                </td>
+                                <td>
+                                	<img src="img/abc123_03.png" alt=""/><a class="look" href="resourceview.html">查看</a>
+                                </td>
+                                <td>
+                                	<img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库
+                                </td>
                                 <td>20M</td>
                                 <td>2016-03-10</td>
                             </tr>
@@ -227,20 +221,6 @@
         </div>
     </div>
 </container>
-<!--尾部-->
-<div class="footer">
-    <div class="footer_con">
-        <p class="footer_firm">
-            <span>主办：宜宾市教育体育局</span>
-            <span>承办：宜宾市新宜集团</span>
-            <span>技术支持：有限公司宜宾市科信教育投资股份</span>
-        </p>
-        <p class="footer_phone">
-            <span>@2016  宜宾市智慧教育云平台</span>
-            <span>联系电话：0831—83500071</span>
-        </p>
-    </div>
-</div>
 <!--修改资源信息 弹窗-->
 <div class="modify" style="display: none">
     <div class="modify-resources" >
@@ -249,13 +229,20 @@
                 <li>修改资源信息</li>
                 <li><a href="javascript:;"><img src="img/Personal-resources_close.gif" alt=""/></a></li>
             </ul>
-        </div>
+        </div>      
         <nav>
             <form action="">
                 <div class="nav-top">
                     <p>资源名称：</p>
                     <input type="text"/></li>
                 </div>
+                <div class="clearfix tab">
+		        	<span class="tabactive">素材</span>
+		        	<span>课件</span>
+		        	<span>教学设计</span>
+		        	<span>习题</span>
+		        	<span>其他</span>
+		        </div>
                 <div class="nav-selest">
                     <span>请选择：</span>
                     <select>
@@ -275,7 +262,7 @@
                     </select>
                 </div>
                 <div class="nav-selest">
-                    <span>请选择：</span>
+                    <span>请选择章节：</span>
                     <select>
                         <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                         <option>八年级</option>
@@ -305,7 +292,7 @@
                         你是几年级的学生呢，你学习情况怎么样你学生呢，你学习情况怎么样你
                     </p>
                 </div>
-                <ul>
+                <ul class="clearfix btns">
                     <li><input type="submit" value="确认"/></li>
                     <li><input class="modify-cancel" type="reset" value="取消"/></li>
                 </ul>
@@ -343,7 +330,7 @@
                 <!--下发至学生 切换内容-->
                 <div class="nav-container">
                     <div class="current">
-                        <input class="checkedAll" id="checkedAll" type="checkbox" value="全选／取消全选"/><label for="checkedAll">全选／取消全选</label>
+                        <input class="checkedAll" id="checkedAll" type="checkbox" value="全选／取消全选"/><label id="quanxuan2" for="checkedAll">全选／取消全选</label>
                         <ul>
                             <li><input id="check_test1" type="checkbox" value=""/><label for="check_test1">孙雨凯</label></li>
                             <li><input id="check_test2" type="checkbox" value=""/><label for="check_test2">孙雨凯</label></li>
@@ -449,24 +436,36 @@
                     </div>
                 </div>
                 <div class="nav-submit">
-                    <input type="submit" value="确认"/>
+                    <input class="tijiao1" type="submit" value="确认"/>
                     <input class="send-off" type="reset" value="取消"/>
                 </div>
             </form>
         </nav>
     </div>
 </div>
-<div class="del_down" style="display: none">
+<!--删除资源提示-->
+<div class="del_down del_down1" style="display: none">
     <div class="hide"></div>
     <div class="con">
         <img src="img/del_down_waring.png">
-        <span>请选中您需要删除的资源</span>
+        <span class="nav-text">请选中您需要删除的资源</span>
     </div>
 </div>
+<!--下载 提示-->
+<div class="del_down del_down2" style="display: none">
+    <div class="hide"></div>
+    <div class="con">
+        <img src="img/del_down_waring.png">
+        <span>请选中您需要下载的资源</span>
+    </div>
+</div>
+<!--foot start-->
+	<iframe src="footer.html" width="100%" height="80px" style="border:0"></iframe>
+<!--foot end-->
 </body>
-<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
-<script type="text/javascript" src="common/js/jquery.ztree.core.js"></script>
-<script type="text/javascript" src="common/js/ztree.js"></script>
-<script src="common/js/personal-resources.js"></script>
-<script src="common/js/header_footer.js"></script>
+	<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
+	<script type="text/javascript" src="common/js/jquery.ztree.core.js"></script>
+	<script type="text/javascript" src="common/js/ztree.js"></script>
+	<script src="common/js/personal-resources.js"></script>
+	<script src="common/js/header_footer.js"></script>
 </html>

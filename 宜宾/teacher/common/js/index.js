@@ -6,7 +6,7 @@ $(function () {
 		var nav_leimu = $(this).parent().prev().find("span").text();
 		var nav_banben = $(this).text();
 		var nav_all = "<span>"+nav_jibie+nav_leimu+"</span>";
-		    nav_all += "<span class='red'>>></span>";
+		    nav_all += "<span class='red red-red'><img src='img/Personal-resources_path-navigation.gif' /></span>";
 		    nav_all += "<span>"+nav_banben+"</span>";
 		$(".cont-nav-text").html(nav_all);
 		$(".cont-nav-text").attr("lock","close");
@@ -17,6 +17,8 @@ $(function () {
 		$(".ziyuan-item dd span").siblings().removeClass("active");
 		$(this).addClass("active");
 	});
+	
+	
 	//搜索框  
 	$(".search input").change(function () {
 		var s = $(".cont-nav-text").attr("lock");
@@ -26,23 +28,4 @@ $(function () {
 		}
 	});
 	
-	
-	
-	
-	
-	 $('.header .header_con .header_list li a').click(function(){
-        $(this).addClass('header_active').parent('li').siblings('li').find('a').removeClass('header_active');
-    });
-
-    /*¸öÈËÐÅÏ¢*/
-    $('.header .header_con .header_btn span,.header .header_con .header_btn i').click(function(){
-        $('.personal').slideToggle();
-    });
-
-    /*¸öÈËÐÅÏ¢Ñ¡ÖÐ×´Ì¬*/
-    $('.header .personal li').click(function(){
-        $(this).addClass('personal_active').siblings('li').removeClass('personal_active');
-        $(this).find('i').attr('class','red').parent().siblings().find('i').attr('class','grey');
-
-    });
 });

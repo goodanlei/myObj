@@ -14,12 +14,14 @@ body {
     font-family: "微软雅黑",Arial,sans-serif;
     position: relative;
 }
+.header .header_con .header_list li a{
+    		height: 62px;
+}
 .container {
     width: 1200px;
-    margin: 20px auto 25px;
+    margin: 15px auto 25px;
 }
 .conrow_center {
-    border: 1px solid #ccc;
     background: #fff;
     padding: 20px 35px 0;
 }
@@ -30,6 +32,7 @@ body {
 .conrow_center h4 strong {
     font-weight: bold;
     color: #3C3C3C;
+    margin-left: 65px;
 
 }
 .conrow_center p {
@@ -47,9 +50,9 @@ body {
 .conrow_center_center {
     position: relative;
     padding-bottom: 30px;
-    height: 475px;
+    height: 600px;
     overflow-y: auto;
-    width: 1035px;
+    width: 1000px;
     margin: 10px auto 0;
     background: #EBF1F9;
     text-align: center;
@@ -147,18 +150,18 @@ body {
     background: #f7f7f7;
     border: #ccc;
     border-radius: 2px;
-    padding: 20px 35px 24px 10px;
+    padding-bottom: 15px;
 }
 .brief_introduction_nav ul li {
     display: inline-block;
     width: 370px;
-    line-height: 45px;
+    line-height: 35px;
     list-style: square  ;
 }
 .brief_introduction {
     width: 1200px;
     background: #f7f7f7;
-    padding-left: 90px;
+    padding-left: 108px;
 }
 .brief_introduction>p {
     color: #6c6c6c;
@@ -207,11 +210,10 @@ body {
     color: #3c3c3c;
 }
 .conrow_center>.conrow_center_header {
-    height: 20px;
+    width: 222px;
+    margin-right: 67px;
 }
-.conrow_center>.conrow_center_header p {
-    float: left;
-}
+
 .conrow_center_header p:nth-child(1) {
     color: #6c6c6c;
     margin-right: 20px;
@@ -246,18 +248,19 @@ body {
 }
 .conrow_center_collection li {
     float: left;
-    width: 80px;
-    line-height: 80px;
-    margin-left: 50px;
+    width: 60px;
+    line-height: 60px;
+    margin-left: 100px;
     vertical-align: middle;
 }
 .conrow_center_collection li img {
     vertical-align: middle;
     margin-top: -6px;
 }
-.conrow_center_collection li a {
-    color: #222;
-    font-size: 16px;
+.conrow_center_collection li img {
+	display: inline-block;
+    width: 25px;
+    height: 25px;
 }
 .conrow_center_collection li a:hover {
 
@@ -344,13 +347,29 @@ body {
 .next-page .show .img{
     text-align: center;
     margin:30px;
-    /*
-    width: 1999px;
-    height: 5000px;*/
 }
-/*.next-page .show .close{
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-}*/
+
+
+/*视频*/
+.show-video-box{
+    background-color: #FFFFFF;
+}
+.show-video-box .show-video{
+	width: 1000px;
+	height: 481px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
