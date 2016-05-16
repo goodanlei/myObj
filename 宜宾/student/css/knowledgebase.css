@@ -44,7 +44,11 @@ header nav .header-right a:hover {
 a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.active,.beiying{
 	font-weight:bold ;
 }
-
+.classification .search{
+	width: 100px;
+	border: 1px solid #000;
+	
+}
 .container {
     width: 1200px;
     margin: 0 auto;

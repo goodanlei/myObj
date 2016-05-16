@@ -101,5 +101,5 @@ input.btnfocus{ background-color:#D03D31; font-family:微软雅黑;   border-rad
 #dvMsgBox .warning{background:url(icon-warning.gif) no-repeat;}  
 #dvMsgBox .clear{clear:both;}  
 #dvMsgBox .height{height:10px;line-height:10px;}  
-#YiBinlightBox{display:none;-moz-opacity:0.5;filter:alpha(opacity=50);opacity:0.5;background-color:#EEEEEE;z-index:100;position:absolute;left:0px;top:0px;}
+#YiBinlightBox{display:none;-moz-opacity:0.5;filter:alpha(opacity=30);opacity:0.3;background-color:#000;z-index:100;position:absolute;left:0px;top:0px;}
 #dvMsgBtns{ text-align:center; width:100%;}

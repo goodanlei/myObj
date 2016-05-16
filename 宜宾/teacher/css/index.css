@@ -407,7 +407,8 @@ iframe {
   margin: auto;
   margin-top: 5px;
   width: 200px;
-  height: 252px;
+  /*height: 252px;*/
+ padding-bottom: 5px;
   border: 1px solid #dddddd;
 }
 .cont-body li{
@@ -429,7 +430,7 @@ iframe {
 .cont-body li:hover div.cont-item{
 	  margin-top: 0px;
 	  width: 212px;
-    height: 262px;
+    /*height: 262px;*/
     border: 2px solid #dddddd;
 }
 

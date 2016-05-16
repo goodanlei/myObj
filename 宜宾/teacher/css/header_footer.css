@@ -113,4 +113,8 @@ body{font-family: "微软雅黑", Arial, sans-serif;}
     color:#222;
 }
 .footer .footer_con p span{margin: 0 19px;}
+.footer .footer_con p span img{
+	position: relative;
+	top:5px;
+}
 
