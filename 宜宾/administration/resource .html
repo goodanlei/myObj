@@ -64,7 +64,7 @@
 				<div class="content-left">
 					<div class="conleft-list">
 						<ul>
-							<li>全部资源</li>
+							<li class="active">全部资源</li>
 							<li>已公开</li>
 							<li>未公开</li>
 							<li>待审核</li>
@@ -72,26 +72,91 @@
 						<p>共 <span>7183</span>个 资源</p>
 					</div>
 					<div class="conleft-tbody">
-						<p class="select-nav"><input id="select" type="checkbox"/><label for="select">全选</label> <input type="button" value="删除"/></p>
+						<p class="select-nav">
+							<input id="select" type="checkbox"/><label for="select">全选</label>
+							<input type="button" value="删除"/>
+							<span class="btn" style="display: none">
+								<button class="adopt">通过</button>
+								<button>不通过</button>
+							</span>
+							<span class="not-publicly" style="display: none">
+								<button id="wei-publicly">公开</button>
+							</span>
+							<span class="already-open" style="display: none">
+								<button>取消公开</button>
+							</span>
+						</p>
 						<table>
 							<tr>
-								<th>资源名称</th>
+								<th class="curename">资源名称</th>
 								<th>资源操作项</th>
 								<th>资源归属</th>
 								<th>资源大小</th>
 								<th>资源状态</th>
 							</tr>
 							<tr>
-								<td><input type="checkbox" value=""/>B-11-八年级-语文-上-小狮子（01）</td>
+								<td><input class="checkone" id="check1" type="checkbox" value=""/><label for="check1">B-11-八年级-语文-上-小狮子（01）</label></td>
 								<td>
-									<span><img src="img/yanjing.png" alt=""/>查看</span>
-									<span><img src="img/edit.png" alt=""/>编辑</span>
+									<span class="look"><img src="img/yanjing.png" alt=""/>查看</span>
+									<span class="bianji"><img src="img/edit.png" alt=""/>编辑</span>
 								</td>
+								<td>钟灵街小学</td>
 								<td>20M</td>
-								<td>2016-03-10</td>
-								<td>公开至资源库</td>
+								<td class="openstate">已取消公开</td>
+							</tr>
+							<tr>
+								<td><input class="checkone" id="check2" type="checkbox" value=""/><label for="check2">B-11-八年级-语文-上-小狮子（01）</label></td>
+								<td>
+									<span class="look"><img src="img/yanjing.png" alt=""/>查看</span>
+									<span class="bianji"><img src="img/edit.png" alt=""/>编辑</span>
+								</td>
+								<td>钟灵街小学</td>
+								<td>20M</td>
+								<td class="yiopen">已公开</td>
+							</tr>
+							<tr>
+								<td><input class="checkone" id="check3" type="checkbox" value=""/><label for="check3">B-11-八年级-语文-上-小狮子（01）</label></td>
+								<td>
+									<span class="look"><img src="img/yanjing.png" alt=""/>查看</span>
+									<span class="bianji"><img src="img/edit.png" alt=""/>编辑</span>
+								</td>
+								<td>钟灵街小学</td>
+								<td>20M</td>
+								<td class="audit">审核中</td>
+							</tr>
+							<tr>
+								<td><input class="checkone" id="check4" type="checkbox" value=""/><label for="check4">B-11-八年级-语文-上-小狮子（01）</label></td>
+								<td>
+									<span class="look"><img src="img/yanjing.png" alt=""/>查看</span>
+									<span class="bianji"><img src="img/edit.png" alt=""/>编辑</span>
+								</td>
+								<td>钟灵街小学</td>
+								<td>20M</td>
+								<td class="audit-not-passed">审核未通过</td>
+							</tr>
+							<tr>
+								<td><input class="checkone" id="check5" type="checkbox" value=""/><label for="check5">B-11-八年级-语文-上-小狮子（01）</label></td>
+								<td>
+									<span class="look"><img src="img/yanjing.png" alt=""/>查看</span>
+									<span class="bianji"><img src="img/edit.png" alt=""/>编辑</span>
+								</td>
+								<td>钟灵街小学</td>
+								<td>20M</td>
+								<td class="openstate">未公开</td>
 							</tr>
 						</table>
+						<!--分页-->
+						<div class="digg">
+							<span class="disabled"></span>
+							<a href="javascript:;" class="current">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<a href="javascript:;">4</a>
+							<a href="javascript:;">5</a>
+							...
+							<a href="javascript:;">14</a>
+							<span class="disabled-bottom"><img src="img/page-right.png" alt=""/></span>
+						</div>
 					</div>
 				</div>
 				<!--core content left （资源管理核心内容右）-->
@@ -113,6 +178,14 @@
 			</ul>
 		</div>
 	</div>
+	<!--弹窗-->
+	<div class="popup" style="display: none">
+		<div class="nav">
+			<p class="popup-text">资源已公开</p>
+			<img src="img/success.png" alt=""/>
+		</div>
+	</div>
+
 </body>
 <script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
 <script type="text/javascript" src="common/js/index.js"></script>
