@@ -50,12 +50,19 @@ footer{
     height: 50px;
     padding: 15px 0;
 }
+.footer .footer_con a,.footer .footer_con a:hover{
+	color: #222;
+	font-weight:normal;
+}
 .footer .footer_con p{
-        width: 1200px;
+    width: 1200px;
     text-align: center;
     line-height: 26px;
     font-size: 14px;
-    color: #222;
+    color:#222;
 }
 .footer .footer_con p span{margin: 0 19px;}
-
+.footer .footer_con p span img{
+	position: relative;
+	top:5px;
+}

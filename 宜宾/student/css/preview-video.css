@@ -152,7 +152,7 @@ header nav .header-right a {
     display: block;
 }
 .box .cont .con .mes ul{
-	width: 50%;
+	width: 70%;
 }
 .box .cont .con .mes ul li{
 	margin-top: 10px;
@@ -161,9 +161,11 @@ header nav .header-right a {
 	float: left;
 }
 .box .cont .con .mes ul li span{
-	padding-left: 20px;
 	font-size: 14px;
 	color: #6c6c6c;
+}
+.box .cont .con .mes ul li span:first-of-type{
+	padding-left: 20px;
 	background: url(../img/list-yuanhuan.png)no-repeat;
 	background-position:0px 8px;
 }
