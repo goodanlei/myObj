@@ -110,6 +110,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 }
 .container-nav .container-left > .def img{
 	width: 130px;
+	margin: 20px 0px;
 }
 .container-nav .container-left > ul{
 	height: 750px;
@@ -491,6 +492,9 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 	text-align: center;
 	color:#742b23;
 	font-size: 16px;
+}
+.know_box_2 .no_show img{
+	margin-top: 30px;
 }
 
 

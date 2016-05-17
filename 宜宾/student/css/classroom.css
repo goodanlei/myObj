@@ -108,7 +108,7 @@ header nav .header-right a {
   background-color: #ebebeb;
 }
 .nav dd td.active {
-  background-color: #f5faff;
+  background-color: rgb(205, 234, 255);
 }
 .nav dd table {
   border: 0px;
@@ -144,7 +144,7 @@ header nav .header-right a {
   height: 20px;
 }
 .nav dd .sel dt.have {
-  background-color: #f5faff;
+  background-color: rgb(205, 234, 255);
 }
 .nav dd .sel dd {
   float: left;
@@ -170,6 +170,9 @@ header nav .header-right a {
   height: 645px;
   width: 550px;
   margin: 30px auto 0px;
+}
+.cont .table .hide img{
+	margin-top: 30px;
 }
 .cont .table table {
   border: 0px;
