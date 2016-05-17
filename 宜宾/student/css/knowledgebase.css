@@ -45,10 +45,31 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 	font-weight:bold ;
 }
 .classification .search{
-	width: 100px;
-	border: 1px solid #000;
-	
+	background-color: #EDEDED;
+	width: 260px;
+    float: right;
 }
+.classification .search input{
+	background-color: #EDEDED;
+	padding-left:5px;
+    border: 0px;
+    outline: 0px;
+    line-height: 27px;
+    height: 27px;
+    width: 225px;
+}
+.classification .search .search-img{
+	    background: url(../img/iconfont-sousuo.png) no-repeat;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -67,6 +88,28 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     width: 188px;
     height: 835px;
     background: url("../img/knowledge-left.png") no-repeat top center;
+}
+.container-nav .container-left > .def{
+	width: 130px;
+    margin-left: 10px;
+}
+.container-nav .container-left > .def .tit{
+	text-align: center;
+    font-size: 18px;
+    font-family: fantasy;
+    font-weight: bold;
+    color: #B49795;
+}
+.container-nav .container-left > .def p{
+	color: #B49795;
+	font-size: 14px;
+	text-align: center;
+}
+.container-nav .container-left > .def p span{
+	text-decoration: underline;
+}
+.container-nav .container-left > .def img{
+	width: 130px;
 }
 .container-nav .container-left > ul{
 	height: 750px;
@@ -91,8 +134,22 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 }
 .container-left .container-left-nav {
     line-height: 30px;
-    margin-left: 10px;
+    width: 160px;
     padding-bottom: 8px;
+}
+.container-left .container-left-nav2{
+	background-color: #F2F2F2;
+	width:150px;
+}
+.container-left .container-left-nav > ul > li{
+	background: url("../img/shang.png") no-repeat right;
+    background-position-y: 8px;
+}
+.container-left .container-left-nav2 ul li a {
+    display: block;
+    height: 27px;
+    color: #732B23;
+    line-height: 27px;
 }
 .container-left .container-left-nav ul li a {
     display: block;
@@ -302,7 +359,8 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 }
 .container-right .conright-nav .paging {
     width: 652px;
-        margin: 30px 130px 0px;
+    margin: 30px auto;
+    height: 45px;
     overflow: hidden;
 }
 .container-right .conright-nav .paging li {
@@ -310,12 +368,11 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     float: left;
     line-height: 45px;
     text-align: center;
-    margin-right: 10px;
 }
 .container-right .conright-nav .paging li a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 45px;
     color: #99cc66;
     font-size: 16px;
     font-weight: bold;
@@ -350,10 +407,11 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     padding-bottom: 20px;
 }
 .box .nav-tit {
-       margin: -20px 118px;
+    margin: -20px 118px;
     position: absolute;
     top: 99px;
     height: 83px;
+    width: 858px;
 }
 .box .nav-tit a {
     display: block;
@@ -407,7 +465,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     color: #732B23;
     float: left;
     padding: 0px 10px;
-    height: 100%;
+    height: 30px;
     line-height: 30px;
 }
 .box .nav-con li a.active {

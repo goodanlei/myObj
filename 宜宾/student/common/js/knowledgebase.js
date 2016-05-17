@@ -37,9 +37,14 @@ $(function(){
                console.log($(".container-right .conright-mask li").eq(num));
                $(".container-right .conright-mask li").eq(num).addClass("show").siblings().removeClass("show");
            });
-           $(".zhouji a,.kemu a,.week a").click(function(){
+           $(".zhouji a,.kemu a,.week a").live("click",function(){
                $(this).siblings().attr("class",'');
                $(this).attr("class",'active');
+               
+               //show
+               $(".container-left .def").hide();
+               $(".container-left ul").show();
+               
            });
 //         $(".nav-tit a").click(function(){
 //             $(".nav-tit a").attr("class",'');
@@ -55,11 +60,17 @@ $(function(){
        		$(".container-left-nav").hide();
        		$(".container-left>ul>li>a.cuent").removeClass("cuent");
        },
-
+	   search:function(){
+	   	$(".search-img").live("click",function(){
+	   		$(".know_box").hide();
+	   		$(".know_box_2").show();
+	   	});
+	   },
        init:function(){
            this.show();
            this.exclusive();
            this.closeAll();
+           this.search();
        },
    };
     knowledge.init();

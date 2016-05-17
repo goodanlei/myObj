@@ -431,7 +431,7 @@ iframe {
 .cont-body li:hover div.cont-item{
 	  margin-top: 0px;
 	  width: 212px;
-    /*height: 262px;*/
+    height: 262px;
     border: 2px solid #dddddd;
 }
 

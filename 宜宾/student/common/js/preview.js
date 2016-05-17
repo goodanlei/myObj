@@ -14,5 +14,10 @@ $(function () {
 	
 	$('.prepared_nav .nav-con li').click(function(){
 		$(this).addClass('pre_active').siblings().removeClass('pre_active');
-	})
+		$(".cont").hide();
+		$(".cont:eq(0)").show();
+	});
+	
+	
+	
 });

@@ -10,6 +10,14 @@ $(function () {
 		alert("下载");
 	});
 	
+	//table 无内容
+	
+	$(".nav-con tr").find("td:not(:first)").live("click",function(){
+		$(".cont .table table").hide();
+		$(".cont .table .hide").show();
+	});
+	$(".nav-con tr").find("td:not(:first)").css("cursor","pointer");
+	
 });
 
 
