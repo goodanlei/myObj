@@ -38,9 +38,13 @@ $(function(){
                $(".container-right .conright-mask li").eq(num).addClass("show").siblings().removeClass("show");
            });
            $(".zhouji a,.kemu a,.week a").live("click",function(){
-               $(this).siblings().attr("class",'');
-               $(this).attr("class",'active');
-               
+              	if($(this).attr("class")=='active'){
+          			$(this).siblings().attr("class",'');
+          			$(this).attr("class","");
+          		}else{
+          			$(this).siblings().attr("class",'');
+          			$(this).attr("class",'active');
+          		}
                //show
                $(".container-left .def").hide();
                $(".container-left ul").show();

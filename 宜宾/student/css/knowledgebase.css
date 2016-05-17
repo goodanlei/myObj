@@ -48,6 +48,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 	background-color: #EDEDED;
 	width: 260px;
     float: right;
+    margin-right: 25px;
 }
 .classification .search input{
 	background-color: #EDEDED;
@@ -104,6 +105,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 	color: #B49795;
 	font-size: 14px;
 	text-align: center;
+    line-height: 25px;
 }
 .container-nav .container-left > .def p span{
 	text-decoration: underline;
@@ -139,20 +141,28 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     padding-bottom: 8px;
 }
 .container-left .container-left-nav2{
-	background-color: #F2F2F2;
+	text-align: left;
 	width:150px;
 }
 .container-left .container-left-nav > ul > li{
 	background: url("../img/shang.png") no-repeat right;
     background-position-y: 8px;
 }
-.container-left .container-left-nav2 ul li a {
+.container-left .container-left-nav .container-left-nav2 ul li a {
+	    text-align: left;
+    width: 100%;
+    overflow: hidden;
     display: block;
     height: 27px;
     color: #732B23;
     line-height: 27px;
 }
-.container-left .container-left-nav ul li a {
+.container-left-nav2 ul{
+	background-color: #F2F2F2;
+	margin-left: 10px;
+	padding-left: 5px;
+}
+.container-left .container-left-nav > ul li a {
     display: block;
     width: 62px;
     height: 27px;
@@ -163,6 +173,11 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 .container-left .container-left-nav ul li a.beiying {
 	color: #FFFFFF;
     background: url("../img/beiying.png") no-repeat center center;
+}
+
+.container-left .container-left-nav .container-left-nav2 ul li a.beiying {
+	color: #222;
+	background: url();
 }
 /*右边*/
 .container-nav .container-right {
