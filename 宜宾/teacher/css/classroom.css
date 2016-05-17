@@ -3,6 +3,7 @@ body{font-family: "微软雅黑";}
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 25px;
+    min-height: 790px;
 }
 
 /*颜色值*/
@@ -837,7 +838,7 @@ iframe {
 .mask{
     display: none;
     width: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
     position: absolute;
     left: 0; top: 0;
 }

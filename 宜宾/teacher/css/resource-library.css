@@ -19,6 +19,7 @@ body {
 }
 .container {
     width: 1200px;
+    min-height: 800px;
     margin: 15px auto 25px;
 }
 .conrow_center {

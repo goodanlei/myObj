@@ -36,7 +36,7 @@ a,a:visited,a:link,a:hover,a:active {
 .container {
     display: block;
     width: 1200px;
-    height: 817px;
+    min-height: 817px;
     margin: 0px auto 25px;
 }
 /*主题内容 右侧----主题内容 左侧 (公共样式)*/

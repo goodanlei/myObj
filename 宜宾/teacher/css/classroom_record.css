@@ -18,6 +18,7 @@ body {
 .center {
   margin:15px auto 25px;
   width: 1200px;
+  min-height: 800px;
 }
 .center:before,
 .center:after {

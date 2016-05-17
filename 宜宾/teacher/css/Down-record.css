@@ -40,18 +40,17 @@ a,a:visited,a:link,a:hover,a:active {
 }
 .container .con-left {
     width: 766px;
-    height: 1080px;
     background: #fff;
+    min-height: 800px;
     -webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
     float: left;
-    padding: 15px 25px;
 }
 .container .con-right {
     width: 362px;
-    height: 1110px;
     background: #fff;
+    min-height: 800px;
     -webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;

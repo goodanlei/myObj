@@ -140,48 +140,79 @@ $(function(){
 		YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {});
 		$(this).attr('src','img/del2.png');
 	});
-	$(".List-questions img.next").click(function () {
-		var t = $(this).parents(".ques_num");
-		t.removeClass("active");
-		t.next().addClass("active");
-		$(this).attr('src','img/down2.png');
+
+	$(".List-questions img.next").live('click',function(){
+		var max_num = $(".List-questions img.next").size();
+		var _this = $(this).parents(".ques_num");
+		var _this_mask = _this.next();	
+		var _next = _this_mask.next();
+		var _next_remove = _next.next();
+		
+		var num = _this.find("h5 span").text();
+		num = num*1 + 1; (num > max_num) ? num=max_num : num;
+		_this.find("h5 span").text(num);
+		
+		num = _next.find("h5 span").text();
+		num = num*1 - 1; num ? num : num=1;
+		var c = _next.clone();
+		c.find("h5 span").text(num);
+		_this.before(c).prev().after(_next_remove);
+
+		_next.remove();
+		_next_remove.remove();
 	});
-	$(".List-questions img.up").click(function () {
-		var t = $(this).parents(".ques_num");
-		t.removeClass("active");
-		t.prev().addClass("active");
-		$(this).attr('src','img/up2.png');
+	$(".List-questions img.up").live('click',function(){
+		var max_num = $(".List-questions img.next").size();
+		var _this = $(this).parents(".ques_num");
+		var _this_mask = _this.next();	
+		var _next_remove = _this.prev();
+		var _next = _next_remove.prev();
+		
+		var num = _this.find("h5 span").text();
+		num = num*1 - 1; num ? num : num=1;
+		_this.find("h5 span").text(num);
+		
+		var c = _next.clone();
+		num = c.find("h5 span").text();
+		num = num*1 + 1; (num > max_num) ? num=max_num : num; 
+		c.find("h5 span").text(num);
+		_this_mask.after(c).next().after(_next_remove);
+
+		_next.remove();
+		_next_remove.remove();
 	});
 	
-	$(".ques_num").hover(function () {
-		$(".ques_num").removeClass("active");
+
+	
+	$(".ques_num").live('mouseover',function () {
 		$(this).addClass("active");
-	},function () {
+	});
+	$(".ques_num").live('mouseout',function () {
 		$(this).removeClass("active");
 	});
 	
 	/*模拟hover*/
-	$(".List-questions img.del").live('mouseover',function(){
+	$(".List-questions .edit img.del").live('mouseover',function(){
 		$(this).attr('src','img/del2.png');
 	});
 	
-	$(".List-questions img.del").live('mouseout',function(){
+	$(".List-questions .edit img.del").live('mouseout',function(){
 		$(this).attr('src','img/theme_del.png');
 	});
 	
-	$(".List-questions img.next").live('mouseover',function(){
+	$(".List-questions .edit img.next").live('mouseover',function(){
 		$(this).attr('src','img/down2.png');
 	});
 	
-	$(".List-questions img.next").live('mouseout',function(){
+	$(".List-questions .edit img.next").live('mouseout',function(){
 		$(this).attr('src','img/theme_down.png');
 	});
 	
-	$(".List-questions img.up").live('mouseover',function(){
+	$(".List-questions .edit img.up").live('mouseover',function(){
 		$(this).attr('src','img/up2.png');
 	});
 	
-	$(".List-questions img.up").live('mouseout',function(){
+	$(".List-questions .edit img.up").live('mouseout',function(){
 		$(this).attr('src','img/theme_up.png');
 	});
 	
