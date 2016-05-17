@@ -408,7 +408,7 @@ iframe {
   margin: auto;
   margin-top: 5px;
   width: 200px;
-  /*height: 252px;*/
+  height: 252px;
  padding-bottom: 5px;
   border: 1px solid #dddddd;
 }
