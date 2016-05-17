@@ -445,16 +445,15 @@ iframe {
 }
 .cont-body li .text .title {
 	  width:100%;
-	  text-align: left;
     text-align: left;
-    height: 30px;
+    height: 40px;
     display: block;
     font-size: 14px;
     color: #505050;
     font-weight: bold;
     background-color: #FFFFFF;
-    /*overflow: hidden;
-    white-space: nowrap;
+    overflow: hidden;
+    /*white-space: nowrap;
     text-overflow: ellipsis;*/
 }
 .cont-body li .text .body {
