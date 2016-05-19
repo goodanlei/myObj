@@ -8,6 +8,10 @@
 		position: relative;
 		top:2px;
 	}
+	.cont-body li .text .title{height:35px;}
+	.cont-body li:hover span.title{
+		height:42px;
+	}
 }
 
 /*苹果*/

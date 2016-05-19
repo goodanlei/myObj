@@ -408,7 +408,7 @@ iframe {
   margin: auto;
   margin-top: 5px;
   width: 200px;
-  height: 252px;
+  /*height: 252px;*/
  padding-bottom: 5px;
   border: 1px solid #dddddd;
 }
@@ -429,9 +429,8 @@ iframe {
 	color: #D03D31;
 }
 .cont-body li:hover div.cont-item{
-	  margin-top: 0px;
-	  width: 212px;
-    height: 262px;
+	margin-top: 0px;
+	width: 212px;
     border: 2px solid #dddddd;
 }
 
@@ -445,17 +444,16 @@ iframe {
   padding: 4px 10px 0px 10px;
 }
 .cont-body li .text .title {
-	  width:100%;
+	width:100%;
+	text-align: left;
     text-align: left;
-    height: 40px;
+    height: 32px;
     display: block;
     font-size: 14px;
     color: #505050;
     font-weight: bold;
     background-color: #FFFFFF;
     overflow: hidden;
-    /*white-space: nowrap;
-    text-overflow: ellipsis;*/
 }
 .cont-body li .text .body {
   font-size: 12px;
@@ -530,7 +528,38 @@ iframe {
   background-color: #d03d31;
 }
 
-
+/*弹出提示*/
+.del_down{
+    text-align: center;
+}
+.del_down .hide{
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0.3;
+}
+.del_down .con{
+    position: fixed;
+    left: 50%;
+    top:240px;
+    z-index:1000;
+    margin-left:-164px;
+    width:328px;
+    height: 180px;
+    background-color: #FFFFFF;
+    opacity: 1;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    -moz-box-shadow: 0 0 6px #ccc;
+    box-shadow: 0 0 6px #ccc;
+}
+.del_down .con img{
+    display: block;
+    width: 47px;
+    margin: 40px auto 16px;
+}
 
 
 
