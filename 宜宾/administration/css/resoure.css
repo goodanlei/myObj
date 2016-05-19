@@ -249,7 +249,7 @@ div.digg span.disabled {
     width: 350px;
     height: 217px;
     background: #fff;
-    box-shadow: 0 0 10px #DFDFDF;
+    box-shadow: 2px 2px 10px #DFDFDF;
     border-radius: 10px;
 }
 .popup .nav p {
@@ -258,3 +258,31 @@ div.digg span.disabled {
     color: #212121;
     margin: 68px 0 10px 0;
 }
+
+/*右侧的图表样式*/
+.ziyuan-youtit{position:relative;padding:20px;font-weight:bold;height:25px;line-height:25px;}
+.ziyuan-youtit:before{position:absolute;content:"";left:0;width:3px;height:25px;background:#4dbd73;}
+.ziyuan-tot{width:90%;margin:0 auto;border-bottom:1px solid #ebeff2;text-align:center;}
+.zynum{color:#4dbd73;margin:10px auto;font-size:16px;font-weight:bold;}
+.zyzongnum{font-size:16px;font-weight:bold;margin:0 auto 10px;}
+.zilx{width:90%;height:200px;margin:10px auto 20px;border-bottom:1px solid #ebeff2;}
+.zilx:after{content:"资源类型模式信息图";position:absolute;left:50%;bottom:8px;font-weight:bold;margin-left:-60px;}
+.zygeshi{width:90%;height:200px;margin:10px auto;}
+.zygeshi:after{content:"资源格式模式信息图";position:absolute;left:50%;bottom:5px;font-weight:bold;margin-left:-60px;}
+
+/*确认删除的弹窗样式*/
+.delreswrap{width:546px;height:320px;background:#fff;position:fixed;left:50%;top:50%;margin-left:-273px;margin-top:-160px;border:1px solid #ddd;box-shadow:2px 2px 10px #ccc;border-radius:5px;display:none;}
+.delrestit{width:100%;height:50px;background:#1d2b36;border-top-left-radius:5px;border-top-right-radius:5px;line-height:50px;color:#fff;}
+.restips{margin-left:20px;}
+.delresclose{margin-right:20px;cursor:pointer;}
+.suredelres{width:100%;height:200px;line-height:200px;text-align:center;font-size:16px;font-weight:bold;}
+.delresbtn{width:100%;height:50px;line-height:50px;text-align:center;}
+.delresbtn button{width:100px;height:30px;margin:10px;border:none;outline:none;color:#fff;cursor:pointer;}
+.suredel-res{background:#4dbd75;}
+.nodel-res{background:#3bc1c4;}
+
+/*删除提示*/
+.delrestixi{width:300px;height:150px;position:fixed;background:#fff;border:1px solid #ddd;box-shadow:2px 2px 10px #ccc;left:50%;top:50%;margin-left:-150px;margin-top:-75px;font-size:16px;border-radius:5px;display:none;}
+.deltixi-tit{width:100%;height:30px;background:#1d2b36;color:#fff;line-height:30px;overflow:hidden;border-top-left-radius:5px;border-top-right-radius:5px;}
+.tixing{margin-left:10px;}
+.tipscon{width:100%;height:120px;text-align:center;line-height:120px;font-weight:bold}

@@ -77,4 +77,16 @@ $(function(){
                     $(".savelesson").fadeOut(500);
                 },1000)
             })
+            
+            //点击查看已上传的夏季课程表
+            
+            $("#seekcb").click(function(){
+              $(".xiajikc").show()
+            })
+            
+            //修改已上传的夏季课程表
+            
+            $("#xgxjkcb").click(function(){
+              $(".xiajikc").show()
+            })
 		})

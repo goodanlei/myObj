@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>设备管理</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/shebeiguanli.css">
@@ -16,10 +16,10 @@
 		<div class="main_left">
 			<h3>宜宾智慧教育平台</h3>
 			<ul class="left_list">
-				<li class="list_active"><em></em>资源管理</li>
-				<li><em></em>教材管理</li>
-				<li><em></em>课程管理</li>
-				<li><em></em>设备管理</li>
+				<a href="resource.html"><li><em></em>资源管理</li></a>
+				<a href="jiaocaiguanli.html"><li><em></em>教材管理</li></a>
+				<a href="kechengguanli.html"><li><em></em>课程管理</li></a>
+				<a class="list_active" href="shebeiguanli.html"><li><em></em>设备管理</li></a>
 			</ul>
 		</div>
 		<div class="main_right">
@@ -81,11 +81,10 @@
 							</thead>
 							<tbody class="tbody">
 								<tr>
-									<td class="zuobiao"><span class="tbactive">一年级</span></td>
+									<td class="zuobiao"><span>一年级</span></td>
 									<td>
 										<ul>
-											<li>1班<span class="youid"></span>
-											</li>
+											<li>1班<span class="youid"></span></li>
 											<li>2班<span class="youid"></span></li>
 											<li>3班<span class="wuid"></span></li>
 											<li>4班<span class="youid"></span></li>
@@ -259,17 +258,17 @@
 					</div>
 					<div class="cxshow">
 						<div class="idshow">
-							<span class="fl">一年级三班id:</span>
+							<span class="fl"><span class="xiugaiid">XX年级XX班级</span><span>id:</span></span>
 							<form class="fl" action="#" id="idxg">
 								<!--修改id的输入框-->
-								<input id="xianshiid" type="text" value="1827283" disabled="disabled">
+								<input id="xianshiid" type="text" value="" disabled="disabled">
 							</form>
 						</div>
 						<!--保存id按钮-->
-							<div id="saveid">
-								保存
-							</div>
-						<p class="zhuyi">注：双击ID可进行编辑修改</p>
+						<div id="saveid">
+							保存
+						</div>
+						<span class="zhuyi">修改ID信息</span>
 					</div>
 				</div>
 			</div>
@@ -286,13 +285,13 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<!--保存成功弹窗-->
 	<div id="tcdui">
 		<p>保存成功</p>
 		<img src="./img/duihao.png" alt="" />
 	</div>
-	
+
 	<!--空ID弹窗-->
 	<div class="tckong kongsave">
 		<div class="kongtit">
@@ -305,7 +304,7 @@
 			<button class="btyou">取消</button>
 		</div>
 	</div>
-	
+
 	<!--修改ID点击保存弹窗-->
 	<div class="tckong suresave">
 		<div class="kongtit">
@@ -318,8 +317,9 @@
 			<button class="btyou">取消</button>
 		</div>
 	</div>
-	
+
 </body>
 <script type="text/javascript" src="common/js/index.js"></script>
 <script type="text/javascript" src="common/js/shebeiguanli.js"></script>
+
 </html>

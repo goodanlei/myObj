@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>课程管理</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/kechengguanli.css">
 	<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
 	<script src="common/My97DatePicker/WdatePicker.js"></script>
 </head>
+
 <body>
 	<!-- 外层框架  -->
 	<div class="mian">
 		<div class="main_left">
 			<h3>宜宾智慧教育平台</h3>
 			<ul class="left_list">
-				<li class="list_active"><em></em>资源管理</li>
-				<li><em></em>教材管理</li>
-				<li><em></em>课程管理</li>
-				<li><em></em>设备管理</li>
+				<a href="resource.html"><li><em></em>资源管理</li></a>
+				<a href="jiaocaiguanli.html"><li><em></em>教材管理</li></a>
+				<a class="list_active" href="kechengguanli.html"><li><em></em>课程管理</li></a>
+				<a href="shebeiguanli.html"><li><em></em>设备管理</li></a>
 			</ul>
 		</div>
 		<div class="main_right">
@@ -58,7 +60,7 @@
 						</li>
 					</ul>
 				</div>
-				
+
 			</div>
 			<div class="right_con">
 				<div class="classroom_head clearfix">
@@ -81,7 +83,7 @@
 									</li>
 								</ul>
 								<div class="add_border">
-								<!--课程表上传成功-->
+									<!--课程表上传成功-->
 									<div class="upsuccess xjup">
 										<table class="uptable">
 											<thead>
@@ -95,7 +97,7 @@
 												<tr>
 													<td>2015年02月26日</td>
 													<td>课程时间信息表</td>
-													<td><a href="">查看&nbsp;</a><a href="">下载&nbsp;</a><a href="">修改&nbsp;</a><a href="">删除&nbsp;</a></td>
+													<td><a href="javascript:;" id="seekcb">查看&nbsp;</a><a href="#">下载&nbsp;</a><a href="javascript:;" id="xgxjkcb">修改&nbsp;</a><a href="">删除&nbsp;</a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -103,7 +105,7 @@
 									<!--上传按钮-->
 									<div class="add_box zuobox">
 										<label class="btn kcbupload xjupload" for="xFile"></label>
-										<form  action="#" method="post" enctype="multipart/form-data">
+										<form action="#" method="post" enctype="multipart/form-data">
 											<input class="ofile" type="file" id="xFile" accept=".xls,.xlsx">
 										</form>
 										<p>导入课程表时间</p>
@@ -123,7 +125,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 					<div class="time fr">
@@ -163,7 +165,7 @@
 									<!--冬季上传按钮-->
 									<div class="add_box youbox">
 										<label class="btn kcbupload djupload" for="xFile"></label>
-										<form  action="" method="post" enctype="multipart/form-data">
+										<form action="" method="post" enctype="multipart/form-data">
 											<input class="ofile" type="file" id="dFile" accept=".xls,.xlsx">
 										</form>
 										<p>导入课程表时间</p>
@@ -200,13 +202,13 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<!--保存成功弹窗-->
 	<div id="tcdui">
 		<p>保存成功</p>
 		<img src="./img/duihao.png" alt="" />
 	</div>
-	
+
 	<!--查看课程表弹窗-->
 	<div class="seelesson xiajikc">
 		<h1>夏季作息时间表</h1>
@@ -243,7 +245,7 @@
 				<td>9:10-9:50</td>
 				<td>9:10-9:50</td>
 				<td>9:10-9:50</td>
-		
+
 			</tr>
 			<tr class="bggay">
 				<td class="kechengnum">3</td>
@@ -287,10 +289,12 @@
 				<td>4:50-5:40</td>
 			</tr>
 		</table>
-		<button class="kcbbbtn savelesson">确定</button> <button class="kcbbbtn exit">取消</button>
+		<button class="kcbbbtn savelesson">确定</button>
+		<button class="kcbbbtn exit">取消</button>
 	</div>
-	
+
 </body>
 <script type="text/javascript" src="common/js/index.js"></script>
 <script type="text/javascript" src="common/js/kechengguanli.js"></script>
+
 </html>

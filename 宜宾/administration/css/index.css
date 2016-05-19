@@ -18,6 +18,16 @@ html{ height:100%} /*兼容firefox的div高度100%*/
 .main_left .left_list li{
 	width: 186px;
 	height: 60px;
+	/*padding-top: 40px;
+	padding-left: 52px;*/
+	color:#fff;
+	font-size: 18px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.main_left .left_list a{display:block;width: 186px;
+	height: 60px;
 	padding-top: 40px;
 	padding-left: 52px;
 	color:#fff;
@@ -25,7 +35,9 @@ html{ height:100%} /*兼容firefox的div高度100%*/
 	margin-bottom: 50px;
 	cursor: pointer;
 }
-.main_left .left_list li.list_active{
+
+
+.main_left .left_list a.list_active{
 	border-left:4px solid #1ab394 ;
 	width: 182px;
 	background: #0f1922;
