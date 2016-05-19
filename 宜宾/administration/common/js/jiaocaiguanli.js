@@ -1,166 +1,292 @@
-$(function(){
-    $(".section div").each(function(index){
-        $(this).click(function(){
+/*
+    -----------教材管理JS--------------
+*/
+
+$(function () {
+
+    /*
+        点击层级显示册别信息开始----------------------
+    */
+    
+    //先点击学段
+    $(".section div").each(function (index) {
+        $(this).click(function () {
             $(".section div").removeClass("active");
             $(this).addClass("active");
             
-            $(".grade label").each(function(index){
-                $(this).click(function(){
+            //再点击学科
+            $(".grade label").each(function (index) {
+                $(this).click(function () {
                     $(".grade label").removeClass("xkactive");
                     $(this).addClass("xkactive");
                     
-                    $(".jcverban label").each(function(index){
-                        $(this).click(function(){
+                    //最后点击版本
+                    $(".jcverban label").each(function (index) {
+                        $(this).click(function () {
                             $(".jcverban label").removeClass("veractive");
                             $(this).addClass("veractive");
-                            
                             $(".main-tit,.youbanben,.bianjibanben").show()
-                            
                             $(".uploadhead,.main-tianjia").hide()
-                            
-                            $(".main-xiazai").css({"border":"none"})
+                            $(".main-xiazai").css({
+                                "border": "none"
+                            })
                         })
                     })
                 })
             })
-            
-            
-        })
-        
-//        $(".grade span").each(function(index){
-//            $(this).click(function(){
-//                $(".grade span").removeClass("active");
-//                $(this).addClass("active");
-//            })
-//        })
-    })
-    
-    
-    
-    $(".subject p span").each(function(index){
-        $(this).click(function(){
-            $(".subject p span").removeClass("active");
-            $(this).addClass("active");
         })
     })
-    
-    $(".jcglul li").click(function(){
-        $(this).addClass("liactive").siblings().removeClass("liactive")
+
+
+    /*
+        遍历册别选项卡切换开始---------------
+    */
+    $(".jcglul li label").each(function (index) {
+        $(this).click(function () {
+            $(".jcglul li label").removeClass("liactive");
+            $(this).addClass("liactive")
+        })
     })
+
     
-    //点击查看版本册别信息
-    $(".chakan").click(function(){
-        $(".jiaocaiwrap").show(300);
-        $(".kcul span").hide()
-    })
-    //点击修改版本册别信息
-    $(".xiugai").click(function(){
+    /*
+        查看和修改册别信息，弹出灰色蒙层部分 开始--------------------
+    */
+    
+    //点击查看版本册别信息弹出灰色蒙层
+    $(".chakan").click(function () {
+            $(".jiaocaiwrap").show(300);
+            $(".kcul span").hide()
+            $(".mengceng").show()
+        })
+        //点击修改版本册别信息弹出灰色蒙层
+    $(".xiugai").click(function () {
         $(".jiaocaiwrap").show(300);
         $(".kcul span").show()
+        $(".mengceng").show()
     })
-    
+
     //点击关闭查看和修改教材目录
-    $(".qxckjc").click(function(){
+    $(".qxckjc").click(function () {
         $(".jiaocaiwrap").hide(300)
+        $(".mengceng").hide()
     })
-    
+
     //点击添加版本
-    $(".tjbanben").click(function(){
+    $(".tjbanben").click(function () {
         $(".bbaddtc").show(200)
     })
-    
-    $(".verquit,.adtitr").click(function(){
+
+    $(".verquit,.adtitr").click(function () {
         $(".addver").hide(200)
     })
     
-    //删除高中版本
-    $(".gaozhongdel").click()
+    /*
+        删除（小学、初中、高中）版本开始-----------------------
+    */
     
-    $(".gaozhongdel").toggle(function(){
+    
+    var gaozver=$(".gaozhong span input:checked");
+    var chuzver=$(".chuzhongjc span input:checked");
+    var xiaover=$(".xiaoxue span input:checked");
+    
+    //删除高中版本
+    $(".gaozhongdel").toggle(function () {
         $(".gaozhong span input").show();
-        
-    },function(){
-        var ipchecked=$(".gaozhong span input:checked").length
-        if(ipchecked>0){
-            $(this).attr("src","./img/suredel.png")
+    }, function () {
+        var ipchecked = $(".gaozhong span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/suredel.png")
             $(".delreswrap").show(300)
-            
-        }else{
+
+        } else {
             $(".delrestixi").show(300)
-            setTimeout(function(){$(".delrestixi").hide(300)},1000)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
         }
-        //////////////////////////////////////////////////
     })
-    
-    
-    //确认删除？
-    
-    $(".delresclose,.nodel-res").click(function(){
-        $(".delreswrap").hide(300)
-    })
-    
-    
-    //删除高中版本
-    
-    $(".suredel-res").click(function(){
-        $(".gaozhong span input:checked").parent().remove();
-        $(".delreswrap").hide()
-    })
-    
-    
-    
-    
-    $(".chuzhongdel").click(function(){
+
+    //删除初中版本
+    $(".chuzhongdel").toggle(function () {
         $(".chuzhongjc span input").show();
-        $(this).attr("src","./img/suredel.png")
-       
+    }, function () {
+        var ipchecked = $(".chuzhongjc span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/suredel.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
     })
+
     
-    $(".xiaoxuedel").click(function(){
+    //删除小学版本
+    $(".xiaoxuedel").toggle(function () {
         $(".xiaoxue span input").show();
-        $(this).attr("src","./img/suredel.png");
+    }, function () {
+        var ipchecked = $(".xiaoxue span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/suredel.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
     })
     
-    $(".banbenshanchu").click(function(){
-        $(".jcglul ul input").show()
-        $(this).attr("src","./img/deltwo.png");
+    //===================================
+    //弹窗确认删除高中\初中\小学版本
+    $(".suredel-res").click(function () {
+        $(".gaozhong span input:checked").parent().remove();
+        $(".chuzhongjc span input:checked").parent().remove();
+        $(".xiaoxue span input:checked").parent().remove();
+        $(".delreswrap").hide();
+        $(".popup").show(300);
+        setTimeout(function () {
+            $(".popup").hide(300);
+        }, 1000)
+
+        $(".tcscbb").attr("src","./img/addbanben.png")
+        $(".tcscxk").attr("src","./img/nianjidel.png")
+        
+        $("span input").hide()
+    })
+
+    /*
+        删除（小学、初中、高中）学科开始----------------------
+    */
+    
+    //删除高中学科
+    $(".gaoxk").toggle(function () {
+        $(".gao-xk span input").show();
+    }, function () {
+        var ipchecked = $(".gao-xk span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/deltwo.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
+    })
+
+    //删除初中学科
+    $(".chuxk").toggle(function () {
+        $(".chu-xk span input").show();
+    }, function () {
+        var ipchecked = $(".chu-xk span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/deltwo.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
     })
     
-    $(".gaoxk").click(function(){
-        $(".gaozhongxk input").show();
-        $(this).attr("src","./img/deltwo.png");
+    //删除小学版本
+    $(".xiaoxk").toggle(function () {
+        $(".xiao-xk span input").show();
+    }, function () {
+        var ipchecked = $(".xiao-xk span input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/deltwo.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
     })
     
-    $(".chuxk").click(function(){
-        $(".chuzhongxk input").show();
-        $(this).attr("src","./img/deltwo.png");
-    })
     
-    $(".xiaoxk").click(function(){
-        $(".xiaoxuexk input").show();
-        $(this).attr("src","./img/deltwo.png");
+    //弹窗确认删除高中、初中、小学学科==================
+    $(".suredel-res").click(function () {
+        $(".gao-xk span input:checked").parent().remove();
+        $(".chu-xk span input:checked").parent().remove();
+        $(".xiao-xk span input:checked").parent().remove();
+        $(".delreswrap").hide();
+        $(".popup").show(300);
+        setTimeout(function () {
+            $(".popup").hide(300);
+        }, 1000)
+        
+        $("span input").hide()
     })
+
+    /*
+        删除册别开始--------------------------
+    */
     
-    $(".xxaddxk,.czxkadd,.gzxkadd").click(function(){
+    $(".banbenshanchu").toggle(function () {
+        $(".jcglul li input").show();
+    }, function () {
+        var ipchecked = $(".jcglul li input:checked").length
+        if (ipchecked > 0) {
+            $(this).attr("src", "./img/deltwo.png")
+            $(".delreswrap").show(300)
+
+        } else {
+            $(".delrestixi").show(300)
+            setTimeout(function () {
+                $(".delrestixi").hide(300)
+            }, 1000)
+        }
+    })
+
+
+    //弹窗确认删除高中、初中、小学学科==================
+    $(".suredel-res").click(function () {
+        $(".jcglul li input:checked").parent().remove();
+        $(".delreswrap").hide();
+        $(".popup").show(300);
+        setTimeout(function () {
+            $(".popup").hide(300);
+        }, 1000)
+        $(".jcglul li input").hide()
+        $(".banbenshanchu").attr("src","./img/nianjidel.png")
+    })
+
+
+    $(".xxaddxk,.czxkadd,.gzxkadd").click(function () {
         $(".addxueketc").show()
     })
-    
-//    $(".versure").click(function(){
-//        var xuekeval=$(".xuekeval").val()
-//        $(".xxxk").append(xuekeval)
-//    })
-    
-    $(".versure").live("click",function(){
-        var xuekeval=$(".xuekeval").val();
-        var i=1;
-        var xuekename='<span><input class="checkone" id="xueke'+i+'" type="checkbox" value="" name="check[]"/><label for="xueke'+i+'">'+xuekeval+'</label></span>'
 
-        $(".xxxk").append(xuekename)
-        
-    })
+        //apend到学科
+        $(".versure").live("click",function(){
+            var xuekeval=$(".xuekeval").val();
+            var i=1;
+            var xuekename='<span><input class="checkone" id="xueke'+i+'" type="checkbox" value="" name="check[]"/><label for="xueke'+i+'">'+xuekeval+'</label></span>'
     
-    $(".addxxbb,.addczbb,.addgzbb").click(function(){
+            $(".xxxk").append(xuekename)
+            
+        })
+        
+    //添加小学、初中、高中版本
+    $(".addxxbb,.addczbb,.addgzbb").click(function () {
         $(".bbaddtc").show()
     })
     
+    //取消确认删除
+    $(".delresclose,.nodel-res").click(function () {
+        $(".delreswrap").hide(300)
+    })
+
+
 })
