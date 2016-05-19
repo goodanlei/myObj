@@ -46,6 +46,7 @@ a,a:visited,a:link,a:hover,a:active {
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
     float: left;
+    padding: 20px 20px 0 20px;
 }
 .container .con-right {
     width: 362px;
