@@ -160,6 +160,7 @@ body {
 }
 .popup-nav .nanyi {
     margin: 43px 0;
+    overflow: hidden;
 }
 .popup-nav .tijiao {
     border-bottom: 1px solid #ccc;
@@ -203,8 +204,18 @@ body {
     margin-left: 50px;
 }
 /*星星 评分*/
+.wenzi {
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
 .nanyi-img {
-    cursor: pointer;
+    margin-top: 6px;
+    display: block;
+    float: left;
 }
 .nanyi-img img {
+    display: block;
+    float: left;
+    cursor: pointer;
 }

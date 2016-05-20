@@ -4,29 +4,6 @@
 (function(){
     var config = {
         //星星效果
-        xingxing:function(){
-            //获取实心星星图片
-            var shi = "img/shi.png";
-            //获取空心星星图片
-            var kong = "img/kong.png";
-            //鼠标移动让当前图片和之前的图片变为实心图片
-            $(".nanyi-img img").on("mousemove",function(e){
-                console.log($(".nanyi-img img").length);
-                $(".nanyi-img img").each(function(index){
-                    //$(".nanyi-img img").attr("src",kong);
-                    $(e.target).attr("src",shi).prevAll().attr("src",shi);
-                    $(".nanyi-img img").on("mouseout",function(){
-                        $(".nanyi-img img").attr("src",kong);
-                    })
-                });
-            });
-            $(".nanyi-img img").on("click",function(){
-                $(".nanyi-img img").attr("src",kong);
-                $(e.target).attr("src",shi).prevAll().attr("src",shi);
-            });
-            //当鼠标没有点击移出的时候图片全部变为空心图片
-
-        },
         add:function(){
             //全选 反选
             //获取当前tbody中的input表单数量
@@ -71,7 +48,6 @@
         //执行函数
         init:function(){
             this.add();
-            this.xingxing();
         }
     };
     //调用执行

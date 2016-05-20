@@ -1,5 +1,35 @@
 (function($){
     var config = {
+        //星星评分
+        xingxing:function(){
+            //获取实心星星图片
+            var shi = "img/shi.png";
+            //获取空心星星图片
+            var kong = "img/kong.png";
+            var shi_num = 0;
+            $(".nanyi-img img").on("click",function(){
+                $(".nanyi-img img").attr("src",kong);
+                shi_num = $(this).index()+1;
+                var t =".nanyi-img img:lt("+shi_num+")";
+                $(t).attr("src",shi);
+            });
+            //鼠标移动让当前图片和之前的图片变为实心图片
+            var m_num = 0;
+            $(".nanyi-img img").on("mousemove",function(){
+                m_num = $(this).index()+1;
+                if(m_num!=shi_num){
+                    $(".nanyi-img img").attr("src",kong);
+                    var t =".nanyi-img img:lt("+m_num+")";
+                    $(t).attr("src",shi);
+                }
+            });
+            //当鼠标没有点击移出的时候图片全部变为空心图片
+            $(".nanyi-img img").on("mouseout",function(){
+                $(".nanyi-img img").attr("src",kong);
+                var t =".nanyi-img img:lt("+shi_num+")";
+                $(t).attr("src",shi);
+            });
+        },
         add:function(){
             //全选 反选
             //获取当前tbody中的input表单数量
@@ -44,6 +74,7 @@
         //执行函数
         init:function(){
             this.add();
+            this.xingxing();
         }
     };
     //调用执行

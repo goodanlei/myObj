@@ -99,6 +99,7 @@ input.zhengming {
 }
 .popup-nav .nanyi {
     margin: 43px 0;
+    overflow: hidden;
 }
 .popup-nav .tijiao {
     border-bottom: 1px solid #ccc;
@@ -108,4 +109,20 @@ input.zhengming {
 .popup-nav .tijiao button {
     margin: 20px 18px 0 ;
     float: right;
+}
+/*星星*/
+.wenzi {
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
+.nanyi-img {
+    margin-top: 6px;
+    display: block;
+    float: left;
+}
+.nanyi-img img {
+    display: block;
+    float: left;
+    cursor: pointer;
 }
