@@ -12,12 +12,7 @@
             $(".xuanze-shiti").click(function(){
                 $(".shitiku").show(500);
             });
-            $(".my-tiku").on("click",function(){
-                $(".shitiku").show(500);
-            });
-            $(".gonggong").on("click",function(){
-                $(".shitiku").show(500);
-            });
+            
             //题型设置
             $(".tixing-shezhi button").click(function(){
                 if($(this).is(".btn-info")){
