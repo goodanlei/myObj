@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>作业中心</title>
+	<title>作业中心 （学生）</title>
 	<link rel="stylesheet" href="common/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/operations-center.css"/>
 
@@ -48,7 +48,6 @@
 			<input type="text" class="form-control" placeholder="请输入关键字搜索....">
 		</div>
 		<button type="button" class="btn btn btn-info btn-primary">搜索</button>
-		<button id="chuanjianshiti" type="button" class="btn btn-primary establish">创建试题</button>
 	</form>
 	<div class="table-responsive">
 		<p>
@@ -85,11 +84,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<p>
-			<button type="button" class="btn btn-default btn-lg">
-				<span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 学生作业统计
-			</button>
-		</p>
 		<nav class="page">
 			<ul class="pagination">
 				<li>
@@ -116,47 +110,7 @@
 		</nav>
 	</div>
 </div>
-<!--弹窗-->
-<div class="popup" style="display: none">
-	<div class="container popup-nav">
-		<h4>创建试题</h4>
-		<span class="glyphicon glyphicon-remove guanbi" aria-hidden="true"></span>
-		<form class="form-inline">
-			<p><input id="zuoye" type="text" class="form-control " placeholder="输入作业名称..."></p>
-			<div class="form-group">
-				<label for="exampleInputName2">开始时间:</label>
-				<input type="text" class="form-control" id="exampleInputName2" placeholder="mm/dd/vvvv">
-			</div>
-			<div class="form-group">
-				<label class="endtime" for="exampleInputEmail2">结束时间:</label>
-				<input type="text" class="form-control" id="exampleInputEmail2" placeholder="mm/dd/vvvv">
 
-			</div>
-			<input type="text" class="Wdate" id="startTime"
-				   readonly="readonly"  value="${startTime}"
-				   onFocus="var endTime=$dp.$('endTime');WdatePicker({onpicked:function(){},maxDate:'new Date()',skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm:ss'})">
-
-			<p class="nanyi">
-				<label>难易程度:</label>
-			</p>
-			<p class="zuoyeleixing">
-				<label>作业类型:</label>
-				<input name="inlineRadioOptions" id="keqiandaoxue" type="radio"/><label for="keqiandaoxue">课前导学</label>
-				<input name="inlineRadioOptions" id="ceshi" type="radio"/><label for="ceshi">课堂测试</label>
-				<input name="inlineRadioOptions" id="lianxi" type="radio"/><label for="lianxi">课后练习</label>
-				<input name="inlineRadioOptions" id="jieduan" type="radio"/><label for="jieduan">阶段测试</label>
-				<input name="inlineRadioOptions" id="jiaqi" type="radio"/><label for="jiaqi">假期作业</label>
-			</p>
-			<p class="tijiao">
-				<button type="button" class="btn btn-default">提交</button>
-				<button id="tijiao-quxiao" type="reset" class="btn btn-default">取消</button>
-			</p>
-
-		</form>
-	</div>
-
-
-</div>
 <!--js-->
 <script src="common/js/jquery.1.8.2.min.js"></script>
 <script src="common/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
