@@ -227,7 +227,7 @@ p span{cursor: pointer;}
 .downjc{cursor:pointer;display:block;border-radius:50%;margin:60px auto 10px;width:106px;height:106px;background:#f1f1f1;line-height:136px;text-align:center;}
 .you-tit{width:96%;color:#4dbd73;height:25px;line-height:25px;border-bottom:1px solid #4dbd73;margin:0 auto 10px;}
 .jcglul{width:96%;margin:0 auto 10px;border-bottom:1px solid #4dbd73;position:relative;}
-.jcglul:after{content:"";position:absolute;left:20px;border:10px solid;border-color: #4dbd73 transparent transparent transparent;}
+.jcglul:after{content:"";position:absolute;left:20px;border:10px solid;border-color: #4dbd73 transparent transparent transparent;bottom:-21px;}
 .jcglul ul li{display:inline-block;height:22px;line-height:22px;text-align:center;margin:0px 10px 10px 0;cursor:pointer;}
 .liactive{background:#4dbd73;color:#fff;border-radius:5px;min-width:80px;height:25px;display:inline-block;border-radius:5px;line-height:25px;}
 .bianjibanben{width:96%;height:143px;margin:0 auto 30px;background:#fafafa;border-radius:5px;}
