@@ -83,16 +83,16 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 }
 /*左边*/
 .container-nav .container-left {
-	padding: 45px 0 0 30px;
+	padding: 45px 0 0 0px;
 	overflow: hidden;
     float: left;
-    width: 188px;
+    width: 218px;
     height: 835px;
     background: url("../img/knowledge-left.png") no-repeat top center;
 }
 .container-nav .container-left > .def{
 	width: 130px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 .container-nav .container-left > .def .tit{
 	text-align: center;
@@ -179,6 +179,51 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 	color: #222;
 	background: url();
 }
+/*tree  */
+#tree{
+	margin: 0px 25px;
+	width:210px;
+	height: 750px;
+	overflow: auto;
+}
+div#tree > dl {
+    width: 160px;
+    padding-left: 5px;
+}
+#tree dl{
+	padding-left: 10%;
+	width: 90%;
+	overflow: hidden;
+}
+#tree dt {
+	cursor: pointer;
+    padding-right: 10%;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    color: #742b23;
+    background: url("../img/xia.png") no-repeat right;
+}
+#tree dt.active{
+	background: url("../img/shang.png") no-repeat right;
+}
+#tree > dl > dt{
+	border-bottom: 1px solid #E2E2E2;
+} 
+#tree dt:hover{
+	background: url("../img/shang.png") no-repeat right;
+}
+#tree dt.have_0,#tree dt.have_0:hover {
+	background:url();
+}
+
+#tree dt span {
+    width: 100%;
+    margin-right: 10%;
+    overflow: hidden;
+    display: block;
+}
+
 /*右边*/
 .container-nav .container-right {
     position: relative;
