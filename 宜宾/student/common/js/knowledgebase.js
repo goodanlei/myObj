@@ -89,7 +89,6 @@ $(function(){
 	   	tree_list_tit.live("click",function(){
 	   		//show hide
 	   		$(this).parent().siblings().children("dt").next().hide();
-	   		console.log($(this).parent().siblings().size());
 	   		$(this).next().show();
 	   		tree.find(".active").removeClass("active");
 	   		$(this).addClass("active");
@@ -98,17 +97,18 @@ $(function(){
 	   		var s = $(this).attr("s");
 	   		var add_s = $(this).attr("add_s");
 	   		if(s*1&&(add_s==0||add_s== undefined)){
-		   		var ht = addList(list);
-		   		$(this).siblings().append(ht);
-		   		$(this).attr("add_s",1);
+		   		addList(list,this);
+	   		}else{
+	   			console.log("如果没有下级目录,则请求详细资源内容！");
 	   		}
 	   	});
-	   	function addList(arr){
+	   	function addList(arr,_this){
 	   		var add_list_html = '';
 	   		$.each(arr,function(k,v){
 	   			add_list_html +="<dl><dt s="+v.item_s+" class='have_"+v.item_s+"'><span>"+v.name+"</span></dt><dd></dd></dl>";
 	   		});		
-	   		return add_list_html;
+	   		$(_this).siblings().append(add_list_html);
+		   	$(_this).attr("add_s",1);
 	   	}
 	   	
 	   },

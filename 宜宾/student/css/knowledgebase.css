@@ -223,7 +223,16 @@ div#tree > dl {
     overflow: hidden;
     display: block;
 }
-
+/*第一层*/
+#tree > dl span{
+	font-size: 16px;
+}
+#tree > dl >dd >dl span{
+	font-size: 14px;
+}
+#tree > dl >dd >dl >dd >dl span{
+	font-size: 12px;
+}
 /*右边*/
 .container-nav .container-right {
     position: relative;
