@@ -165,10 +165,6 @@ body {
 }
 .content-left .conleft-tbody table tr td span.look {
     margin-right: 20px;
-    cursor: pointer;
-}
-.content-left .conleft-tbody table tr td span.bianji {
-    cursor: pointer;
 }
 .content-left .conleft-tbody table tr td span.bianji img {
     vertical-align: middle;
@@ -286,3 +282,35 @@ div.digg span.disabled {
 .deltixi-tit{width:100%;height:30px;background:#1d2b36;color:#fff;line-height:30px;overflow:hidden;border-top-left-radius:5px;border-top-right-radius:5px;}
 .tixing{margin-left:10px;}
 .tipscon{width:100%;height:120px;text-align:center;line-height:120px;font-weight:bold}
+
+/*查看资源*/
+#seeresource{width:800px;height:500px;background:#fff;box-shadow:2px 2px 10px #ccc;z-index:10000;position:fixed;left:50%;top:50%;margin-left:-400px;margin-top:-250px;border-radius:5px;}
+.seeres-tit{width:100%;height:25px;padding:10px 0;background:#1d2b36;overflow:hidden;color:#fff;border-top-left-radius:5px;border-top-right-radius:5px;font-size:16px;}
+.seeshipin{padding-left:20px;}
+.seeclose{padding-right:20px;cursor:pointer;}
+.seevideo{width:780px;height:420px;margin:10px auto 0;}
+
+/*编辑资源*/
+#editores{width:800px;height:500px;background:#fff;box-shadow:2px 2px 10px #ccc;z-index:10000;position:fixed;left:50%;top:50%;margin-left:-400px;margin-top:-250px;border-radius:5px;}
+.editor-tit{width:100%;height:25px;padding:10px 0;background:#1d2b36;overflow:hidden;color:#fff;border-top-left-radius:5px;border-top-right-radius:5px;font-size:16px;}
+.editorzy{padding-left:20px;}
+.editorclose{padding-right:20px;cursor:pointer;}
+.editor-con{width:90%;height:360px;margin:20px auto;overflow: hidden;}
+.resourename{width:600px;height:30px;border:1px solid #ddd;outline:none}
+.editor-con ul li{display:inline-block;cursor:pointer;}
+.zyming{font-size:18px;}
+.resleibie{width:700px;height:30px;margin:20px auto;}
+.resleibie li{width:90px;height:30px;line-height:30px;margin-left:30px;text-align:center;border:1px solid #ddd;border-radius:3px;}
+.reslbactive{background:#4dbd73;color:#fff;border:none;}
+.resxueduan{margin:20px 0}
+.editor-con select{width:127px;border:1px solid #ddd;outline:none;}
+.reskeys{margin:20px 0}
+.clear{clear:both;}
+.resdec{margin:20px 0;display:block;background:#f9f9f9;padding:10px;}
+.editorbtn{width:400px;height:50px;margin:0 auto;text-align:center;}
+.editorbtn button{width:140px;height:30px;border:none;outline:none;color:#fff;cursor:pointer;margin:10px;}
+.editorsure{background:#4dbd75;}
+.editorquite{background:#3bc1c4;}
+.keysli li{margin-left:10px;}
+/*灰色蒙层*/
+#mengceng{position:fixed;left:0;top:0;bottom:0;right:0;background:rgba(0,0,0,.3);z-index:666;}

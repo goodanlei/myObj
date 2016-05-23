@@ -119,15 +119,21 @@
   width: 14%;
 }
 
-.main-left .c {
+.grade span {
+  display: inline-block;
+  width: 70px;
 }
 
+.main-left .l{
+  width:80px;
+}
 .main-left .r {
-  width: 60%;
   text-align: left;
   padding-left: 10px;
 }
-
+.main-left .c{
+  width:160px;
+}
 .main-left td {
   font-size: 14px;
 }
@@ -263,7 +269,6 @@ p span{cursor: pointer;}
 .addverbtn button{width:100px;height:30px;line-height:30px;margin:10px;border:none;outline:none;color:#fff;    cursor: pointer;}
 
 .grade{position:relative;}
-.grade span{display:inline-block;width:45px;}
 .grade input{display:none;}
 .subject{text-align:center;}
 .subject span{display:inline-block;width:60px;}
@@ -275,7 +280,6 @@ p span{cursor: pointer;}
 
 .chuzhong{background:#f5fbf7;}
 .jcbbimg{width:155px;margin:0 auto;}
-.grade{width:140px;}
 .grade span label{cursor:pointer;}
 .subject span{display:inline-block;}
 
