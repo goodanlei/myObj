@@ -883,8 +883,8 @@ iframe {
 .mask .mask_box .mask_pic{
 	width: 730px;
 	padding-left: 36px;margin-top: 10px;
-	
 }
+.mask .mask_box .mask_pic strong{display: block;width: 738px;}
 .mask .mask_box .mask_pic h3{margin: 12px 0;}
 .mask .mask_box .mask_pic  ul li{float: left;margin-left: 20px;}
 
