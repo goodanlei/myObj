@@ -46,7 +46,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
 }
 .classification .search{
 	background-color: #EDEDED;
-	width: 260px;
+    width: 200px;
     float: right;
     margin-right: 25px;
 }
@@ -57,7 +57,7 @@ a:hover,.active,.current,.classification li:hover,.comprehensive li:hover,.activ
     outline: 0px;
     line-height: 27px;
     height: 27px;
-    width: 225px;
+    width: 170px;
 }
 .classification .search .search-img{
 	    background: url(../img/iconfont-sousuo.png) no-repeat;
@@ -330,7 +330,7 @@ div#tree > dl {
 }
 .container-right .conright-nav .classification ul li {
     text-align: center;
-    width: 73px;
+    padding: 0 15px;
     float: left;
     cursor: pointer;
     line-height: 30px;
@@ -339,6 +339,7 @@ div#tree > dl {
 }
 .container-right .conright-nav .classification ul li.current {
     background: url("../img/classification.png") no-repeat center center;
+    background-size: 100% 100%;
     color: #fff;
 }
 .container-right .conright-nav .comprehensive {
@@ -446,6 +447,9 @@ div#tree > dl {
     color: #99cc66;
     font-size: 16px;
     font-weight: bold;
+}
+.paging img {
+    margin-top: 10px;
 }
 .container-right .conright-nav .paging .previous-off {
     width: 97px;
@@ -617,6 +621,7 @@ div#tree > dl {
 
 .cont-body li img {
   width: 100%;
+  height: 110px;
 }
 .cont-body li .text {
   padding: 1px 10px 0px 10px;
