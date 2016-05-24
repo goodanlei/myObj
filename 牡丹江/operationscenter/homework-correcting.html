@@ -12,8 +12,10 @@
 <div class="container-fluid head-top">
     <h4>
         作业名称：<span>正数和负数课后作业（初一  数学上册  第一章  有理数  第一节  正数和负数）</span>
-        完成时间：<span>2016-05-04   16:00:00 </span>
     </h4>
+    <p>
+        完成时间：<span>2016-05-04   16:00:00 </span>
+    </p>
     <p>
         难易程度：<span><img src="img/3.png" alt=""/></span>
         满分：<span>100分</span>
@@ -28,6 +30,14 @@
                 <option>二年级</option>
                 <option>三年级</option>
                 <option>四年级</option>
+            </select>
+            <br/>
+            <label class="control-label">批改次数：</label>
+            <select class="input-xlarge">
+                <option>第一次</option>
+                <option>第二次</option>
+                <option>第三次</option>
+                <option>第四次</option>
             </select>
             <ul>
                 <li class="active">高天泽</li>
@@ -84,6 +94,8 @@
                             <li><input name="li" id="inputradio4" type="radio"/><label for="inputradio4">D.力是物体对物体的作用</label></li>
                         </ol>
                     </div>
+                    <span class="pingyu">批注：</span>
+                    <input type="text" class="form-control input-one" placeholder="输入批注....">
                 </li>
                 <li>
                     <div>
@@ -95,6 +107,8 @@
                             <li><input name="li" id="inputradio1-4" type="radio"/><label for="inputradio1-4">D.力是物体对物体的作用</label></li>
                         </ol>
                     </div>
+                    <span class="pingyu">评语：</span>
+                    <input type="text" class="form-control input-one" placeholder="输入批注....">
                 </li>
                 <li>
                     <div>
@@ -106,6 +120,8 @@
                             <li><input name="li" id="inputradio2-4" type="radio"/><label for="inputradio2-4">D.力是物体对物体的作用</label></li>
                         </ol>
                     </div>
+                    <span class="pingyu">评语：</span>
+                    <input type="text" class="form-control input-one" placeholder="输入批注....">
                 </li>
                 <li>
                     <div>
@@ -117,8 +133,40 @@
                             <li><input name="li" id="inputradio3-4" type="radio"/><label for="inputradio3-4">D.力是物体对物体的作用</label></li>
                         </ol>
                     </div>
+                    <span class="pingyu">评语：</span>
+                    <input type="text" class="form-control input-one" placeholder="输入批注....">
                 </li>
             </ul>
+            <!--总评语-->
+            <div class="zongcomment">
+                <span>评语：</span>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <!--分页-->
+            <nav style="text-align: center; margin: 20px 0">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

@@ -4,16 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>批改作业(学生)</title>
+    <title>查看任务(小学)</title>
     <link rel="stylesheet" href="common/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/homework-correcting.css"/>
 </head>
 <body>
 <div class="container-fluid head-top">
+    <p class="list-head">
+        <a class="btn btn-default " href="#" role="button">完成任务</a>
+        <a class="btn btn-default btn-primary" href="#" role="button">查看任务</a>
+    </p>
     <h4>
         作业名称：<span>正数和负数课后作业（初一  数学上册  第一章  有理数  第一节  正数和负数）</span>
         完成时间：<span>2016-05-04   16:00:00 </span>
     </h4>
+    <p>
+        <select style="margin-left: 0;" class="form-control pigai-cishu">
+            <option>第一次</option>
+            <option>第二次</option>
+            <option>第三次</option>
+            <option>第四次</option>
+            <option>第五次</option>
+        </select>
+    </p>
     <p class="dati-time">
         答题用时：<span>20分15秒</span>
     </p>
@@ -72,6 +85,30 @@
                     </div>
                 </li>
             </ul>
+            <nav style="text-align: center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
