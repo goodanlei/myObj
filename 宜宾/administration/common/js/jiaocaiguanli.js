@@ -9,21 +9,19 @@ $(function () {
         =====点击层级显示册别信息模块 开始=====
     */
     
-    //先点击学段
-    $(".section div").each(function (index) {
-        $(this).click(function () {
+    
+    $(".section div").each(function(index){
+        $(this).live("click",function(){
             $(".section div").removeClass("active");
             $(this).addClass("active");
             
-            //再点击学科
-            $(".grade label").each(function (index) {
-                $(this).click(function () {
+            $(".grade label").each(function(index){
+                $(this).live("click",function(){
                     $(".grade label").removeClass("xkactive");
                     $(this).addClass("xkactive");
                     
-                    //最后点击版本
-                    $(".jcverban label").each(function (index) {
-                        $(this).click(function () {
+                    $(".jcverban label").each(function(index){
+                        $(this).live("click",function(){
                             $(".jcverban label").removeClass("veractive");
                             $(this).addClass("veractive");
                             $(".main-tit,.youbanben,.bianjibanben").show()
@@ -49,7 +47,6 @@ $(function () {
         })
     })
 
-    
     /*
         ======查看和修改册别信息，弹出灰色蒙层模块 开始======
     */
@@ -75,10 +72,8 @@ $(function () {
 
     
     /*
-        ========删除模块开始=========
+        ========删除版本模块开始=========
     */
-    
-    /*--------小学、初中、高中）版本开始---------*/
     
     //删除高中版本toggle动态绑定
     $(".gaozhongdel").live("click",function(){
@@ -88,38 +83,20 @@ $(function () {
             var ipchecked = $(".gaozhong span input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/suredel.png")
-                $(".delreswrap").show(300)
-
             } else {
                 $(".delrestixi").show(300)
                 setTimeout(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(".gaozhong span input:checked").parent().remove();
+            $(this).attr("src", "./img/addbanben.png")
+            $(".gaozhong span input").hide();
         });
         $(this).trigger("click");
     })
     
-    
-
-    //删除高中版本
-//    $(".gaozhongdel").toggle(function () {
-//        $(".gaozhong span input").show();
-//    }, function () {
-//        var ipchecked = $(".gaozhong span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/suredel.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
-//    
-
 
     //删除初中版本
     $(".chuzhongdel").live("click",function(){
@@ -129,35 +106,20 @@ $(function () {
             var ipchecked = $(".chuzhongjc span input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/suredel.png")
-                $(".delreswrap").show(300)
-
             } else {
                 $(".delrestixi").show(300)
                 setTimeout(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(".chuzhongjc span input:checked").parent().remove();
+            $(this).attr("src", "./img/addbanben.png");
+            $(".chuzhongjc span input").hide();
         });
         $(this).trigger("click");
     })
     
-    
-//    $(".chuzhongdel").toggle(function () {
-//        $(".chuzhongjc span input").show();
-//    }, function () {
-//        var ipchecked = $(".chuzhongjc span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/suredel.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
-
     
     //删除小学版本
     $(".xiaoxuedel").live("click",function(){
@@ -167,52 +129,20 @@ $(function () {
             var ipchecked = $(".xiaoxue span input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/suredel.png")
-                $(".delreswrap").show(300)
-
             } else {
                 $(".delrestixi").show(300)
                 setTimeout(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(".xiaoxue span input:checked").parent().remove();
+            $(this).attr("src", "./img/addbanben.png");
+            $(".xiaoxue span input").hide();
         });
         $(this).trigger("click");
     })
     
-    
-//    $(".xiaoxuedel").toggle(function () {
-//        $(".xiaoxue span input").show();
-//    }, function () {
-//        var ipchecked = $(".xiaoxue span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/suredel.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
-    
-    //===================================
-    //弹窗确认删除高中\初中\小学版本
-    $(".suredel-res").click(function () {
-        $(".gaozhong span input:checked").parent().remove();
-        $(".chuzhongjc span input:checked").parent().remove();
-        $(".xiaoxue span input:checked").parent().remove();
-        $(".delreswrap").hide();
-        $(".popup").show(300);
-        setTimeout(function () {
-            $(".popup").hide(300);
-        }, 1000)
-
-        $(".tcscbb").attr("src","./img/addbanben.png")
-        $(".tcscxk").attr("src","./img/nianjidel.png")
-        
-        $("span input").hide()
-    })
 
     /*----------删除（小学、初中、高中）学科开始----------*/
     
@@ -223,8 +153,7 @@ $(function () {
         }, function () {
             var ipchecked = $(".gao-xk span input:checked").length
             if (ipchecked > 0) {
-                $(this).attr("src", "./img/deltwo.png")
-                $(".delreswrap").show(300)
+                $(this).attr("src", "./img/deltwo.png");
 
             } else {
                 $(".delrestixi").show(300)
@@ -232,27 +161,14 @@ $(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(this).attr("src", "./img/nianjidel.png");
+            $(".gao-xk span input:checked").parent().remove();
+            $(".gao-xk span input").hide();
         });
         $(this).trigger("click");
     })
     
-    
-    
-//    $(".gaoxk").toggle(function () {
-//        $(".gao-xk span input").show();
-//    }, function () {
-//        var ipchecked = $(".gao-xk span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/deltwo.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
 
     //删除初中学科
     $(".chuxk").live("click",function(){
@@ -262,34 +178,22 @@ $(function () {
             var ipchecked = $(".chu-xk span input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/deltwo.png")
-                $(".delreswrap").show(300)
             } else {
                 $(".delrestixi").show(300)
                 setTimeout(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(this).attr("src", "./img/nianjidel.png");
+            $(".chu-xk span input:checked").parent().remove();
+            $(".chu-xk span input").hide();
         });
         $(this).trigger("click");
     })
     
-//    $(".chuxk").toggle(function () {
-//        $(".chu-xk span input").show();
-//    }, function () {
-//        var ipchecked = $(".chu-xk span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/deltwo.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
     
-    //删除小学版本
+    //删除小学学科
     $(".xiaoxk").live("click",function(){
         $(this).toggle(function () {
             $(".xiao-xk span input").show();
@@ -297,48 +201,20 @@ $(function () {
             var ipchecked = $(".xiao-xk span input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/deltwo.png")
-                $(".delreswrap").show(300)
-
             } else {
                 $(".delrestixi").show(300)
                 setTimeout(function () {
                     $(".delrestixi").hide(300)
                 }, 1000)
             }
+        },function(){
+            $(this).attr("src", "./img/nianjidel.png");
+            $(".xiao-xk span input:checked").parent().remove();
+            $(".xiao-xk span input").hide();
         });
         $(this).trigger("click");
     })
     
-    
-//    $(".xiaoxk").toggle(function () {
-//        $(".xiao-xk span input").show();
-//    }, function () {
-//        var ipchecked = $(".xiao-xk span input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/deltwo.png")
-//            $(".delreswrap").show(300)
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
-    
-    /*--------弹窗确认删除高中、初中、小学学科-----*/
-    
-    $(".suredel-res").click(function () {
-        $(".gao-xk span input:checked").parent().remove();
-        $(".chu-xk span input:checked").parent().remove();
-        $(".xiao-xk span input:checked").parent().remove();
-        $(".delreswrap").hide();
-        $(".popup").show(300);
-        setTimeout(function () {
-            $(".popup").hide(300);
-        }, 1000)
-        
-        $("span input").hide()
-    })
 
     /*========删除册别开始========*/
     
@@ -349,57 +225,26 @@ $(function () {
             var ipchecked = $(".jcglul li input:checked").length
             if (ipchecked > 0) {
                 $(this).attr("src", "./img/deltwo.png")
-//                $(".delreswrap").show(300)
 
             } else {
-//                $(".delrestixi").show(300)
-//                setTimeout(function () {
-//                    $(".delrestixi").hide(300)
-//                }, 1000)
+                $(".delrestixi").show(300)
+                setTimeout(function () {
+                    $(".delrestixi").hide(300)
+                }, 1000)
             }
         },function(){
             $(".jcglul li input:checked").parent().remove();
+            $(this).attr("src","./img/nianjidel.png")
+            $(".jcglul li input").hide();
         });
         $(this).trigger("click");
     })
-    
-    
-//    $(".banbenshanchu").toggle(function () {
-//        $(".jcglul li input").show();
-//    }, function () {
-//        var ipchecked = $(".jcglul li input:checked").length
-//        if (ipchecked > 0) {
-//            $(this).attr("src", "./img/deltwo.png")
-//            $(".delreswrap").show(300)
-//
-//        } else {
-//            $(".delrestixi").show(300)
-//            setTimeout(function () {
-//                $(".delrestixi").hide(300)
-//            }, 1000)
-//        }
-//    })
-
-    //弹窗确认删除册别==================
-//    $(".suredel-res").click(function () {
-//        $(".jcglul li input:checked").parent().remove();
-//        $(".delreswrap").hide();
-//        $(".jcglul li label").removeClass("liactive");
-//        $(".popup").show(300);
-//        setTimeout(function () {
-//            $(".popup").hide(300);
-//        }, 1000)
-//        $(".jcglul li input").hide()
-//        $(".banbenshanchu").attr("src","./img/nianjidel.png")
-//    })
-
     
     //取消确认删除
     $(".delresclose,.nodel-res").click(function () {
         $(".delreswrap").hide(300)
     })
     
-        
     /*
         ====添加学科/版本/册别模块 并且append进去====
     */    
@@ -427,10 +272,10 @@ $(function () {
     $(".tjbanben").live("click",function(){
         $(".addcebie").show(200)
     })
-
+    
+    //点击取消添加
     $(".verquit,.adtitr").click(function () {
         $(".addver").hide(200)
     })
     
-
 })
