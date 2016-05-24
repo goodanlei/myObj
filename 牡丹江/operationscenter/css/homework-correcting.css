@@ -1,0 +1,238 @@
+/**
+ * 批改作业 css 脚本
+ */
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+label {
+    margin-bottom: 15px;
+}
+.head-top {
+    border-bottom: 1px solid #ccc;
+}
+.head-top h4 {
+    margin: 45px 0 15px 0;
+}
+.sidebar {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+.nav-center {
+    margin-top: 15px;
+}
+.sidebar ul {
+    margin-top: 20px;
+}
+.sidebar ul li {
+    float: left;
+    width: 90px;
+    list-style: none;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.sidebar ul li.active {
+    color: blue;
+}
+.main p {
+    font-size: 16px;
+}
+.main .main-p-right {
+    float: right;
+}
+.main .main-p-right .xingming {
+    margin-right: 10px;
+}
+.main ul li {
+    list-style: none;
+    overflow: hidden;
+    margin: 15px 0;
+}
+.main ul li p {
+    margin:  0 0 5px 0;
+}
+.main ol {
+    overflow: hidden;
+}
+.main ol li {
+    float: left;
+    margin: 5px 20px 0 5px;
+}
+.main ul li ol li input {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.tongji p {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 10px 0;
+}
+.tongji p span {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+/*学生版添加*/
+.nanyi-img {
+    margin-right: 40px;
+}
+.manfen {
+    margin-right: 40px;
+}
+.defen {
+    margin-right: 40px;
+}
+.dati-time {
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+.fan-hui {
+    float: right;
+    margin-bottom: 10px;
+}
+.fan-hui a {
+    color: #fff;
+}
+.shoucang {
+    margin-left: 200px
+}
+.cuowu {
+    margin-left: 10px;
+}
+.page-job {
+    text-align: center;
+}
+.page-job ul {
+    margin-top: 50px;
+}
+.pingyu {
+    font-size: 20px;
+}
+.zongcomment {
+    padding: 0 0 0 40px;
+}
+.zongcomment span {
+    font-size: 24px;
+    color: #0099CC;
+}
+ /*弹窗*/
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup-nav {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -235px;
+    margin-left: -335px;
+    width: 670px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 0 0 20px 0;
+}
+.popup-nav h4 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.popup-nav .guanbi {
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    cursor: pointer;
+}
+#zuoye {
+    width: 300px;
+    margin-bottom: 25px;
+}
+.popup-nav form {
+    margin-left: 20px;
+}
+.popup-nav .endtime {
+    margin-left: 60px;
+}
+.popup-nav .zuoyeleixing {
+    margin: 20px 0;
+}
+.popup-nav .zuoyeleixing input {
+    margin: 0 5px 0 22px;
+}
+.popup-nav .nanyi {
+    margin: 43px 0;
+    overflow: hidden;
+}
+.popup-nav .tijiao {
+    border-bottom: 1px solid #ccc;
+    margin-top: 55px;
+}
+.popup-nav .tijiao button {
+    margin: 20px 18px 0 ;
+    float: right;
+}
+.form-biaoti {
+    margin-left: 50px;
+}
+.form-biaoti input[type=checkbox] {
+    vertical-align: middle;
+    margin: -2px 5px 0 200px;
+}
+.xuesheng-list {
+    padding: 30px;
+    margin: 0 auto;
+}
+.xuesheng-list label {
+    width: 65px;
+    margin: 20px 0;
+}
+.checkbox-inline+.checkbox-inline {
+    margin: 0 10px 0 0;
+}
+.xuesheng-list label.one {
+    margin-right: 10px;
+}
+.list-head {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.head-top .pigai-cishu {
+    width: 200px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.head-top .xiafa-cishu {
+    margin-left: 50px;
+}
+/*星星 评分*/
+.wenzi {
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
+.nanyi-img {
+    margin-top: 6px;
+    display: block;
+    float: left;
+}
+.nanyi-img img {
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.input-one {
+    width: 92%;
+    display: inline-block;
+}

@@ -232,6 +232,7 @@ a:active {
   margin-top: 4px;
   height: 200px;
   padding-left: 100px;
+  overflow: auto;
 }
 .box .cont li .cont-r span {
   line-height: 50px;

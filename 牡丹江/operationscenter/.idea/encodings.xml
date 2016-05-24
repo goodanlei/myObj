@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/common/js/config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/js/editing-work.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/js/homework-correcting.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/js/operation-statistics.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/js/operations-center.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/editing-work.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/homework-correcting.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/operations-center.css" charset="UTF-8" />
+  </component>
+</project>

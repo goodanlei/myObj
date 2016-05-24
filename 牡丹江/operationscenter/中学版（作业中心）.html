@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>作业中心 （学生）</title>
+	<link rel="stylesheet" href="common/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/operations-center.css"/>
+
+</head>
+<body>
+<div class="container container-nav">
+	<p class="list-head">
+		<a class="btn btn-default btn-primary" href="#" role="button">作业中心</a>
+		<a class="btn btn-default" href="#" role="button">我的题库</a>
+		<a class="btn btn-default" href="#" role="button">公共题库</a>
+	</p>
+	<form class="form-inline">
+		<div class="form-group">
+			<select class="form-control">
+				<option>一年级</option>
+				<option>二年级</option>
+				<option>三年级</option>
+				<option>四年级</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<select class="form-control">
+				<option>语文上册</option>
+				<option>语文下册</option>
+				<option>数学下册</option>
+				<option>数学上册</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<select class="form-control">
+				<option>第一章</option>
+				<option>第二章</option>
+				<option>第三章</option>
+				<option>第四章</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="请选择节....">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="请输入关键字搜索....">
+		</div>
+		<button type="button" class="btn btn btn-info btn-primary">搜索</button>
+	</form>
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>作业名称</th>
+					<th>作业类型</th>
+					<th>满分</th>
+					<th>下发状态</th>
+					<th>完成状态</th>
+					<th>难度</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="blue"><a href="##">不等式证明</a></td>
+					<td>布置作业</td>
+					<td>100</td>
+					<td>第二次</td>
+					<td>第一次</td>
+					<td><img src="img/0.png" alt=""/></td>
+				</tr>
+				<tr>
+					<td class="blue"><a href="">不等式证明</a></td>
+					<td>布置作业</td>
+					<td>100</td>
+					<td>未下发</td>
+					<td>未完成</td>
+					<td><img src="img/0.png" alt=""/></td>
+				</tr>
+			</tbody>
+		</table>
+		<nav class="page">
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!--js-->
+<script src="common/js/jquery.1.8.2.min.js"></script>
+<script src="common/js/operations-center.js"></script>
+</body>
+</html>

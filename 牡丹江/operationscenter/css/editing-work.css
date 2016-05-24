@@ -1,0 +1,110 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ccc;
+}
+ul li {
+    list-style: none;
+}
+.main .list-head {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.main .list-head p button {
+    margin-right: 20px;
+}
+.main .biaoti {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main .biaoti .nanyi-img {
+    margin-right: 200px;
+}
+.main .biaoti .submit {
+    float: right;
+}
+/*内容*/
+.main .content {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.main .content .fraction {
+    width: 25px;
+    border: 1px solid #212121;
+    border-radius: 3px;
+}
+.main .content .xuanze-shiti {
+    cursor: pointer;
+    margin-left: 20px;
+    color: #3BC1C3;
+}
+.main .content .shiti li div p span.glyphicon {
+    cursor: pointer;
+    margin-left: 20px;
+}
+.main .content .shiti li div p input {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.main .content .shiti li div p span.glyphicon-trash {
+    color: #c9302c;
+}
+.main .content .shiti li div p span.glyphicon-chevron-up {
+    color: #31b0d5;
+}
+.main .content .shiti li div p span.glyphicon-chevron-down {
+    color: #31b0d5;
+}
+.main .content nav {
+    margin-left: 35px;
+}
+.main .content .shitiku {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 99999;
+    background: #fff;
+}
+.main .content .shitiku span.glyphicon-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.main .content .shitiku .shiti >li {
+    margin-bottom: 20px;
+}
+.main .content .shitiku .shiti li label {
+    margin-bottom: -10px;
+}
+.main .content .shitiku .shitiku-list {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.main .content .shitiku .shitiku-list button {
+    margin-right: 10px;
+}
+.main .content .shitiku .shitiku-list .btn-xs {
+    margin-left: 150px;
+}
+
+.main .content .shitiku .shitiku-list .btn-info a {
+    color: #fff;
+}
