@@ -71,10 +71,25 @@ header nav .header-right a {
 	right:25px;
 }
 .sy_box .box_name p{
-	width: 146px;
-	text-indent: 15px;
-	line-height: 28px;
-	text-align: left;
+	display: block;
+    width: 146px;
+    height: 28px;
+}
+.sy_box .box_name p span:first-of-type{
+	float: left;
+}
+.sy_box .box_name p span:last-of-type{
+	display: block;
+    float: right;
+    text-align: left;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sy_box .box_name p span:last-of-type:hover{
+	overflow: inherit;
 }
 .sy_box  .box_cycle p{
 	width: 146px;
