@@ -22,23 +22,7 @@ function test_pic(){
 $(function(){
 	
 	_height();
-	/*左侧滚动*/
-	/*$(document).scroll(function() {
-		var top = $(document).scrollTop();
-		top = (149-top);
-		if(top<0){
-			$('.main_left').css({
-	  			top:'0'
-	  		});
-		}else{
-			top +='px';
-			$('.main_left').css({
-	  			top:top
-	  		});
-		}
-	});*/
-		
-
+	
     /*导航菜单tab切换*/
     var heada = $('.nav_list li a');
     for (var i = 0; i < heada.length; i++) {
@@ -57,17 +41,16 @@ $(function(){
         $(this).parent().css('background-color','#caf2f1');
     });
 
-    /*试卷蓝购物车*/
-    $('.blue_box').click(function(){
-        $('.box_car').slideToggle();
-    });
     
     /*试卷购物车删除图片切换*/
    $('.wrapper .head .box_car li .car').live('click',function(){
    		$(this).find('img').attr('src','img/delete_grey.png');
    });
-    
-    
+    $('.wrapper .head .box_car li .car').hover(function(){
+    	$(this).find('img').attr('src','img/delete_grey.png');
+    },function(){
+    	$(this).find('img').attr('src','img/delete.png');
+    });
 
     /*组卷记录-试卷预览 --答案解析*/ /*答案解析--mask层*/
     $('.theme .choose .ques_num .edit span').click(function(){
@@ -191,33 +174,31 @@ $(function(){
 		$(this).removeClass("active");
 	});
 	
-	/*模拟hover*/
-	$(".List-questions .edit img.del").live('mouseover',function(){
+	/*试题预览的上下删除的hover*/
+	$(".List-questions .edit img.del").hover(function(){
 		$(this).attr('src','img/del2.png');
-	});
-	
-	$(".List-questions .edit img.del").live('mouseout',function(){
+	},function(){
 		$(this).attr('src','img/theme_del.png');
 	});
 	
-	$(".List-questions .edit img.next").live('mouseover',function(){
+	$(".List-questions .edit img.next").hover(function(){  
+		
+		
+		
 		$(this).attr('src','img/down2.png');
-	});
-	
-	$(".List-questions .edit img.next").live('mouseout',function(){
+	},function(){
 		$(this).attr('src','img/theme_down.png');
 	});
 	
-	$(".List-questions .edit img.up").live('mouseover',function(){
-		$(this).attr('src','img/up2.png');
-	});
 	
-	$(".List-questions .edit img.up").live('mouseout',function(){
+	$(".List-questions .edit img.up").hover(function(){
+		$(this).attr('src','img/up2.png');
+	},function(){
 		$(this).attr('src','img/theme_up.png');
 	});
 	
-	
-	
+
+
 	/*提示弹窗*/
 	$('.main_right .sub_ques .sub_ques_line_r .collection span.quxiao').live('click',function(){
 		$(".del_down").show();  
