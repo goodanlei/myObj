@@ -75,7 +75,7 @@ body{font-family: "微软雅黑";}
     left:-3px;
     cursor: pointer;
 }
-.wrapper .head .test_btn span{
+.wrapper .head .blue_box  span{
     position: relative;
     top:-4px;
     color:#fff;
@@ -86,7 +86,7 @@ body{font-family: "微软雅黑";}
     height:334px;
     background: #f0f9ff;
     position: absolute;
-    top:50px;
+    top:56px;
     right:0;
     z-index: 100;
     display: none;
@@ -99,11 +99,13 @@ body{font-family: "微软雅黑";}
     padding-left: 14px;
     cursor: pointer;
 }
+.wrapper .head .box_car span{color:#222;}
 .wrapper .head .box_car li .name{
     width: 162px;
-    overflow: hidden; /*自动隐藏文字*/
-    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
-    white-space: nowrap;/*强制不换行*/
+    text-align: left;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .wrapper .head .box_car li .car{
     width: 46px;
@@ -115,6 +117,7 @@ body{font-family: "微软雅黑";}
     display: block;
     margin:8px 0 0 13px
 }
+
 .wrapper .head .box_car .box_car_btn{
     display: block;
     width: 180px;
@@ -129,6 +132,10 @@ body{font-family: "微软雅黑";}
 .wrapper .head .box_car .box_car_btn:hover{
 	background-color: #C9F2F1;
 }
+.blue_hover:hover .box_car{
+	display: block;
+}
+
 
 /*搜索*/
 .head .test_btn .lens{
@@ -138,6 +145,8 @@ body{font-family: "微软雅黑";}
     border-radius: 14px;
     margin-top: 10px;
 }
+
+
 .head .test_btn .blue_box{
 	border-left: 1px solid #f17167;
     height: 56px;
