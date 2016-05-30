@@ -217,32 +217,4 @@
 			};
 			// 使用刚指定的配置项和数据显示图表。
         tubiaotwo.setOption(option);
-    
-    //关闭视频弹窗
-    $(".seeclose").click(function(){
-        $("#seeresource").hide();
-        $("#mengceng").hide();
-    })
-    
-    //关闭编辑修改资源弹窗
-    $(".editorclose,.editorquite").click(function(){
-        $("#editores").hide();
-        $("#mengceng").hide();
-    })
-    
-    //编辑修改资源弹窗的UL选项卡切换
-    $(".resleibie li").click(function(){
-        $(this).addClass("reslbactive").siblings().removeClass("reslbactive")
-    })
-    
-    //保存修改的资源弹窗内容
-    $(".editorsure").click(function(){
-        $("#editores").hide();
-        $("#mengceng").hide();
-        $(".popup").show()
-        $(".popup-text").html("保存成功")
-        setTimeout(function(){
-            $(".popup").hide(300)
-        },1000)
-    })
 })(window);

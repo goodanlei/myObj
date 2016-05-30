@@ -1,6 +1,6 @@
 .right_con {
   width: 100%;
-  min-height: 800px!important;
+  height: 800px;
   background: none!important
 }
 
@@ -119,21 +119,15 @@
   width: 14%;
 }
 
-.grade span {
-  display: inline-block;
-  width: 70px;
+.main-left .c {
 }
 
-.main-left .l{
-  width:80px;
-}
 .main-left .r {
+  width: 60%;
   text-align: left;
   padding-left: 10px;
 }
-.main-left .c{
-  width:160px;
-}
+
 .main-left td {
   font-size: 14px;
 }
@@ -227,9 +221,9 @@ p span{cursor: pointer;}
 .downjc{cursor:pointer;display:block;border-radius:50%;margin:60px auto 10px;width:106px;height:106px;background:#f1f1f1;line-height:136px;text-align:center;}
 .you-tit{width:96%;color:#4dbd73;height:25px;line-height:25px;border-bottom:1px solid #4dbd73;margin:0 auto 10px;}
 .jcglul{width:96%;margin:0 auto 10px;border-bottom:1px solid #4dbd73;position:relative;}
-.jcglul:after{content:"";position:absolute;left:20px;border:10px solid;border-color: #4dbd73 transparent transparent transparent;bottom:-21px;}
+.jcglul:after{content:"";position:absolute;left:20px;border:10px solid;border-color: #4dbd73 transparent transparent transparent;}
 .jcglul ul li{display:inline-block;height:22px;line-height:22px;text-align:center;margin:0px 10px 10px 0;cursor:pointer;}
-.liactive{background:#4dbd73;color:#fff;border-radius:5px;min-width:80px;height:25px;display:inline-block;border-radius:5px;line-height:25px;}
+.liactive{background:#4dbd73;color:#fff;border-radius:5px;}
 .bianjibanben{width:96%;height:143px;margin:0 auto 30px;background:#fafafa;border-radius:5px;}
 .bianji-tit{color:#4dbd73;padding:10px;}
 .banbenmc{width:350px;margin:0 auto;}
@@ -244,9 +238,9 @@ p span{cursor: pointer;}
 
 /*查看教材目录开始*/
 .weit{font-weight:bold;}
-.jiaocaiwrap{position:absolute;background:#fff;width:40%;min-height:743px;left:50%;top:50%;margin-left:-20%;margin-top:-371px;border:1px solid #ddd;box-shadow:2px 2px 10px #ccc;overflow: hidden;min-width:700px;z-index:888}
+.jiaocaiwrap{position:fixed;background:#fff;width:40%;height:743px;left:50%;top:50%;margin-left:-20%;margin-top:-371px;border:1px solid #ddd;box-shadow:2px 2px 10px #ccc;overflow: hidden;min-width:700px;}
 .jiaocaitit{width:100%;height:50px;background:#ebebeb;text-align:center;line-height:50px;font-size:16px;font-weight:bold;}
-.jiaocaimain{margin-top:25px;min-height:500px;overflow:hidden;}
+.jiaocaimain{margin-top:25px;overflow:hidden;}
 .maiwidth{width:50%;}
 .weight{font-weight:bold;text-align:center;font-size:16px;}
 .kcce{text-align:center;margin-top:10px;font-weight:bold}
@@ -269,6 +263,7 @@ p span{cursor: pointer;}
 .addverbtn button{width:100px;height:30px;line-height:30px;margin:10px;border:none;outline:none;color:#fff;    cursor: pointer;}
 
 .grade{position:relative;}
+.grade span{display:inline-block;width:45px;}
 .grade input{display:none;}
 .subject{text-align:center;}
 .subject span{display:inline-block;width:60px;}
@@ -280,22 +275,23 @@ p span{cursor: pointer;}
 
 .chuzhong{background:#f5fbf7;}
 .jcbbimg{width:155px;margin:0 auto;}
+.grade{width:140px;}
 .grade span label{cursor:pointer;}
 .subject span{display:inline-block;}
 
-.jcverban{width:100%;min-height:100px;}
+.jcverban{width:100%}
 .jcverban span input{display:none;}
 .jcverban span label{cursor:pointer;}
 .jcbbimg img{cursor:pointer;}
-.jcglul li{min-width:100px;}
+.jcglul li{width:100px;}
 .jcglul li input{display:none;}
 .banbenshanchu{cursor:pointer;}
 .xkactive{color:#4dbd73;}
 .veractive{color:#3bc2c5;}
 .xkadd,.xkdel{cursor:pointer;}
-/*.jcbbimg{width:100%;}
-*/
-.xxxk{width:100%;min-height:100px;}
+.jcbbimg{width:100%;}
+
+.xxxk{width:100%;}
 .tjtupian{width:100%;}
 
 .kcul ul{margin-bottom:25px;}
@@ -320,33 +316,3 @@ p span{cursor: pointer;}
 .deltixi-tit{width:100%;height:30px;background:#1d2b36;color:#fff;line-height:30px;overflow:hidden;border-top-left-radius:5px;border-top-right-radius:5px;}
 .tixing{margin-left:10px;}
 .tipscon{width:100%;height:120px;text-align:center;line-height:120px;font-weight:bold}
-
-/*弹窗*/
-.popup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.popup .nav {
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -135px;
-  margin-left: -175px;
-  width: 350px;
-  height: 217px;
-  background: #fff;
-  box-shadow: 2px 2px 10px #DFDFDF;
-  border-radius: 10px;
-}
-.popup .nav p {
-  text-align: center;
-  font-size: 16px;
-  color: #212121;
-  margin: 68px 0 10px 0;
-}
-
-.mengceng{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:1}
