@@ -1,15 +1,14 @@
 /**
- * 下发记录
+ * 涓嬪彂璁板綍
  */
 body {
-    font-family: "微软雅黑";
     background: #f1f1f1;
     position: relative;
 }
 a,a:visited,a:link,a:hover,a:active {
     text-decoration:none;
 }
-/*路径导航*/
+/*璺緞瀵艰埅*/
 .route {
     width: 1200px;
     height: 56px;
@@ -32,7 +31,7 @@ a,a:visited,a:link,a:hover,a:active {
     background: #B33329;
 }
 
-/*主体内容*/
+/*涓讳綋鍐呭*/
 .container {
     width: 1200px;
     margin: 0 auto 25px;
@@ -42,28 +41,32 @@ a,a:visited,a:link,a:hover,a:active {
     width: 766px;
     background: #fff;
     min-height: 800px;
+    padding:20px;
     -webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
     float: left;
-    padding: 20px 20px 0 20px;
 }
 .container .con-right {
     width: 362px;
     background: #fff;
-    min-height: 800px;
+    min-height: 846px;
     -webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
     float: right;
+    height: 880px;
+    overflow: hidden;
 }
-/*时间 list切换*/
+/*鏃堕棿 list鍒囨崲*/
 .con-left .conleft-list {
     overflow: hidden;
     margin-bottom: 8px;
 }
 .con-left .conleft-list span {
     float: left;
+    position:relative;
+    top:4px;
 }
 .con-left .conleft-list ul {
     float: left;
@@ -112,9 +115,9 @@ a,a:visited,a:link,a:hover,a:active {
     right: 15px;
     opacity: 0;
 }
-/*list 切换内容*/
+/*list 鍒囨崲鍐呭*/
 .conleft-nav>ul>li {
-    width: 726px;
+    width: 706px;
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -128,7 +131,7 @@ a,a:visited,a:link,a:hover,a:active {
     float: left;
 }
 .conleft-nav ul li div.connav-left {
-    width: 360px;
+    width: 330px;
 }
 .conleft-nav ul li div.connav-right {
     width: 365px;
@@ -193,11 +196,20 @@ a,a:visited,a:link,a:hover,a:active {
     border-radius: 3px;
     margin-right: 5px;
 }
+.connav-left-nav>ul li span {
+	height: 29px;
+	line-height: 29px;
+	margin: 0 0 12px 5px;
+}
 .connav-left-nav>ul li a:visited {
     color: #FFF;
     background: #81d36f;
 }
-/*主题内容右边*/
+.conleft-nav {
+	overflow: auto;
+	height: 794px;
+}
+/*涓婚鍐呭鍙宠竟*/
 .con-right h3 {
     width: 362px;
     color: #212121;
@@ -215,7 +227,7 @@ a,a:visited,a:link,a:hover,a:active {
     color: #201D16;
 }
 .con-right .describe span {
-    width: 70px;
+    width: 80px;
     height: 27px;
     display: inline-block;
     text-align: center;
@@ -224,12 +236,14 @@ a,a:visited,a:link,a:hover,a:active {
 .con-right .describe span.weixuexi {
     background: url("../img/Personal-resources_weixuexi.png") no-repeat center left;
 }
-/*人物简介*/
+/*浜虹墿绠�浠�*/
 .conright-nav {
     padding: 20px 0 0 20px;
+    overflow: auto;
+    height: 755px;
 }
 .conright-nav ul li {
-    width: 114px;
+    width: 33%;
     margin-bottom: 20px;
     float: left;
 }
@@ -244,3 +258,15 @@ a,a:visited,a:link,a:hover,a:active {
     float: right;
     margin-top: 3px;
 }
+.weixuexi p,.weixuexi span {
+	color: #487190;
+}
+.yixuexi p,.yixuexi span {
+	color: #7ed321;
+}
+.zengxuexi p,.zengxuexi span {
+	color: #f7a35c; 
+}
+
+
+
