@@ -496,7 +496,7 @@ iframe {
 /*题文*/
 .main_right .sub_ques .sub_ques_line_l .test_pic,
 .main_right .sub_ques .sub_ques_line_l .test_an{
-	width: 740px;
+	width: 730px;
 	margin: 10px 0 10px 0;
 	padding: 5px;
 	border:1px solid #ebebeb;
@@ -695,7 +695,7 @@ iframe {
 }
 .assembly_head span.assembly_head_active{background: #d03d31;color:#fff;}
 
-.assembly .form_table{margin: 32px auto;width: 880px;}
+.assembly .form_table{margin: 32px auto;width: 1070px;}
 .assembly .form_table td{border:1px solid #ebebeb;padding: 0 15px;}
 .assembly .form_table .name{
 	display: inline-block;
@@ -726,7 +726,8 @@ iframe {
     font-size: 14px;
     text-align: center;
 }
-.assembly .form_table table tbody tr td a{margin-right: 10px;cursor: pointer;}
+.assembly .form_table table tbody tr td a{cursor: pointer;}
+.assembly .form_table table tbody tr td a:nth-of-type(2){margin: 0 30px;}
 .assembly .form_table table tbody tr td a:hover{color:#d03d31;}
 
 /* colspan:跨行  rowspan：跨列*/
@@ -938,15 +939,47 @@ iframe {
     background-color: #FFFFFF ;
     float: right;
 }
+/*课堂记录-测试 --2016-05-30 修改*/
 .center .tit {
     height: 35px;
     padding: 15px 0px 0px 20px;
     border-bottom: 1px solid #dddddd;
+    position:relative;
 }
+.teamListUl{
+	border: 1px solid #ccc;
+	box-shadow:0 0 5px #000;
+    width: 90px;
+    position: absolute;
+    right: 0;
+    margin-top: 16px;
+    margin-right: 21px;
+    background-color: #fff;
+    display: none;
+    z-index: 100;
+}
+.teamListUl li{
+	line-height:30px;
+	text-align:center;
+}
+.center .tit span.span_hover{
+	display: inline-block;
+	cursor:pointer;
+	width: 30px;
+    height: 40px;
+    text-align: center;
+}
+.center .tit span.span_hover:hover .teamListUl{display: block;}
+
+
+
 .center .tit span {
-    margin-right: 30px ;
+    margin-right: 26px ;
+    text-align: center;
 }
-.center .tit span.active {
+
+/*课堂记录-测试 --2016-05-30 修改*/
+.center .tit .active {
     color: #d03d31;
 }
 .center .rili {
@@ -1042,25 +1075,39 @@ iframe {
 .content-body {
     margin: 30px 0px 0px;
     text-align: center;
+    position:relative;
+    z-index: 1;
 }
+.content-body img.left_btn,.content-body img.right_btn{
+	position:absolute;
+	cursor:pointer;
+}
+.content-body img.left_btn{top: 210px;left: 7px;}
+.content-body img.right_btn{top: 210px;right: 7px;}
 .content-body:before,
 .content-body:after {
     content: " ";
     display: table;
     clear: both;
 }
-.content-body .f {
-    width: 250px;
+.content-body .cy {
+    width: 150px;
 }
-.content-body .c {
+.content-body .st {
     width: 170px;
 }
-.content-body .l {
-    width: 170px;
+.content-body .tm {
+    width: 90px;
 }
+.content-body .cz {
+    width: 80px;
+}
+
+
 .content-body table {
     margin: 0px 20px 40px;
     border:0;
+    max-height: 440px;
 }
 .content-body tr {
     height: 48px;
@@ -1070,9 +1117,7 @@ iframe {
     border:1px solid #ebebeb;
 }
 .content-body td{padding: 10px;border:1px solid #ebebeb;}
-.content-body td:first-of-type {
-    text-align: left;
-}
+
 .content-body .doing:hover{color:#6daddc;}
 .content-body .text-tit {
     text-align: left;
@@ -1138,7 +1183,7 @@ iframe {
 
 /*选项比率*/
 .content-body .text .count{
-    margin-top: 40px;
+    margin-top: -13px;
     padding-right:150px;
     height: 260px;
 }
