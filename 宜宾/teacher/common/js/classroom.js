@@ -1,7 +1,4 @@
 
-/*------------------------------- 全部函数 ---------------------------------------------*/
-
-
 /*动态赋值高度函数*/
 function _height(){
     var _height  =  $('.main_right').height() + 'px';
@@ -22,23 +19,7 @@ function test_pic(){
 $(function(){
 	
 	_height();
-	/*左侧滚动*/
-	/*$(document).scroll(function() {
-		var top = $(document).scrollTop();
-		top = (149-top);
-		if(top<0){
-			$('.main_left').css({
-	  			top:'0'
-	  		});
-		}else{
-			top +='px';
-			$('.main_left').css({
-	  			top:top
-	  		});
-		}
-	});*/
-		
-
+	
     /*导航菜单tab切换*/
     var heada = $('.nav_list li a');
     for (var i = 0; i < heada.length; i++) {
@@ -57,17 +38,18 @@ $(function(){
         $(this).parent().css('background-color','#caf2f1');
     });
 
-    /*试卷蓝购物车*/
-    $('.blue_box').click(function(){
-        $('.box_car').slideToggle();
-    });
     
     /*试卷购物车删除图片切换*/
-   $('.wrapper .head .box_car li .car').live('click',function(){
+    $('.wrapper .head .box_car li .car').live('click',function(){
    		$(this).find('img').attr('src','img/delete_grey.png');
-   });
-    
-    
+    });
+    $('.wrapper .head .box_car li .car').hover(function(){
+    	$(this).find('img').attr('src','img/delete_grey.png');
+    },function(){
+    	$(this).find('img').attr('src','img/delete.png');
+    });
+
+
 
     /*组卷记录-试卷预览 --答案解析*/ /*答案解析--mask层*/
     $('.theme .choose .ques_num .edit span').click(function(){
@@ -75,6 +57,8 @@ $(function(){
         _height();
         $('.mask').css('display','block');
     });
+
+
 
 	/*课堂评测--组件记录--时间切换*/
 	$('.assembly_head span').click(function(){
@@ -135,6 +119,8 @@ $(function(){
 	$('.questions_r li span').click(function(){
 		$(this).addClass('que_active').parent().siblings().find('span').removeClass('que_active');
 	});
+	
+	
 	//试题预览 上下删除事件
 	$(".List-questions img.del").click(function () {
 		YiBin.Msg.confirm('您确定删除这条记录吗？',function (s) {});
@@ -161,6 +147,7 @@ $(function(){
 		_next.remove();
 		_next_remove.remove();
 	});
+	
 	$(".List-questions img.up").live('click',function(){
 		var max_num = $(".List-questions img.next").size();
 		var _this = $(this).parents(".ques_num");
@@ -191,33 +178,33 @@ $(function(){
 		$(this).removeClass("active");
 	});
 	
-	/*模拟hover*/
-	$(".List-questions .edit img.del").live('mouseover',function(){
-		$(this).attr('src','img/del2.png');
-	});
 	
-	$(".List-questions .edit img.del").live('mouseout',function(){
+	
+	/*试题预览的上下删除的hover*/
+	$(".List-questions .edit img.del").hover(function(){
+		$(this).attr('src','img/del2.png');
+	},function(){
 		$(this).attr('src','img/theme_del.png');
 	});
 	
-	$(".List-questions .edit img.next").live('mouseover',function(){
-		$(this).attr('src','img/down2.png');
-	});
-	
-	$(".List-questions .edit img.next").live('mouseout',function(){
+	$(".List-questions .edit img.next").hover(function(){  
+		
+		
+		
+	$(this).attr('src','img/down2.png');
+	},function(){
 		$(this).attr('src','img/theme_down.png');
 	});
 	
-	$(".List-questions .edit img.up").live('mouseover',function(){
-		$(this).attr('src','img/up2.png');
-	});
 	
-	$(".List-questions .edit img.up").live('mouseout',function(){
+	$(".List-questions .edit img.up").hover(function(){
+		$(this).attr('src','img/up2.png');
+	},function(){
 		$(this).attr('src','img/theme_up.png');
 	});
 	
-	
-	
+
+
 	/*提示弹窗*/
 	$('.main_right .sub_ques .sub_ques_line_r .collection span.quxiao').live('click',function(){
 		$(".del_down").show();  
@@ -264,6 +251,74 @@ $(function(){
 			$(".del_down").hide(); 
 		},1000);
 	});
+	
+
+	//左侧栏目选择
+	$(".ziyuan>li>dl span").click(function(){
+		$(".ziyuan>li>dl span").css("color","#212121");
+		$(this).css("color","#d03d31");
+		var xueduan_html =  "<span>"+$(this).text()+"</span>";
+		    xueduan_html += "<span class='red red-red'></span>";
+		    xueduan_html += "<span></span>";
+		$(".cont-nav-text").html(xueduan_html);    
+	});
+	
+	$(".ziyuan-item dl dt span").live("click",function(){
+		$(".ziyuan-item dl dt span").removeClass("cur");
+		$(this).addClass("cur");
+		var superior = $(this).closest(".ziyuan-item").prevAll(".jiyuan-list").find("span");
+		$(".ziyuan>li>dl span").css("color","#212121");
+		superior.css("color","#d03d31");
+		var xueduan_html =  "<span>"+superior.text()+$(this).text()+"</span>";
+		    xueduan_html += "<span class='red red-red'></span>";
+		    xueduan_html += "<span></span>";
+		$(".cont-nav-text").html(xueduan_html);
+	});
+	
+	
+	$('.ziyuan-item dd span').click(function(){
+		var nav_jibie = $(this).parents("li").find(".jiyuan-list span");
+		var nav_leimu = $(this).parent().prev().find("span");
+		var nav_all = "<span>"+nav_jibie.text()+nav_leimu.text()+"</span>";
+		    nav_all += "<span class='red red-red'><img src='img/Personal-resources_path-navigation.gif' /></span>";
+		    nav_all += "<span>"+$(this).text()+"</span>";
+		$(".cont-nav-text").html(nav_all);
+		$(".cont-nav-text").attr("lock","close");
+		$(".tree").show();
+		$(".catalog img").hide();
+		$(".ziyuan-item dd span").siblings().removeClass("active");
+		$(this).addClass("active");
+		$(".ziyuan>li>dl span").css("color","#212121");
+		nav_jibie.css("color","#d03d31");
+		$(".ziyuan-item dl dt span").removeClass("cur")
+		nav_leimu.addClass("cur");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 });
 
 
@@ -359,69 +414,4 @@ window.onload = function(){
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 }
-/*----------------------------------------------------- Ztree相关js ------------------------------------------------------------*/
-var setting = {};
-var zNodes =[
-    //有子分类
-    { name:"第一单元", open:true,
-        children: [
-            { name:"阅读",open:true,
-                children: [
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"}
-                ]
-            },
-        ]
-    },
-    { name:"第二单元",
-        children: [
-            { name:"阅读",
-                children: [
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"}
-                ]
-            },
-        ]
-    },
-    { name:"第三单元",
-        children: [
-            { name:"阅读",
-                children: [
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"}
-                ]
-            },
-        ]
-    },
-    { name:"第三单元",
-        children: [
-            { name:"阅读",
-                children: [
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"}
-                ]
-            },
-        ]
-    },
-];
-$(document).ready(function(){
-    $.fn.zTree.init($("#treeDemo"), setting, zNodes);
-    $.fn.zTree.init($("#treeDemo1"), setting, zNodes);
-    $.fn.zTree.init($("#treeDemo2"), setting, zNodes);
-    $.fn.zTree.init($("#treeDemo3"), setting, zNodes);
 
-    $('.list-trees .list-p').click(function(){
-        $(this).next('.content_wrap').slideToggle();
-        $(this).addClass('ztree_active').siblings('p').removeClass('ztree_active');
-        $(this).find('img').attr('src','img/red_minus.png').parent('p').siblings('p').find('img').attr('src','img/black_add.png');
-    });
-
-});

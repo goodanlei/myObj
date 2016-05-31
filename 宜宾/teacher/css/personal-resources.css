@@ -1,5 +1,5 @@
 /**
- * 个人资源中心
+ * 涓汉璧勬簮涓績
  */
 body {
     font-family: "微软雅黑";
@@ -9,7 +9,7 @@ body {
 a,a:visited,a:link,a:hover,a:active {
     text-decoration:none;
 }
-/*路径导航*/
+/*璺緞瀵艰埅*/
 .route {
     width: 1200px;
     height: 56px;
@@ -32,14 +32,14 @@ a,a:visited,a:link,a:hover,a:active {
 .route ul li.current {
     background: #B33329;
 }
-/*主题内容*/
+/*涓婚鍐呭*/
 .container {
     display: block;
     width: 1200px;
     min-height: 817px;
     margin: 0px auto 25px;
 }
-/*主题内容 右侧----主题内容 左侧 (公共样式)*/
+/*涓婚鍐呭 鍙充晶----涓婚鍐呭 宸︿晶 (鍏叡鏍峰紡)*/
 .container .left,.container .right {
     float: left;
     height: 817px;
@@ -49,7 +49,7 @@ a,a:visited,a:link,a:hover,a:active {
     -ms-box-shadow: 0 0 10px #ccc;
     box-shadow:0 0 10px #ccc;  ;
 }
-/*主题内容 左侧*/
+/*涓婚鍐呭 宸︿晶*/
 .container .left {
     width: 250px;
     margin-right: 18px;
@@ -84,7 +84,7 @@ a,a:visited,a:link,a:hover,a:active {
 .container .left .list-trees .content_wrap {
     overflow: hidden;
 }
-/*主题内容 右侧*/
+/*涓婚鍐呭 鍙充晶*/
 .container .right {
     width: 930px;
     position: relative;
@@ -129,7 +129,7 @@ a,a:visited,a:link,a:hover,a:active {
     color: #5EA6D9;
 }
 
-/*主题内容 右侧  table栏切换*/
+/*涓婚鍐呭 鍙充晶  table鏍忓垏鎹�*/
 .investment_f {
     width:930px;
     margin:0 auto;
@@ -178,7 +178,7 @@ a,a:visited,a:link,a:hover,a:active {
 .investment_con_list {
     display:none;
 }
-/*主题内容 右侧 table栏切换 侧边《下载 删除》按钮*/
+/*涓婚鍐呭 鍙充晶 table鏍忓垏鎹� 渚ц竟銆婁笅杞� 鍒犻櫎銆嬫寜閽�*/
 .investment_btn {
     width: 270px;
     height: 44px;
@@ -190,6 +190,7 @@ a,a:visited,a:link,a:hover,a:active {
     text-align: center;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
 }
 .investment_btn ul li:nth-child(2),.investment_btn ul li:nth-child(3) {
     width: 84px;
@@ -228,7 +229,7 @@ a,a:visited,a:link,a:hover,a:active {
 .investment_btn ul li:nth-child(1) a.xiafa:hover {
 	color: #5292bf;
 }
-/*主题内容 右侧 table栏切换 list切换内容*/
+/*涓婚鍐呭 鍙充晶 table鏍忓垏鎹� list鍒囨崲鍐呭*/
 .investment_con table {
     width: 100%;
     text-align: center;
@@ -246,6 +247,7 @@ a,a:visited,a:link,a:hover,a:active {
     height: 53px;
     color: #555555;
     font-size: 14px;
+    cursor:pointer;
 }
 .investment_con table tr td.gongkai {
     cursor: pointer;
@@ -269,7 +271,9 @@ a,a:visited,a:link,a:hover,a:active {
 	line-height: 22px;
 	width: 287px;
 	overflow: hidden;
+	text-align:left;
 	white-space: nowrap;
+	cursor:pointer;
 }
 .investment_con table tr td input {
     vertical-align: middle;
@@ -314,7 +318,7 @@ a,a:visited,a:link,a:hover,a:active {
 .bianji:hover {
 	color: #5292bf;
 }
-/*主题内容 右侧 table栏切换 分页*/
+/*涓婚鍐呭 鍙充晶 table鏍忓垏鎹� 鍒嗛〉*/
 .investment_paging {
     position: absolute;
     bottom: 25px;
@@ -355,7 +359,7 @@ float:left;
     border-radius: 3px;
     color: #fff;
 }
-/*弹窗*/
+/*寮圭獥*/
 .popup {
     width: 100%;
     height: 100%;
@@ -383,7 +387,7 @@ float:left;
     top: 0;
     left: 0;
 }
-/*文件资源上传 弹窗*/
+/*鏂囦欢璧勬簮涓婁紶 寮圭獥*/
 .popup .long-resources {
     width: 727px;
     height: 343px;
@@ -481,7 +485,7 @@ float:left;
     text-align: center;
     color: #212121;
 }
-/*修改资源信息 弹窗*/
+/*淇敼璧勬簮淇℃伅 寮圭獥*/
 .modify .modify-resources {
     width: 727px;
     padding-bottom: 20px;
@@ -505,6 +509,7 @@ float:left;
     font-size: 16px;
     color: #fff;
 }
+.modify .modify-resources .top ul li  a img{margin-top:11px;}
 .modify .modify-resources nav .tab{margin-top: 30px;margin-left: 42px;}
 .modify .modify-resources nav .tab span{
 	display: block;
@@ -530,6 +535,7 @@ float:left;
 .modify .modify-resources nav .nav-top input {
     width: 550px;
     height: 29px;
+    text-indent:10px;
 }
 .modify .modify-resources nav form>p {
     margin-left: 44px;
@@ -537,10 +543,22 @@ float:left;
 .modify .modify-resources nav form .describe {
     width: 616px;
     height: 68px;
-    margin: 3px auto 20px;
+    margin-left: 33px;
     padding: 10px;
-    background: #F9F9F9;
 }
+.modify .modify-resources nav form .describe span{margin-bottom:6px;display:block;}
+.modify .modify-resources nav form .describe textarea.text{
+	margin-left: 0px;
+    margin-right: 0px;
+    width: 614px;
+    height: 55px;
+    overflow-y: auto;
+    resize:none;
+    outline:none;
+}
+
+  
+    
 .modify .modify-resources .top ul li:nth-child(2) {
     float: right;
     margin-right: 20px;
@@ -640,7 +658,7 @@ float:left;
 .modify .modify-resources nav .nav-selest select {
     margin-right: 25px;
 }
-/*下发至学生 弹窗*/
+/*涓嬪彂鑷冲鐢� 寮圭獥*/
 .issued .modify-resources {
     width: 811px;
     background: #fff;
@@ -662,6 +680,9 @@ float:left;
     margin-left: 35px;
     font-size: 16px;
     color: #fff;
+}
+.issued .modify-resources .top ul li  a img{
+	margin-top:12px;
 }
 .issued .modify-resources .top ul li:nth-child(2) {
     float: right;
@@ -685,7 +706,7 @@ float:left;
     width: 591px;
     height: 29px;
 }
-/*下发至学生 切换list*/
+/*涓嬪彂鑷冲鐢� 鍒囨崲list*/
 .issued .modify-resources nav .nav-list {
     width: 690px;
     overflow: hidden;
@@ -711,7 +732,7 @@ float:left;
     background: #BB372B;
     color: #fff;
 }
-/*下发至学生 切换内容*/
+/*涓嬪彂鑷冲鐢� 鍒囨崲鍐呭*/
 .issued .modify-resources nav .nav-container {
     width: 690px;
     margin: 30px auto;
@@ -735,11 +756,11 @@ float:left;
 }
 .issued .modify-resources nav .nav-container ul li {
     float: left;
-    width: 70px;
+    width: 80px;
     margin-right: 33px;
     margin-top: 30px;
 }
-.issued .modify-resources nav .nav-container ul li:nth-child(7n) {
+.issued .modify-resources nav .nav-container ul li:nth-child(6n) {
     margin-right: 0;
 }
 .issued .modify-resources nav .nav-submit {
@@ -770,7 +791,7 @@ float:left;
 .issued .modify-resources nav .nav-submit input[type="submit"]:hover {
     background: #BB372B;
 }
-/*下载弹窗*/
+/*涓嬭浇寮圭獥*/
 .del_down{
     text-align: center;
 }
