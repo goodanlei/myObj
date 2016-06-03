@@ -1,17 +1,19 @@
 
-/*动态赋值高度函数*/
-function _height(){
-    var _height  =  $('.main_right').height() + 'px';
-    var _heightMask  =  $('body').height() + 'px';
-    $('.main_left').css('height',_height);
-    $('.mask').css('height',_heightMask);
-    console.log(_height);
-}
-/*点击图片显示答案函数*/
-function test_pic(){
-    $('[s=false]').next().hide();
-    $('[s=true]').next().show();
-}
+	/*动态赋值高度函数*/
+	function _height(){
+	    var _height  =  $('.main_right').height();
+	    var _heightMask  =  $('body').height() + 'px';
+	    //var btn_bottom = _height-660;
+	    $('.main_left').css('height',_height+ 'px');
+	    //$('.main_right .page_btn').css('bottom',-btn_bottom+ 'px');
+	    $('.mask').css('height',_heightMask+ 'px');
+	    console.log(_height)
+	}
+	/*点击图片显示答案函数*/
+	function test_pic(){
+	    $('[s=false]').next().hide();
+	    $('[s=true]').next().show();
+	}
 
 
 
@@ -52,8 +54,7 @@ $(function(){
 
 
     /*组卷记录-试卷预览 --答案解析*/ /*答案解析--mask层*/
-    $('.theme .choose .ques_num .edit span').click(function(){
-        	$(this).addClass('edit_active').parent('div.edit').parent('div.ques_num').siblings('div.ques_num').find('span').removeClass('edit_active');
+    $('.theme .choose .ques_num .edit span').click(function(){     		$(this).addClass('edit_active').parent('div.edit').parent('div.ques_num').siblings('div.ques_num').find('span').removeClass('edit_active');
         _height();
         $('.mask').css('display','block');
     });
@@ -296,31 +297,56 @@ $(function(){
 	
 	
 	
+	 /*我的课堂--右侧标题*/
+	$(".center .tit span.titSpan").live("click",function(){
+		$(".teamListUl li").removeClass("actives");
+		$(this).addClass("actives").siblings('span.titSpan').removeClass("actives");
+	});
+	
+	$(".teamListUl li").live("click",function(){
+		$(".center .tit span.titSpan").removeClass("actives");
+		$(".teamListUl li").removeClass("actives");
+		$(this).addClass("actives");
+	});
 	
 	
+	$('.content-body table td.table_tit').wordLimit(14);
+	$('.assembly .form_table .name').wordLimit(16);
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 });
 
+
+(function($){
+	$.fn.wordLimit = function(num){	
+		this.each(function(){	
+			if(!num){
+				var copyThis = $(this.cloneNode(true)).hide().css({
+					'position': 'absolute',
+					'width': 'auto',
+					'overflow': 'visible'
+				});	
+				$(this).after(copyThis);
+				if(copyThis.width()>$(this).width()){
+					$(this).text($(this).text().substring(0,$(this).text().length-4));
+					$(this).html($(this).html()+'...');
+					copyThis.remove();
+					$(this).wordLimit();
+				}else{
+					copyThis.remove();
+					return;
+				}	
+			}else{
+				var maxwidth=num;
+				if($(this).text().length>maxwidth){
+					$(this).text($(this).text().substring(0,maxwidth));
+					$(this).html($(this).html()+'...');
+				}
+			}					 
+		});
+	}		  
+})(jQuery);
 
 
 
@@ -414,4 +440,3 @@ window.onload = function(){
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 }
-
