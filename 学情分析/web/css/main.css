@@ -10,7 +10,11 @@
 .main-left{
 	width: 10%;
 	height: 100%;
+	float: left;
 	min-height: 1000px;
 	background: #313944;
 }
-.main-right{width: 90%;}
+.main-right{
+	width: 90%;
+	float: left;
+}
