@@ -1,0 +1,16 @@
+﻿@import url("reset.css");
+.content{
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+}
+.header{
+	background-color:#32ba54;
+}
+.main-left{
+	width: 10%;
+	height: 100%;
+	min-height: 1000px;
+	background: #313944;
+}
+.main-right{width: 90%;}
