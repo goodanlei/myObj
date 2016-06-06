@@ -1,0 +1,163 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class_mes {
+  margin: 20px;
+}
+.class_mes .nav-mes {
+  height: 60px;
+  line-height: 60px;
+  background-color: #ffffff;
+}
+.class_mes .options {
+  margin-top: 20px;
+}
+.class_mes .options .options-tit {
+  background-color: #f5f5f5;
+}
+.class_mes .options .options-list {
+  float: left;
+  width: 65%;
+}
+.class_mes .options .options-list > li {
+  float: left;
+  text-align: center;
+  margin-left: -2px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid transparent;
+  border-right-color: #cccccc;
+  cursor: pointer;
+  width: 20%;
+}
+.class_mes .options .options-list > li.active {
+  border-top: 2px solid #32ba54;
+  border-bottom-color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+.class_mes .options .options-other {
+  float: left;
+}
+.class_mes .options .options-item {
+  width: 100%;
+  height: 855px;
+}
+.class_mes .options .options-item > li {
+  display: none;
+  padding-top: 10px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: red;
+}
+.class_mes .options .options-item > li.active {
+  display: block;
+}
+.class_mes .options .options-item .options-1 .analysis:before,
+.class_mes .options .options-item .options-1 .analysis:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class_mes .options .options-item .options-1 .analysis:before,
+.class_mes .options .options-item .options-1 .analysis:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class_mes .options .options-item .options-1 .analysis-l,
+.class_mes .options .options-item .options-1 .analysis-c,
+.class_mes .options .options-item .options-1 .analysis-r {
+  float: left;
+  margin-left: -2px;
+  height: 388px;
+}
+.class_mes .options .options-item .options-1 .analysis-l {
+  width: 59%;
+}
+.class_mes .options .options-item .options-1 .analysis-l .tit {
+  height: 36px;
+  line-height: 36px;
+  border-left: 4px solid #32ba54;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+.class_mes .options .options-item .options-1 .analysis-l .tit > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont:before,
+.class_mes .options .options-item .options-1 .analysis-l .cont:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont:before,
+.class_mes .options .options-item .options-1 .analysis-l .cont:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont-left {
+  float: left;
+  width: 80%;
+  height: 320px;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont-left table {
+  margin: 0px 2%;
+  text-align: center;
+  float: left;
+  width: 46%;
+  margin-bottom: 30px;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont-left td,
+.class_mes .options .options-item .options-1 .analysis-l .cont-left th {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 20%;
+  height: 35px;
+  line-height: 35px;
+  border: 0;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont-right {
+  height: 320px;
+}
+.class_mes .options .options-item .options-1 .analysis-l .cont-right .table-mes1,
+.class_mes .options .options-item .options-1 .analysis-l .cont-right .table-mes2 {
+  height: 160px;
+}
+.class_mes .options .options-item .options-1 .analysis-l .class_mes {
+  font-size: 14px;
+  color: #666666;
+  font-weight: normal;
+}
+.class_mes .options .options-item .options-1 .analysis-c {
+  width: 21%;
+}
+.class_mes .options .options-item .options-1 .analysis-r {
+  width: 20%;
+}
+.class_mes .options .options-item .options-1 .analysis-mes {
+  height: 465px;
+}
+.class_mes .options .options-item .options-1 .general_count {
+  margin-top: 20px;
+  height: 930px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.class_mes .options .options-item .options-1 .contrast {
+  margin-top: 20px;
+  height: 1045px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}

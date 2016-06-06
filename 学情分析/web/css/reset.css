@@ -47,9 +47,6 @@ table {
   clear:both;
   visibility: hidden;
 }
-.clearfix {
-  *zoom:1;
-}
 .fl{float: left;}
 .fr{float: right;}
 
