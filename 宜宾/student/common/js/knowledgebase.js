@@ -72,7 +72,9 @@ $(function(){
 	   },
 	   //tree
 	   tree:function(){
-	   	
+	   	var tree = $("#tree dl");
+	   	var _tit = tree.children("dt");
+	   	var tree_list_tit=tree.find("dt");
 	   	
 	   	//new  list
 	   	var list = {
@@ -505,34 +507,42 @@ $(function(){
         }
     ]
 };
-		    function getTreeDom (list) {
-		    	var str = '';
-		    	$.each(list, function(k,v) {
-		   		 if(v.children != undefined){
-		   		 	str += "<dl><dt id="+v.id+"><span>"+v.name+"</span></dt><dd>";
-			   		str += getTreeDom(v.children);
-		   		 }else{
-		   		 	str += "<dl><dt id="+v.id+" class='have_0'><span>"+v.name+"</span></dt><dd>";
-		   		 }
-		    		str+="</dd></dl>"
-		    	});
-		    	return str;
-		    }
-		   var tree =	getTreeDom(list.data);
-		   console.log(tree);
-		   $("#tree").empty().append(tree);
-		   
-		   var tree = $("#tree dl");
-		   var _tit = tree.children("dt");
-		   var tree_list_tit=tree.find("dt");
-		   tree.children("dd").hide();
-		   tree_list_tit.live("click",function(){
-		   		//show hide
-		   		$(this).parent().siblings().children("dt").next().hide();
-		   		$(this).next().show();
-		   		tree.find(".active").removeClass("active");
-		   		$(this).addClass("active");
-		   	});
+	   	
+	   	var tit = '';
+	   $.each(list.data, function(k,v) {
+	   	console.log(v);
+	   		 console.log(v.children.length);
+	   		
+	   		tit += "<dl><dt s='1' class='have_1'><span>asdfasdfljasldkfjla</span></dt><dd></dd></dl>";
+	   });
+	   $("#tree").empty().append(tit);
+	   
+	   
+//	   tree_list_tit.live("click",function(){
+//	   		//show hide
+////	   		$(this).parent().siblings().children("dt").next().hide();
+////	   		$(this).next().show();
+////	   		tree.find(".active").removeClass("active");
+////	   		$(this).addClass("active");
+////	   		
+////	   		//add  new  list
+////	   		var s = $(this).attr("s");
+////	   		var add_s = $(this).attr("add_s");
+////	   		if(s*1&&(add_s==0||add_s== undefined)){
+////		   		addList(list,this);
+////	   		}else{
+////	   			console.log("如果没有下级目录,则请求详细资源内容！");
+////	   		}
+//	   	});
+	   	function addList(arr,_this){
+	   		var add_list_html = '';
+	   		$.each(arr,function(k,v){
+	   			add_list_html +="<dl><dt s="+v.item_s+" class='have_"+v.item_s+"'><span>"+v.name+"</span></dt><dd></dd></dl>";
+	   		});		
+	   		$(_this).siblings().append(add_list_html);
+		   	$(_this).attr("add_s",1);
+	   	}
+	   	
 	   },
        init:function(){
            this.show();

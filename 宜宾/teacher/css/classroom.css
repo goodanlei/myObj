@@ -1,10 +1,9 @@
-@charset "utf-8";
 body{font-family: "微软雅黑";}
 .wrapper{
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 25px;
-    position: relative;
+    min-height: 790px;
 }
 
 /*颜色值*/
@@ -76,26 +75,21 @@ body{font-family: "微软雅黑";}
     left:-3px;
     cursor: pointer;
 }
-.wrapper .head .blue_box  span{
+.wrapper .head .test_btn span{
     position: relative;
     top:-4px;
     color:#fff;
 }
 /*试题蓝购物车*/
 .wrapper .head .box_car{
-    width: 247px;
-    padding-bottom:20px;
+    width: 228px;
+    height:334px;
     background: #f0f9ff;
     position: absolute;
-    top:56px;
+    top:50px;
     right:0;
     z-index: 100;
     display: none;
-}
-.box_car ul li span p{display:inline-block;}
-.box_car .line_sub{
-	max-height:400px;
-	overflow-y: auto;
 }
 .wrapper .head .box_car li{
     height:38px;
@@ -105,10 +99,8 @@ body{font-family: "微软雅黑";}
     padding-left: 14px;
     cursor: pointer;
 }
-.wrapper .head .box_car span{color:#222;}
 .wrapper .head .box_car li .name{
     width: 162px;
-    text-align:left;
     overflow: hidden; /*自动隐藏文字*/
     text-overflow: ellipsis;/*文字隐藏后添加省略号*/
     white-space: nowrap;/*强制不换行*/
@@ -137,11 +129,6 @@ body{font-family: "微软雅黑";}
 .wrapper .head .box_car .box_car_btn:hover{
 	background-color: #C9F2F1;
 }
-.blue_hover:hover .box_car{
-	display: block;
-}
-
-
 
 /*搜索*/
 .head .test_btn .lens{
@@ -181,7 +168,6 @@ body{font-family: "微软雅黑";}
 .main{width: 1200px;}
 .main .main_left{
     width: 250px;
-    min-height: 1275px;
     border-right:0;
     border-bottom: 0;
     background: #fff;
@@ -193,7 +179,6 @@ body{font-family: "微软雅黑";}
 }
 .main .main_right{
     width: 930px;
-    min-height: 1275px;
     background: #fff;
     -webkit-box-shadow: 0 0 10px #ccc;
  	-moz-box-shadow: 0 0 10px #ccc;
@@ -335,7 +320,6 @@ ul.ziyuan .ziyuan-item dt span {
 }
 ul.ziyuan .ziyuan-item dd {
   width: 375px;
-  min-height:46px;
   float: left;
 }
 ul.ziyuan .ziyuan-item dd span {
@@ -490,30 +474,13 @@ iframe {
 
 
 /*题目明细*/
-.main_right .sub_ques{min-height: 1000px;}
 .main_right .sub_ques .sub_ques_line{padding: 24px 30px;}
 .main_right .sub_ques .sub_ques_line:nth-child(even){background: #f9f9f9;}
 .main_right .sub_ques .sub_ques_line_l h4.tit{color:#d03d31;margin-bottom: 12px;}
 .main_right .sub_ques .sub_ques_line_l h4.tit i{color:#5ea6d9;margin-left: 12px;}
 .main_right .sub_ques .sub_ques_line_l h3{margin-bottom: 12px;}
-.main_right .sub_ques .sub_ques_line_l p.knowledge{margin: 6px 0;}
-.main_right .sub_ques .sub_ques_line_l ul li{float:left;margin: 3px 20px 3px 0;cursor:pointer;}
-.main_right .sub_ques .sub_ques_line_l ul li.tiwen{margin-left: -6px;    margin-bottom: 6px;}
-
-.main_right .sub_ques .sub_ques_line_l ul li.ques_tit{width:738px;}
-.main_right .sub_ques .sub_ques_line_l ul li span.ques_tit{display:block;width:728px;padding-left:10px;}
-.test_an ul li span p{display:inline-block;}
-
-.main_right .sub_ques .sub_ques_line_l .test_pic .widthlimit{margin-left:4px;}
-
-/*创建试题*/
-.main_right .sub_ques .sub_ques_line_l .test_pic li span p{display:inline-block;}
-/* .main_right .sub_ques .sub_ques_line_l .test_pic li{margin-top:-10px;} */
-
-
-/*创建答案*/
-.main_right .sub_ques .sub_ques_line_l .test_an{}
-
+.main_right .sub_ques .sub_ques_line_l p{margin: 12px 0;}
+.main_right .sub_ques .sub_ques_line_l ul li{float:left;margin-right:26px;}
 
 
 
@@ -524,7 +491,6 @@ iframe {
 	margin: 10px 0 10px 0;
 	padding: 5px;
 	border:1px solid #ebebeb;
-	cursor:pointer;	
 }
 .main_right .sub_ques .sub_ques_line_l .test_pic .tiwen_con,
 .main_right .sub_ques .sub_ques_line_l .test_an .jiexi_con,
@@ -586,10 +552,10 @@ iframe {
 .main_right .page{padding:12px 26px 16px 44px;color:#5ea6d9;}
 .main_right .page_r{background: #81d370;height: 28px;color:#fff;padding: 0 8px;cursor: pointer;}
 .main_right .page_r:hover{background-color: #68be53;}
-.main_right .page_r img{position: relative;top:5px;left: -2px;}
+.main_right .page_r img{position: relative;top:5px;}
 
 /*页数按钮*/
-.page_btn{text-align: center;margin: 0 auto;padding-bottom: 16px;padding-left: 340px;bottom:0px;}
+.page_btn{text-align: center;margin: 0 auto;padding-bottom: 16px;padding-left: 340px;}
 .page_btn li{
     width: 22px;
     height:22px;
@@ -720,13 +686,16 @@ iframe {
 }
 .assembly_head span.assembly_head_active{background: #d03d31;color:#fff;}
 
-.assembly .form_table{margin: 32px auto 20px;width: 1070px;min-height:450px;}
+.assembly .form_table{margin: 32px auto;width: 880px;}
 .assembly .form_table td{border:1px solid #ebebeb;padding: 0 15px;}
 .assembly .form_table .name{
 	display: inline-block;
 	width: 248px;
 	height: 39px;
 	line-height: 39px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
    	border:0;
    	border-bottom:1px solid #ebebeb;
 }
@@ -748,8 +717,7 @@ iframe {
     font-size: 14px;
     text-align: center;
 }
-.assembly .form_table table tbody tr td a{cursor: pointer;}
-.assembly .form_table table tbody tr td a:nth-of-type(2){margin: 0 30px;}
+.assembly .form_table table tbody tr td a{margin-right: 10px;cursor: pointer;}
 .assembly .form_table table tbody tr td a:hover{color:#d03d31;}
 
 /* colspan:跨行  rowspan：跨列*/
@@ -759,11 +727,11 @@ iframe {
 
 
 .assembly .page_btn{
-    padding: 38px 0 38px 532px;
+    padding: 38px 0 38px 480px;
 }
 
 /******************************************* 组卷记录--试卷预览  *******************************************/
-.theme{background: #fff;border:1px solid #e5e5e5;min-height: 800px;}
+.theme{background: #fff;border:1px solid #e5e5e5;}
 .theme .theme_head{
     height: 50px;
     line-height: 50px;
@@ -837,10 +805,7 @@ iframe {
 .theme .choose .ques_num .pic{
 	width: 700px;
 }
-.theme .choose .ques_num .pic ul li p{display:inline-block;}
-.theme .choose .ques_num .pic .pic_tit{margin: 5px 0;}
-.theme .choose .ques_num .pic .pic_tit i p{display:inline-block;}
-
+.theme .choose .ques_num .pic h5{margin: 5px 0;}
 .theme .choose .ques_num .pic ul li{float: left;margin-right: 30px;}
 .theme .choose .ques_num .edit{cursor: pointer;display: none;}
 .theme .choose .ques_num .edit span{
@@ -919,9 +884,9 @@ iframe {
 	width: 730px;
 	padding-left: 36px;margin-top: 10px;
 }
-
+.mask .mask_box .mask_pic strong{display: block;width: 738px;}
 .mask .mask_box .mask_pic h3{margin: 12px 0;}
-.mask .mask_box .mask_pic  ul li{float: left;}
+.mask .mask_box .mask_pic  ul li{float: left;margin-left: 20px;}
 
 
 /*******************************  我的课堂  ************************************/
@@ -968,41 +933,11 @@ iframe {
     height: 35px;
     padding: 15px 0px 0px 20px;
     border-bottom: 1px solid #dddddd;
-    position:relative;  
 }
-.teamListUl{
-	border: 1px solid #ccc;
-	box-shadow:0 0 5px #000;
-    width: 90px;
-    position: absolute;
-    right: 0;
-    margin-top: 16px;
-    margin-right: 21px;
-    background-color: #fff;
-    display: none;
-    z-index: 100;
-}
-.teamListUl li{
-	line-height:30px;
-	text-align:center;
-}
-.center .tit span.span_hover{
-	display: inline-block;
-	cursor:pointer;
-	width: 30px;
-    height: 40px;
-    text-align: center;
-}
-.center .tit span.span_hover:hover .teamListUl{display: block;}
-
-
-/*课堂记录-测试 --2016-05-30 修改*/
 .center .tit span {
-    margin-right: 26px ;
-    text-align: center;
+    margin-right: 30px ;
 }
-
-.center .tit span.active,.center .tit .teamListUl li.actives,.center .tit span.actives {
+.center .tit span.active {
     color: #d03d31;
 }
 .center .rili {
@@ -1098,37 +1033,25 @@ iframe {
 .content-body {
     margin: 30px 0px 0px;
     text-align: center;
-    position:relative;
-    z-index: 1;
 }
-.content-body img.left_btn,.content-body img.right_btn{
-	position:absolute;
-	cursor:pointer;
-}
-.content-body img.left_btn{top: 214px;left: 7px;}
-.content-body img.right_btn{top: 214px;right: 7px;}
 .content-body:before,
 .content-body:after {
     content: " ";
     display: table;
     clear: both;
 }
-.content-body .cy {
-    width: 150px;
+.content-body .f {
+    width: 250px;
 }
-.content-body .st {
+.content-body .c {
     width: 170px;
 }
-.content-body .tm {
-    width: 90px;
-}
-.content-body .cz {
-    width: 80px;
+.content-body .l {
+    width: 170px;
 }
 .content-body table {
     margin: 0px 20px 40px;
     border:0;
-    max-height: 440px;
 }
 .content-body tr {
     height: 48px;
@@ -1137,12 +1060,9 @@ iframe {
     font-size: 16px;
     border:1px solid #ebebeb;
 }
-.content-body td{padding: 10px;border:1px solid #ebebeb;text-align: center;}
-.content-body table td.table_tit{
-	width: 216px;
-	height: 60px;
-    border:transparent;
-    border-bottom: 1px solid #ebebeb;
+.content-body td{padding: 10px;border:1px solid #ebebeb;}
+.content-body td:first-of-type {
+    text-align: left;
 }
 .content-body .doing:hover{color:#6daddc;}
 .content-body .text-tit {
@@ -1209,7 +1129,7 @@ iframe {
 
 /*选项比率*/
 .content-body .text .count{
-    margin-top: -13px;
+    margin-top: 40px;
     padding-right:150px;
     height: 260px;
 }
@@ -1269,6 +1189,7 @@ iframe {
 
 /*编辑插件*/
 #qstShowwqyan{overflow: auto;}
+
 
 
 
