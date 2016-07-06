@@ -6,11 +6,29 @@ var zNodes =[
         children: [
             { name:"阅读",open:true,
                 children: [
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"},
-                    { name:"金色的草地"}
-                ]
+		            { name:"next",open:true,
+		                children: [
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"}
+		                ]
+		            },{ name:"next",open:true,
+		                children: [
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"}
+		                ]
+		            },{ name:"next",open:true,
+		                children: [
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"},
+		                    { name:"金色的草地"}
+		                ]
+		            }
+		        ]
             },
         ]
     },

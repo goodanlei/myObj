@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>头部</title>
+		<link rel="stylesheet" href="css/reset.css" charset="utf-8"/>
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			html{font:normal normal 62.5% "Microsoft YaHei";}/*加上是--1rem等于10px*/
+			.head{
+				width: 100%;
+				min-width: 1200px;
+				background-color:#fff;
+			}
+			.head .logo{
+				width: 17%;
+				min-width: 203px;
+				height: auto;
+				margin: 8px 4px 10px 4px;
+			}
+			.head .list{
+				width: 60%;
+				min-width: 760px;
+				padding-left: 2%;
+			}
+			.head .list li{
+				float: left;
+				width: 14.2%;
+				font-size: 1.6rem;
+				padding-top: 1.6%;
+				padding-bottom: 17px;
+			}
+			.head .list li a{
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				height: 18px;
+				line-height: 18px;
+				border-right:1px solid #e5e5e5;
+			}
+			.head .list li a.active{color:#147ec9;}
+			.head .list li:first-of-type a{border-left:1px solid #e5e5e5;}
+			
+			.head .btn{
+				width: 14%;
+				height: 50px;
+			    line-height: 50px;
+			    font-size:1.4rem;
+			    cursor: pointer;
+			    text-align: right;
+			   padding-right: 24px;
+			}
+			.head .btn .login{font-size: 1.2rem;}
+			.head .btn strong {
+		    	font-weight: normal;
+		    }
+		    .head .btn strong img{
+		    	margin-top: 23px;
+		    	margin-right: 14px;
+		    }
+		    .head .btn strong span{color:#5093e1;}
+		    .head .btn .personal{
+		    	width: 76px;
+			    height: 20px;
+			    position: absolute;
+			    top: 33px;
+    			right: 80px;
+			    z-index: 1111;
+			    background: #fff;
+			    border: 2px solid #a7c9f0;
+			    border-radius: 3px;
+			     display: none; 
+		    }
+		    .head .btn .personal li{
+		    	width: 76px;
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    font-size: 1.2rem;
+		    }
+		    .head .btn strong:hover .personal{display: block;}
+		</style>
+	</head>
+	<body>
+		<div class="head clearfix">
+			<img class="logo fl" src="img/logo.png" alt="" />
+			<ul class="list fl">
+				<li><a href="#" class="active">个人资源中心</a></li>
+				<li><a href="#">备课中心</a></li>
+				<li><a href="#">公共资源中心</a></li>
+				<li><a href="#">作业中心</a></li>
+				<li><a href="#">评测中心</a></li>
+				<li><a href="#">课堂记录</a></li>
+				<li><a href="#">综合评价</a></li>
+			</ul>
+			<div class="btn fr">
+				<strong>
+                	<span>示例教师3</span>
+                	<img src="img/xia_blue.png" alt=""/>
+                	<ul class="personal">
+		                <li>退出登陆</li>
+		            </ul>
+                </strong>
+                <em class="login">[已登录]</em>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.head .list li').on('click',function(){
+				$(this).find('a').addClass('active').parent('li').siblings('li').find('a').removeClass('active');
+			});
+		});
+	</script>
+</html>
