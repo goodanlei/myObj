@@ -6,7 +6,7 @@
 	text-indent: 1em;
 	display:block; 
 }
-.ztree li a.level0.cur {background-color: #161e25;border-right:5px solid #5093e1;}
+.ztree li a.level0.cur {background-color: #3d7bc3;}
 
 .ztree li a.level0 span {
 	display: block; 
@@ -29,15 +29,14 @@
 div.content_wrap {    
 	width: 100%;
     min-width: 180px;
-    background-color: #22252b;
+    background-color: #5093e1;
 }
 
-div.content_wrap div.left{float: left;width:100%;min-width: 180px;background-color: #22252b;}
+div.content_wrap div.left{float: left;width:100%;min-width: 180px;background-color: #5093e1;}
 div.content_wrap div.right{float: right;width: 340px;}
 div.zTreeDemoBackground {width:100%;min-width: 180px;min-height:600px;text-align:left;}
 
 ul.ztree {
-	margin-top: 10px;
 	width:100%;
 	min-height: 600px;
 	overflow-y:auto;

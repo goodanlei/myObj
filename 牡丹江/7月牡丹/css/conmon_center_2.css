@@ -1,0 +1,367 @@
+@import url("tool.css");
+@import url("public.css");
+/*@import url("reset.css");*/
+/*reset reset*/
+body,#treeDemo{
+	margin: 0;
+	padding: 0;
+}
+/*left_main header*/
+.main .main_left{
+	float: left;
+	background-color: #5093e1;
+}
+.main_left .grade{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-indent: 0;
+	font-size: 16px;
+	color: #ebebeb;
+	border-bottom: 2px solid #EDEFF5;
+}
+	/*ziyuan   */
+ul.ziyuan,.ziyuan dl,.ziyuan dt,.ziyuan dd{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.ziyuan a {
+  color: #d03d31;
+  text-decoration: none;
+}
+ul.ziyuan a:link {
+  text-decoration: none;
+}
+ul.ziyuan a:visited {
+  text-decoration: none;
+}
+ul.ziyuan a:hover {
+  text-decoration: none;
+}
+ul.ziyuan a:active {
+  text-decoration: none;
+}
+ul.ziyuan li {
+  height: 41px;
+  /*border: 1px solid #EFEFEF;*/
+  border-top: 0px;
+  position: relative;
+}
+ul.ziyuan li:before,
+ul.ziyuan li:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+ul.ziyuan li:hover {
+  background-color: #3D7BC3;
+}
+ul.ziyuan li:hover .ziyuan-item {
+  left: 100%;
+  top: -1px;
+}
+/*ul.ziyuan li:first-of-type .ziyuan-item {
+  left: 100%;
+  top: -1px;
+}*/
+ul.ziyuan dt {
+  height: 40px;
+  font-size: 16px;
+}
+ul.ziyuan dt span {
+	cursor: pointer;
+  padding-top: 10px;
+  display: block;
+  color: #FFFFFF;
+}
+ul.ziyuan dd span {
+  color: #d03d31;
+  display: block;
+  width: 62px;
+  font-size: 14px;
+  margin-bottom: 3px;
+  float: left;
+}
+ul.ziyuan .ziyuan-item {
+  position: absolute;
+  left: -999em;
+  width: 300%;
+}
+ul.ziyuan .ziyuan-item > span {
+	display: block;
+    position: absolute;
+    left: -2px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 16px solid #fff;
+}
+ul.ziyuan .ziyuan-item dl {
+  margin-left: 9px;
+  background-color: #FFFFFF;
+  border: 1px #EFEFEF solid;
+  padding-top: 15px;
+  -webkit-box-shadow: 0 0 5px #666;
+  -moz-box-shadow: 0 0 5px #666;
+  -ms-box-shadow: 0 0 5px #666;
+  box-shadow: 0 0 5px #666;
+}
+ul.ziyuan .ziyuan-item dl span {
+  color: #555555;
+  font-size: 12px;
+  padding: 0px;
+  border-right: 1px solid #ddd;
+}
+ul.ziyuan .ziyuan-item dt {
+  width: 13%;
+  padding-top: 0px;
+  float: left;
+}
+ul.ziyuan .ziyuan-item dt span.cur {
+	color: #d03d31;
+}
+ul.ziyuan .ziyuan-item dd {
+  width: 87%;
+  float: left;
+}
+ul.ziyuan .ziyuan-item dd span {
+  width: auto;
+  padding-right: 6px;
+  margin: 0px 6px 10px 6px;
+}
+ul.ziyuan .ziyuan-item dd span:hover{
+	cursor: pointer;
+}
+ul.ziyuan .ziyuan-item dd span.active {
+  color: #d03d31;
+}
+/*tree*/
+#treeDemo_1_a{
+	text-align: center;
+	text-indent: 0;
+}
+.list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list a{
+	text-decoration: none;
+    outline: none;
+    color: #222;
+}
+/*left_main end*/
+
+/*right section*/
+.main_right{
+	float: left;
+}
+/*header*/
+.main_right header{
+	padding:0 1.5%;
+	height: 45px;
+}
+.main_right header span{
+	margin-top: 10px;
+	margin-right: 15px;
+	cursor: pointer;
+	height: 20px;
+	font-size: 16px;
+	color: #949494;
+	display: inline-block;
+}
+.main_right header span.active{
+	color: #222222;
+	border-bottom: 2px solid #5093E1;
+}
+/*header end*/
+
+/*article*/
+.main_right article.cont-body{
+	margin: 0 1.5%;
+	padding-bottom: 20px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+}
+.cont-body header{
+	height: 120px;
+	border-bottom:1px solid #EEEEEE ;
+}
+.cont-body header dl{
+	list-style: none;
+	color: #222222;
+	font-size: 14px;
+}
+.cont-body header dl span{
+	display: inline-block;
+	color: #222222;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	padding: 0 10px;
+	margin:0 5px 5px;
+	border-radius: 10px;
+}
+.cont-body header dl span.active{
+	background-color: #5093E1;
+	color: #FFFFFF;
+}
+.cont-body header dl input{
+	height: 30px;
+	width: 150px;
+	border: 1px solid #E5E5E5;
+	outline: 0;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.cont-body header dl button{
+	height: 32px;
+	border-radius: 5px;
+	border:0;
+	background-color: #5093E1;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+.cont-body header dt{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	width: 5%;
+}
+.cont-body header dd{
+	padding-top: 10px;
+	margin: 0;
+	float: right;
+	width: 95%;
+}
+/*section*/
+.cont-body section{
+	padding: 20px 0;
+}
+.cont-body section ul{
+	padding: 0;
+	margin: 0 2.4%;
+	list-style: none;
+}
+.cont-body section ul li{
+	padding: 0;
+    margin: 0;
+    margin-bottom: 22px;
+	float: left;
+	overflow: hidden;
+	width: 25%;
+	
+}
+.cont-body section ul li figure{
+	padding: 0;
+    margin: 0;
+    height: 266px;
+	border: 2px solid #EEEEEE;
+}
+.cont-body section ul li figure img{
+	display: block;
+	width: 30%;
+	height: 70px;
+	background-color: #F5F5F5;
+	padding:36px 35%;
+}
+.cont-body section ul li figcaption{
+	max-height: 134px;
+	padding:0 4%;
+	overflow: hidden;
+}
+.cont-body section ul li figcaption p{
+	margin: 0;
+	font-size: 12px;
+	color: #818181;
+	line-height: 20px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*width: 100%;*/
+}
+.click_num,.down_num {
+    display: inline-block;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	width: 49%;
+}
+.cont-body section ul li figcaption p .click_num,.cont-body section ul li figcaption p .down_num,{
+	
+}
+.down,.collection{
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	margin-left: 10%;
+	width: 27%;
+	line-height: 21px;
+	padding-left: 12%;
+}
+.collection{
+	background:url(../img/shoucang.png) no-repeat;
+}
+.down{
+	background:url(../img/xiaz.png) no-repeat;
+}
+.title{
+	font-size: 14px;
+	margin-right: 40px;
+	color: #222222;
+	font-weight: bold;
+}
+.cont-body section ul li:nth-child(4n+1) figure{
+	margin-right: 10%;
+}
+.cont-body section ul li:nth-child(4n+2) figure{
+	margin-left:5%;
+	margin-right:7.5%;
+}
+.cont-body section ul li:nth-child(4n+3) figure{
+	margin-left:7.5%;
+	margin-right:5%;
+}
+.cont-body section ul li:nth-child(4n+4) figure{
+	margin-left:10%;
+}
+/*section end*/
+
+/*footer*/
+.cont-body footer{
+	text-align: center;
+}
+.cont-body footer span{
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+    line-height: 20px;
+    color: #5093E1;
+}
+.cont-body footer span.active{
+	background-color: #5093E1;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+.cont-body footer span.previous,.cont-body footer span.next{
+	font-size: 14px;
+	background-color: transparent;
+    border: 1px solid #5093E1;
+    border-radius: 15px;
+}
+/*footer end*/
+
+/*article end*/
+/*right section**********end*/
+
+

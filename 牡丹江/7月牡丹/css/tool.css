@@ -1,0 +1,8 @@
+.clearfix:after,.clearfix:before{
+  content: " ";
+  display: table;
+  clear: both;
+}
+.clearfix{*zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
