@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人资源中心-我的资源</title>
+    <link rel="stylesheet" href="css/reset.css" charset="utf-8"/>
+    <link rel="stylesheet" href="common/zTree/css/demo.css" type="text/css">
+    <link rel="stylesheet" href="common/zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <!--头部左侧默认样式-->
+    <link rel="stylesheet" href="css/myziyuan.css"/>
+    <!--中心内容默认样式-->
+    <link rel="stylesheet" href="css/ziyuan.css"/>
+</head>
+<body>
+<!--头部导航-->
+<div class="head clearfix">
+    <img class="logo fl" src="img/logo.png" alt="" />
+    <ul class="list fl">
+        <li><a href="#" class="active">个人资源中心</a></li>
+        <li><a href="#">备课中心</a></li>
+        <li><a href="#">公共资源中心</a></li>
+        <li><a href="#">作业中心</a></li>
+        <li><a href="#">评测中心</a></li>
+        <li><a href="#">课堂记录</a></li>
+        <li><a href="#">综合评价</a></li>
+    </ul>
+    <div class="btn fr">
+        <strong>
+            <span>示例教师3</span>
+            <img src="img/xia_blue.png" alt=""/>
+            <ul class="personal">
+                <li>退出登陆</li>
+            </ul>
+        </strong>
+        <em class="login">[已登录]</em>
+    </div>
+</div>
+<!--中心内容-->
+<div class="main">
+    <!--左侧-->
+    <div class="main_left">
+        <h3 class="name">全部</h3>
+        <div class="main_left_ztree">
+            <div class="content_wrap">
+                <div class="zTreeDemoBackground left">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="main_right">
+        <p class="lianjie">
+            <span><a class="cur" href="javascript:;">我的资源</a></span>
+            <span><a href="javascript:;">下发记录</a></span>
+        </p>
+        <div class="con">
+                <!--主题内容 右侧 路径导航 -->
+                <div class="path-navigation">
+                    <ul>
+                        <li><span>初一</span></li>
+                        <li>
+                            <span class="xie">/</span>
+                            <span>数学上册</span>
+                        </li>
+                        <li>
+                            <span class="xie">/</span>
+                            <span>第一章 有理数</span>
+                        </li>
+                    </ul>
+                    <div class="path-right">
+                        <form action="">
+                            <input placeholder="请输入相关字" type="text"/>
+                            <span class="sousuo"></span>
+                        </form>
+                    </div>
+                </div>
+                <!--主题内容 右侧 table栏切换 -->
+                <div class="tab-switch">
+                    <div class="investment_f clearfix">
+                        <!--主题内容 右侧 table栏切换 侧边《下载 删除》按钮-->
+                        <div class="investment_btn">
+                            <dl>
+                                <dt>筛选 :</dt>
+                                <dd class="active">全部</dd>
+                                <dd>视频</dd>
+                                <dd>音频</dd>
+                                <dd>图片</dd>
+                                <dd>PDF</dd>
+                                <dd>PPT</dd>
+                                <dd>Word</dd>
+                                <dd>Excel</dd>
+                                <dd>微课</dd>
+                                <dd>微课大赛</dd>
+                            </dl>
+                            <ul>
+                                <li>共享至老师</li>
+                                <li>下发至学生</li>
+                                <li>同步云课堂</li>
+                                <li id="download">
+                                    <span></span>
+                                    下载
+                                </li>
+                                <li id="delete">
+                                    <span></span>
+                                    删除
+                                </li>
+                            </ul>
+                        </div>
+                        <!--主题内容 右侧 table栏切换 list导航-->
+                        <div class="investment_title">
+                            <div class="on">我上传的（共<span>3</span>条）</div>
+                            <div>收藏与共享的（共<span>3</span>条）</div>
+                            <div>同步到云课堂的（共<span>3</span>条）</div>
+                        </div>
+                        <!--主题内容 右侧 table栏切换 list切换内容-->
+                        <div class="investment_con">
+                            <div class="investment_con_one investment_one">
+                                <table>
+                                    <tr>
+                                        <th class="quanxuan">全选</th>
+                                        <th class="list-name2">资源名称</th>
+                                        <th>资源大小</th>
+                                        <th>修改属性</th>
+                                        <th class="time">加入时间</th>
+                                        <th>资源操作</th>
+                                        <th>申请精品</th>
+                                        <th style="width: 220px;">同步到云课堂</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox4" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox2">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td class="caozuo">
+                                            <span></span>
+                                            公开至资源库
+                                        </td>
+                                        <td class="jingpin">
+                                            <span></span>
+                                            申请成为精品
+                                        </td>
+                                        <td class="butongbu">
+                                            <div>
+                                                <span></span>
+                                                同步
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox1" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox1">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td class="tongbu">
+                                            <div>
+                                                <span></span>
+                                                取消公开
+                                            </div>
+                                        </td>
+                                        <td class="yijingpin">
+                                            <span></span>
+                                            已成功
+                                        </td>
+                                        <td class="tongbu">
+                                            <div>
+                                                <span></span>
+                                                取消同步
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="yeshu">
+                                    显示 <span>1</span> 到 <span>20</span> 项，共 <span>72</span> 项
+                                </div>
+                                <!--主题内容 右侧 table栏切换 分页-->
+                                <div class="investment_paging">
+                                    <ul class="pagination-clean">
+                                        <li class="previous-off"><a href="javascript:;"></a></li>
+                                        <li><a class="active" href="javascript:;">1</a></li>
+                                        <li><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a href="javascript:;">4</a></li>
+                                        <li class="next"><a href="javascript:;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="display: none" class="investment_con_one">
+                                <table>
+                                    <tr>
+                                        <th class="quanxuan">全选</th>
+                                        <th class="list-name2">资源名称</th>
+                                        <th>资源大小</th>
+                                        <th>修改属性</th>
+                                        <th class="time">加入时间</th>
+                                        <th>作者</th>
+                                        <th>资源来源</th>
+                                        <th>同步到云课堂</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox3" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox3">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td>
+                                            李本玲
+                                        </td>
+                                        <td>收藏</td>
+                                        <td class="butongbu">
+                                            <div>
+                                                <span></span>
+                                                同步
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox5" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox5">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td>
+                                            李本玲
+                                        </td>
+                                        <td>收藏</td>
+                                        <td class="tongbu">
+                                            <div>
+                                                <span></span>
+                                                取消同步
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="yeshu">
+                                    显示 <span>1</span> 到 <span>20</span> 项，共 <span>72</span> 项
+                                </div>
+                                <!--主题内容 右侧 table栏切换 分页-->
+                                <div class="investment_paging">
+                                    <ul class="pagination-clean">
+                                        <li class="previous-off"><a href="javascript:;"></a></li>
+                                        <li><a class="active" href="javascript:;">1</a></li>
+                                        <li><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a href="javascript:;">4</a></li>
+                                        <li class="next"><a href="javascript:;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="display: none" class="investment_con_list">
+                                <table>
+                                    <tr>
+                                        <th class="quanxuan">全选</th>
+                                        <th class="list-name2">资源名称</th>
+                                        <th>资源大小</th>
+                                        <th>修改属性</th>
+                                        <th class="time">加入时间</th>
+                                        <th>作者</th>
+                                        <th>资源来源</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox2" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox2">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td>
+                                            李本玲
+                                        </td>
+                                        <td>收藏</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="checkebox5" type="checkbox" value=""/>
+                                        </td>
+                                        <td>
+                                            <label for="checkebox5">
+                                                属的化学性质金属的化学性质性学性质
+                                            </label>
+                                        </td>
+                                        <td>
+                                            1.1M
+                                        </td>
+                                        <td class="bianji">
+                                            <span></span>
+                                            编辑
+                                        </td>
+                                        <td>
+                                            2016-06-15
+                                            04:21:19
+                                        </td>
+                                        <td>
+                                            李本玲
+                                        </td>
+                                        <td>收藏</td>
+                                    </tr>
+                                </table>
+                                <div class="yeshu">
+                                    显示 <span>1</span> 到 <span>20</span> 项，共 <span>72</span> 项
+                                </div>
+                                <!--主题内容 右侧 table栏切换 分页-->
+                                <div class="investment_paging">
+                                    <ul class="pagination-clean">
+                                        <li class="previous-off"><a href="javascript:;"></a></li>
+                                        <li><a class="active" href="javascript:;">1</a></li>
+                                        <li><a href="javascript:;">2</a></li>
+                                        <li><a href="javascript:;">3</a></li>
+                                        <li><a href="javascript:;">4</a></li>
+                                        <li class="next"><a href="javascript:;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!--浮窗-->
+<div class="floating">
+    <ul>
+        <li class="weike">
+            <span></span>
+            <a href="javascript:;">2016年微课大赛上传</a>
+        </li>
+        <li class="shangchuan">
+            <span></span>
+            <a href="javascript:;">上传资源</a>
+        </li>
+        <li class="xiazai">
+            <span></span>
+            <a href="javascript:;">下载视频转码软件</a>
+        </li>
+    </ul>
+    <div class="juxing">
+        备注：上传资源之前大家可以使用转
+        码软件自行先转码。平台提供了32位
+        和64位两个版本软件，使用前务必详
+        细阅读MediaCoder使用说明
+    </div>
+</div>
+<!--修改属性-->
+<div class="shuxing" style="display: none">
+    <div class="con">
+        <p class="xiugaixiuxing">
+            <span class="xiu">修改属性</span>
+            <span class="guanbi"></span>
+        </p>
+        <form class="xiugai" action="">
+            <p class="mingcheng">
+                <span>资源名称：</span>
+                <input type="text"/>
+            </p>
+            <p class="type">
+                资源类型：
+                <span class="cur">资源</span>
+                <span>微课</span>
+                <span>微课大赛</span>
+            </p>
+            <p class="guanlian">
+                资源关联：
+                <select>
+                    <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>八年级</option>
+                    <option>九年级</option>
+                </select>
+                <select>
+                    <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>八年级</option>
+                    <option>九年级</option>
+                </select>
+                <select>
+                    <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>八年级</option>
+                    <option>九年级</option>
+                </select>
+                <select>
+                    <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>八年级</option>
+                    <option>九年级</option>
+                </select>
+            </p>
+            <p>
+                <span>关键字：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text"/>
+            </p>
+            <p>
+                资源描述：
+               <input type="text"/>
+            </p>
+            <p class="tijiao">
+                <input class="queren" type="button" value="确认"/>
+                <input class="quxiao" type="reset" value="取消"/>
+            </p>
+        </form>
+    </div>
+</div>
+
+
+<!--头部导航脚本文件-->
+<script src="common/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="common/zTree/js/jquery.ztree.core.js" type="text/javascript" ></script>
+<script src="common/js/ztree.js" type="text/javascript" charset="utf-8"></script>
+<script src="common/js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="common/js/ziyuan.js"></script>
+
+</body>
+</html>

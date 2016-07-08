@@ -1,0 +1,133 @@
+body{background-color: #edeff5;}
+/* 头部 */
+iframe{border:0 none;}
+html,body{width: 100%;background-color: #edeff5;}
+.header{
+    width: 100%;
+    height: 100%;
+    height: 48px;
+    min-width: 1200px;
+    box-shadow: 0 0 8px #000;
+}
+
+.main{width: 100%;position: relative;top:4px;}
+@media screen and (min-width:1024px) and (max-width:1300px){
+    .main{
+        top:2px;
+    }
+}
+
+.main .main_left{
+    width: 15%;
+    min-width: 180px;
+    height: 100%;
+    min-height: 906px;
+    background-color: #5093e1;
+    position: absolute;
+    left: 0;
+}
+.main .main_right{
+    width: 84%;
+    margin-left: 16%;
+    min-width: 1000px;
+    height: 100%;
+    min-height: 906px;
+}
+@media only screen and (max-width: 1200px) {
+    .main .main_right{margin-left: 190px;}
+}
+.main_left .person img{
+    width: 48%;
+    height: 48%;
+    min-width: 87px;
+    min-height: 87px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin:10% 24% 5% 24%;
+}
+.main_left .name{
+    height: 40px;
+    line-height: 40px;
+    color:#fff;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.main_left_ztree{width: 100%;}
+
+
+
+html{font:normal normal 62.5% "Microsoft YaHei";}/*加上是--1rem等于10px*/
+.head{
+    width: 100%;
+    min-width: 1200px;
+    background-color:#fff;
+}
+.head .logo{
+    width: 17%;
+    min-width: 203px;
+    height: auto;
+    margin: 8px 4px 10px 4px;
+}
+.head .list{
+    width: 60%;
+    min-width: 760px;
+    padding-left: 2%;
+}
+.head .list li{
+    float: left;
+    width: 14.2%;
+    font-size: 1.6rem;
+    padding-top: 1.6%;
+    padding-bottom: 17px;
+}
+.head .list li a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    border-right:1px solid #e5e5e5;
+}
+.head .list li a.active{color:#147ec9;}
+.head .list li:first-of-type a{border-left:1px solid #e5e5e5;}
+
+.head .btn{
+    width: 14%;
+    height: 50px;
+    line-height: 50px;
+    font-size:1.4rem;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 24px;
+}
+.head .btn .login{font-size: 1.2rem;}
+.head .btn strong {
+    font-weight: normal;
+}
+.head .btn strong img{
+    margin-top: 23px;
+    margin-right: 14px;
+}
+.head .btn strong span{color:#5093e1;}
+.head .btn .personal{
+    width: 76px;
+    height: 20px;
+    position: absolute;
+    top: 33px;
+    right: 80px;
+    z-index: 1111;
+    background: #fff;
+    border: 2px solid #a7c9f0;
+    border-radius: 3px;
+    display: none;
+}
+.head .btn .personal li{
+    width: 76px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.head .btn strong:hover .personal{display: block;}
+
