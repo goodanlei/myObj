@@ -6,6 +6,9 @@ body,#treeDemo{
 	margin: 0;
 	padding: 0;
 }
+a{
+	text-decoration: none;
+}
 /*left_main header*/
 .main .main_left{
 	float: left;

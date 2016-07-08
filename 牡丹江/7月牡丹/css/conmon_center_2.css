@@ -193,6 +193,8 @@ ul.ziyuan .ziyuan-item dd span.active {
 	border-bottom:1px solid #EEEEEE ;
 }
 .cont-body header dl{
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	color: #222222;
 	font-size: 14px;
@@ -211,6 +213,10 @@ ul.ziyuan .ziyuan-item dd span.active {
 .cont-body header dl span.active{
 	background-color: #5093E1;
 	color: #FFFFFF;
+}
+.cont-body header dl span.file_up_time,.cont-body header dl span.click_num{
+	background-color: #F5F5F5;
+	width: auto;
 }
 .cont-body header dl input{
 	height: 30px;
